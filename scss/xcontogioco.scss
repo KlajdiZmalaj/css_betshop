@@ -1,20 +1,190 @@
-/*HEADER e MENU*/
+@import "vars";
 
-.logo img {
-        height: 100%!important;
+.logo a {
+  &::before {
+    content: "";
+    width: 100%;
+    height: 70px;
+    background-image: url("#{$logoUrl}");
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 360px;
+    background-repeat: no-repeat;
+    height: 40px;
+  }
+  img {
+    display: none;
+  }
 }
 
+.row.barra-superiore {
+  position: absolute;
+  height: 70px;
+  background: transparent;
+  a {
+    filter: invert($invert);
+  }
+  .info-utili,
+  .funzioni-menu,
+  .testo-disclaimer {
+    display: none;
+  }
+}
+.row.barra-intermedia {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  height: 70px;
+  background: var(--primary-bg);
+  color: var(--primary-txt);
+}
+.login-header.col-lg-9 {
+  width: calc(100% / 3);
+  max-width: calc(100% / 3);
+  flex: auto;
+}
 .logo {
-    height: 110px!important;
+  height: 100%;
+  width: calc(100% / 3);
+  max-width: calc(100% / 3);
+  margin-left: auto;
+  flex: auto;
+  justify-content: center;
+}
+.menu-principale-barra ul.menu-principale {
+  background: var(--secondary-bg);
+  color: var(--secondary-txt);
+  li,
+  a {
+    color: var(--secondary-txt);
+    font-family: $font;
+  }
 }
 
-p.testo-disclaimer {
-    max-width: 100%!important;
-    font-size: 10px!important;
+.menu-principale-barra {
+  display: flex;
+  > ul {
+    width: auto;
+    font-family: $font;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  > nav {
+    width: auto;
+    flex-grow: 1;
+    font-family: $font;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+.menu-principale-barra .sottomenu-principale ul {
+  background: var(--secondary-bg);
+  color: var(--secondary-txt);
+}
+div#cg-scommesse-submenu {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  background: var(--secondary-bg);
+}
+.menu-principale-barra .active,
+.menu-principale-barra a:hover {
+  border-bottom: 3px solid var(--accent);
 }
 
-.barra-superiore .blocco-header {
-    font-size: 12px!important;
+//iframe sport
+iframe#sport-frame {
+  margin-top: 0 !important;
 }
 
-/*FINE HEADER e MENU*/
+div#content {
+  padding-top: 10px !important;
+}
+.login-header {
+  .margine-dx,
+  .margine-destra {
+    margin-right: 0;
+    display: flex;
+    width: auto;
+  }
+  .blocco-header {
+    border-right: 0;
+    input {
+      border-radius: 0;
+      background: var(--bg1);
+      color: var(--col1);
+      border: 0;
+      width: 125px;
+      margin: 0;
+    }
+  }
+  .form-group {
+    &:first-child {
+      position: relative;
+      &:before {
+        content: "\f007";
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 300;
+        position: absolute;
+        left: 16px;
+        top: 5px;
+        font-size: 15px;
+      }
+      input {
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        padding-left: 35px;
+      }
+    }
+    &:last-child {
+      position: relative;
+      &:before {
+        content: "\f30d";
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 300;
+        position: absolute;
+        left: 16px;
+        top: 5px;
+        font-size: 15px;
+      }
+      input {
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        padding-left: 35px;
+      }
+    }
+  }
+}
+.bottone-registrazione {
+  height: 26px;
+  border-radius: 13px;
+  background: linear-gradient(#0af 0%, #0067b6 25.12%, #003465 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 0 10px;
+  margin-left: 5px;
+}
+.login-header .blocco-header {
+  align-items: center;
+}
+
+a.bottone.bottone-login {
+  height: 26px;
+  border-radius: 13px;
+  background: linear-gradient(#0af 0%, #0067b6 25.12%, #003465 100%);
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.flag-lang {
+  display: flex;
+  align-items: center;
+}

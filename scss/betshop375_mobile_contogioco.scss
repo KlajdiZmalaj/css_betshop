@@ -1,0 +1,1078 @@
+/*:root {
+--top-navbar-color:#1a1f23;
+--bottom-navbar-color:#1a1f23!important;
+--top-navbar-text-color:#FFF;
+--bottom-navbar-text-color:#FFF!important;
+--notification-circle-color: #FCCD06;
+--notification-circle-text-color: black;
+--nav-selection-color: #fdcd09;
+--primary-color:#20282b!important;
+--background-color:#20282b;
+--field-wrapper-background:#2e3639;
+--general-border-color:#827b7b;
+--arrow-color:#fccd06!important;
+--loader-color:#fccd06;
+--deposit-button-background-color:#00b0dc;
+--ticket-background:#2e3639;
+--menu-header-go-back:#000;
+--calendar-text-color:#FFF;
+--signup-label:#000;
+--nav-selection-border2:#000;
+--nav-selection-text2:#000;
+--button-slider-border: #000000;
+--button-slider-background: #fdcd09;
+--button-slider-text-color: #000000;
+}*/
+
+body{
+background: #404040!important;
+}
+
+.contentMain {
+background: #404040!important;
+
+}
+
+.loader-container {
+   background: #404040!important;
+	}
+
+.bouncing-loader > div {
+    background: #ffd919!important;
+}
+
+.cg-nav-logo {
+	background-image: url("/external_cms/BETSHOP375/logo_betshop375.png");
+    height: 40px;
+	width: 100%;
+	position:absolute;
+	top: 5px;
+}
+
+.cg-info-popup > div {
+	background-color: #1a1f23!important;
+	border-radius: 0px!important;
+	width: 100%;
+	bottom: 59px;
+	}
+
+.cg-cookies-button-ok {
+	background-color: #ffd919;
+	padding: 10px 10px;
+	color: #000;
+	}
+
+.cg-cookies-button-more-info {
+	background-color: #a0d743;
+	padding: 10px 10px;
+	}
+
+.cg-cookies-popup-text {
+	padding: 15px 10px;
+	}
+	
+
+.cg-slide-scroll-button {
+    max-width: 65px!important;
+}
+
+.cg-signup-popup-logo, .cg-signup-logo, .cg-recover-logo, .cg-slide-logo {
+	background-image: url("/external_cms/BETSHOP375/logo_betshop375.png");
+	height: 45px;
+	width: 35%;
+	margin-top:0px;
+	margin-left: 25px;
+}
+
+.cg-recover-top-navbar {
+	background: #000!important;
+	}
+	
+.cg-slide-logo-dim {
+    height: 36px!important;
+    width: 130px!important;
+    margin-top: 4px!important;
+}
+
+.cg-signup-popup-button {
+    border-width: 0px!important;
+    border-radius: 0px!important;
+}
+
+/* ico */
+.cg-ico-prematch, .cg-ico-sport, .cg-slide-ico-prematch{
+	background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-prematch.svg)!important;
+}
+
+#cg-slide-live-button .cg-ico-prematch{
+	background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-live.svg)!important;
+}
+
+.cg-ico-live{
+	background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-live.svg)!important;
+}
+
+.cg-ico-cart{
+	background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/footer-icons/footer-cart.svg)!important;
+}
+.cg-ico-casino{
+	background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-casino.svg)!important;
+}
+
+.cg-slide-ico-poker {
+    background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-poker.svg)!important;
+}
+
+.cg-slide-ico-bingo {
+    background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-bingo.svg)!important;
+}
+
+.cg-ico-user{
+	background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/footer-icons/user2.svg);
+}
+
+.cg-searchIcoLite{
+	background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/icons-prematch/search-icon.svg)!important;
+}
+
+.cg-homeMenuIcoLite{
+	background-image: url('https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/menu-options.svg');
+}
+
+.cg-showedIco{
+	background-image: url('https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/contogioco/showed-eye-white.svg');
+}
+
+.cg-notShowedIco {
+    text-align: center;
+    background-image: url('https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/contogioco/hidden-eye-white.svg');
+}	
+.cg-ico-search{
+	background-image: url('https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/footer-icons-casino/footer-search.svg')!important;
+}
+
+.cg-slide-ico-lotterie {
+	background-image: url('https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-lottery.svg');
+}
+
+.cg-slide-ico-casino-live {
+	background-image: url('https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-livecasino.svg')!important;
+}
+
+.cg-slide-ico-virtual {
+	background-image: url('https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-virtual.svg')!important;
+}
+
+.cg-slide-ico-carte {
+    background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-cardgames.svg)!important;
+    }
+
+.cg-slide-ico-gv {
+    background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-scratch.svg)!important;
+}
+	
+
+.cg-signup-userdata-icon {
+    background-image: url('https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/user-white.svg');
+	width: 18px;
+    height: 20px;
+    background-repeat: no-repeat;
+	margin-right: 5px;
+    }
+
+.cg-signup-document-icon {
+    filter: invert(1)!important;
+    margin-right: 5px!important;
+}
+
+.cg-signup-home-icon {
+    filter: invert(1)!important;
+    margin-right: 5px!important;
+}
+
+.cg-signup-mobile-icon {
+    filter: invert(1)!important;
+    margin-right: 5px!important;
+}
+
+.cg-signup-account-icon {
+    filter: invert(1)!important;
+    margin-right: 5px!important;
+}
+
+.cg-signup-deposit-icon {
+    filter: invert(1)!important;
+    margin-right: 5px!important;
+}
+
+.cg-signup-check-icon {
+    filter: invert(1)!important;
+    margin-right: 5px!important;
+}
+
+.cg-registerButton, .cg-loginLabel, .restorePasswordLink {
+    color: #FFF !important;
+}
+
+#cg-loggedMask{
+	color:#FFF;
+}
+
+.cg-function-field{
+	background:#000!important;
+}
+
+#cg-balance-container {
+    background: #000!important;
+}
+
+.cg-field-container{
+	border-bottom: 1px solid gray !important;
+	}
+.cg-firstFieldContainer {
+    border-top-left-radius: 0px; 
+    border-top-right-radius: 0px;
+}
+.cg-lastFieldContainer {
+    border-bottom-left-radius: 0% !important;
+    border-bottom-right-radius: 0% !important;
+}
+#cg-ticket-section{
+	color:#FFF;
+}
+
+#cg-ticket-search-button, #cg-ticket-info-account, #cg-user-profile-info-account{
+	color:#000;
+}
+
+.cg-loader-container{
+	background: #404040!important;
+}
+.cg-bouncing-loader > div {
+    background: #fdcd09!important;
+}
+.cg-ticket-sport-element{
+	color:white;
+}
+
+.cg-ticket-sport-link{
+	color:#fccd06!important;
+}
+
+/*.cg-arrow {
+	color: var(--arrow-color)!important;
+}*/
+
+.cg-arrow {
+	color: #fff!important;
+}
+
+
+.cg-ticket-sport-importo-box {
+    border: solid 1px white!important;
+}
+
+.cg-signup-title, .cg-signup-section-title{
+	color:#FFF;
+}
+
+/*.cg-signup-userdata-icon, .cg-signup-document-icon, .cg-signup-home-icon, .cg-signup-mobile-icon,.cg-signup-account-icon, .cg-signup-deposit-icon, .cg-signup-check-icon{
+	display:none;
+}*/
+
+
+.cg-step-selector.disabled, #cg-balance-selections-container.disabled .cg-balance-selection, #cg-balance-selections-container.disabled #cg-signup-balance-limit-input{
+	background: #a0d743!important;
+    color: #fff!important;
+}
+
+.cg-step-selector:not(.disabled).cg-selected, #cg-balance-selections-container:not(.disabled) .cg-balance-selection.selected, #cg-balance-selections-container:not(.disabled) #cg-signup-balance-limit-input {
+  background: linear-gradient(180deg,#f8cb24,#e79211);
+    border: solid 1px #ffffff!important;
+    color: #000000!important;
+}
+
+.cg-info-section .cg-info-select-container {
+    background: #fff!important;
+}
+
+.cg-info-go-back {
+    border-radius: 0px!important;
+    background: linear-gradient(#ffffff00, #bbbbbb00)!important;
+	border-color: #fdcd0900!important;
+}
+.cg-balance-selection{
+	 background: linear-gradient(#ffffff, #bbbbbb);
+}
+
+.cg-balance-selection.selected{
+	background: linear-gradient(#efc20a, #9a7b00)!important;
+	border: unset!important;
+}
+
+
+.cg-recover-body{
+	color: #FFF;
+	background: #0c1e2c;
+}
+
+.cg-recover-input-border {
+    border-radius: 0px!important;
+}
+
+.cg-recover-separator{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1ba6ab+0,05b0dd+100 */
+background: #1ba6ab; /* Old browsers */
+background: -moz-linear-gradient(top,  #1ba6ab 0%, #05b0dd 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #1ba6ab 0%,#05b0dd 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #1ba6ab 0%,#05b0dd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ba6ab', endColorstr='#05b0dd',GradientType=0 ); /* IE6-9 */
+border-top: 0px !important;
+border-bottom: 0px!important;
+color: #fff!important;
+font-weight: normal!important;
+text-align: center!important;
+text-shadow: none!important;
+margin-top: 25px!important;
+}
+.cg-recover-button-border {
+    border-radius: 0px!important;
+    background: #fdce0e!important;
+}
+.cg-loader-container-bis{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#026aa6+1,0e2536+100 */
+background: #026aa6; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #026aa6 1%, #0e2536 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #026aa6 1%,#0e2536 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #026aa6 1%,#0e2536 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#026aa6', endColorstr='#0e2536',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}
+
+.cg-popup-close-icon{
+	background-size: 31px!important;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.date-android-container > div{
+    background: unset!important;
+    border: unset!important;
+}
+
+.cg-ico-down-arrow{
+	background-image: url("img/down-chevron.svg")!important;
+}
+
+.cg-ico-up-arrow{
+	background-image: url("img/up-chevron.svg")!important;
+}
+
+.cg-ico-regole-sport-opener{
+	background-image: url("img/regole.svg")!important;
+}
+.cg-ico-stats-sport-opener{
+	background-image: url("img/statistiche.svg")!important;
+}
+.cg-ico-score-sport-opener{
+	background-image: url("img/livescore.svg")!important;
+}
+
+.cg-ico-cg-external-chat, .cg-ico-cg-external-chat-pvr {
+    background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/icons-prematch/external-chat.svg)!important;
+    height: 30px!important;
+    width: 30px!important;
+}
+
+.nav-go-back .arrow {
+    color: var(--arrow-color)!important;
+}
+
+#cg-logged-section-logout {
+	border-bottom-left-radius: 0px!important;
+    border-bottom-right-radius: 0px!important;
+	background: #fdce0e!important;
+    color: #000!important;
+}
+
+#cg-left-side-menu {
+	background-color: #20282b!important;
+}
+
+#cg-slide-menu-top {
+	background-color: #2e3639!important;
+	border-bottom-color: #808080!important;
+}
+
+#cg-slide-footer {
+	background-color: #000000!important;
+    border-top: 1px solid #fdcd09;	
+}
+
+#cg-slide-section-title {
+	color: #ffffff!important;
+}
+
+.cg-slide-cross-color {
+	color: #ffffff!important;
+}
+.cg-nav-go-back {
+    background: linear-gradient(180deg,#f8cb24,#e79211)!important;
+    color: #000!important;
+}
+#cg-slide-scroll-buttons .cg-slide-title {
+	color: #ffffff!important;
+}
+
+#cg-slide-footer2 {
+	color: #ffffff!important;
+}
+
+#cg-slide-footer2 .cg-slide-menu-separator{
+	background-color: #808080!important;
+}
+
+#cg-account-detail-section {
+	color: #ffffff!important;
+}
+
+#cg-user-profile-changepsw-container .cg-signup-info-text {
+	background-color: #2e3639;
+}
+
+.cg-message-info-box {
+	color: #000000!important;
+}
+
+.cg-slide-icon-container i {
+	height: 35px!important;
+    width: 35px!important;
+}
+.cg-slide-ico-home {
+    background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-home.svg)!important;
+}
+
+.cg-slide-ico-promo {
+    background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-promotions.svg)!important;
+}
+
+.cg-ico-message {
+   background-image: url("img/msg-white.svg")!important;
+}
+
+#cg-slide-logout-button, #cg-slide-recoverpsw-button{
+	background-color: #333!important;
+    color: #FFF!important;
+}
+
+#cg-errorLoginField {
+	color: #ffffff!important;
+}
+
+.cg-signup-input[disabled] {
+    background-color: #0a1d2c!important;
+    color: #05b0dc!important;
+    border-style: groove;
+    border-width: 1px;
+}
+
+.cg-signup-input-border.cg-top {
+    border-style: none!important;
+    border-width: 0px!important;
+    border-top-left-radius: 0px!important;
+    border-top-right-radius: 0px!important;
+    border-color: none!important;
+    border-bottom-color: none!important;
+}
+
+.cg-signup-input-border.cg-bot {
+     border-bottom-style: none!important; 
+    border-left-style: none!important; 
+    border-right-style: none!important; 
+    border-bottom-left-radius: 0px!important;
+    border-bottom-right-radius: 0px!important;
+    border-color: none!important; 
+    border-width: 0px!important; 
+}
+
+.cg-voucher-element-container {
+	color: #000000!important;
+}
+/*tasti messaggistica mobile */
+#cg-message-option-button-container > div {
+    border-radius: 0px!important;
+    background: linear-gradient(180deg,#f8cb24,#e79211)!important;
+    color: #000!important;
+    border: solid 1px #a0d743!important;
+}
+
+.cg-ico-message-refresh {
+    background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/contogioco/refresh.svg)!important;
+    filter: invert(1)!important;
+	}
+
+.cg-message-preview {
+    border: 0px;
+    border-radius: 0px;
+	border-bottom: 1px solid #ffffff4d!important;
+}
+
+.cg-message-preview:nth-child(even) {
+    background-color: #0a1d2c!important;
+    border: 0px;
+	border-bottom: 1px solid #ffffff4d;
+}
+
+.cg-ico-message-read {
+ filter: invert(1)!important;
+}
+
+.cg-ico-message-ad {
+  filter: invert(1)!important;
+}
+
+/* DEPOSITI */
+.xp-field-wrapper {
+    color: #fff!important;
+	background: #000!important;
+    border-radius: 0px!important;
+    border-style: groove;
+    border-color: #ffffff;
+}
+
+.xp-field-container {
+    border-bottom-color: #ffffff26!important;
+}
+
+
+div.xp-balance-selection, #xp-carta-credito option {
+    color: #000!important;
+}
+
+.xp-method-input-label {
+    color: white!important;
+    }
+
+.xp-method-button-border {
+    border: 0px!important;
+    border: 0px!important; 
+    background: linear-gradient(180deg,#a0d743,#a0d743 49%,#a0d743 50%,#a0d743)!important;
+}
+
+/* landing mobile */
+
+#cg-landing-body {
+    background-color: #404040!important;
+    }
+
+#cg-carousel-banner .draggable, .cg-banner-height {
+    height: 70vw !important;}
+
+.cg-casino-games > div {
+     height: 80% !important;
+}
+
+.cg-slide-field-wrapper {
+      border-radius: 0!important;
+}
+
+.cg-prematch-item > div {
+    border-radius: 0px!important;
+    /*background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-landing/bg_quote1.jpg)*/
+}
+
+.cg-prematch-tournament {
+    color: #000!important;
+}
+.cg-prematch-time {
+    color: #000!important;
+	font-weight: normal;
+}
+
+.cg-prematch-teams {
+    color: #000!important;
+	font-weight: normal;
+}
+
+.cg-odd-left {
+    color: #000!important;
+}
+
+.cg-odd {
+    border-radius: 0px!important;
+    background-color: #f8cb24!important;
+    }
+
+.cg-antepost-desc {
+    color: #000!important;
+	font-weight: normal;
+}
+.cg-odd-antepost > .cg-top {
+    color: #000!important;
+}
+.cg-odd-antepost {
+    border-radius: 0px!important;
+    background-color: #0e304b!important;
+}
+
+/* header*/
+.cg-top-navbar {
+    border-bottom: 1px solid #fdcd09!important;
+    background: #000!important;
+	    color: #ffffff!important;
+}
+
+.cg-deposit-button {
+    background: #05b0dc!important;
+    }
+
+.cg-iconContainer {
+    color: #ffffff!important;
+}
+
+/* FOOTER */
+
+.cg-buttons-row {
+    background: #000!important;
+}
+
+
+/*SLIDER */
+
+.cg-banner {
+      border-radius: 0px!important;
+}
+
+/* MENU LATERALE */
+
+#cg-slide-menu-top {
+    background-color: #333333!important;
+    border-bottom: 1px solid #fdcd09!important;
+}
+
+.cg-slide-buttons {
+    border-radius: 0px!important;
+	border-color: #000000;
+    background: linear-gradient(180deg,#f8cb24,#e79211);
+    box-shadow: 0 1px 5px #242424;
+    color: #000;
+	       
+}
+
+.cg-live-sport.cg-acceso > .cg-live-sport-underline {
+    background-color: #000000!important;
+}
+
+.cg-slide-alternative-button {
+    border-width: 1px!important;
+    border-radius: 0px!important;
+    border-color: #fdcd09!important;
+    }
+
+#cg-slide-body-container {
+    padding-bottom: 15px!important;
+    background: #000!important;
+	color: #fff!important;
+}
+
+.cg-slide-function-field {
+    background-color: #333!important;
+	color: #fdcd09!important;
+    }
+
+.cg-slide-lastFieldContainer {
+    border-bottom-left-radius: 0px!important; 
+    border-bottom-right-radius: 0px!important; 
+}
+
+.cg-slide-firstFieldContainer {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+
+.cg-deposit-button {
+    border-radius: 0px!important;
+    background: linear-gradient(180deg,#a0d743,#a0d743 49%,#a0d743 50%,#a0d743)!important;
+    font-weight: normal!important;
+	padding: 0 10px!important;
+}
+
+.cg-odds-color {
+    color: #000!important;
+}
+
+.cg-ico-pvr-refresh-arrows {
+     filter: invert(1)!important;
+}
+
+.cg-ico-pvr-ricarica-conto {
+     filter: invert(1)!important;
+}
+
+.cg-ico-pvr-crea-conto {
+     filter: invert(1)!important;
+}
+
+.cg-landing-section-container {
+    background-color: #fdcd0900!important;
+	}
+
+.cg-landing-section-title {
+    font-weight: normal!important;
+}
+
+.black ul.slick-dots li.slick-active {
+    background: #fccd06!important;
+}
+
+.cg-casino-games > div {
+    border-radius: 0px!important; 
+   
+}
+
+
+/*live widget */
+#cg-sport-live-container {
+    border-radius: 0px;
+	background: #a0d743;
+background: linear-gradient(180deg,#a0d743,#a0d743 49%,#a0d743 50%,#a0d743);
+   }
+
+.cg-live-odds-container .cg-odd-live {background-color: #f8cb24!important; border: solid 0px #f8cb24!important;}
+.cg-odd-live > .cg-top {color: #000!important;}
+.cg-odd-live > .cg-bottom {border-top: solid 1px #000!important;}
+
+.cg-live-item {
+    /* height: 74px; */
+    border-radius: 0px!important;
+    background: #000!important;
+    color: #ffffff!important;
+}
+
+.cg-live-item > .cg-info {
+    border-top: solid 1px #f8cb24!important;
+}
+
+
+
+
+
+/* LOGIN POP UP */
+
+
+.cg-wrapper-login-section {
+    background: #333!important;
+}
+
+.cg-loginButton {
+    border-width: 0px!important;
+    border-radius: 0px!important;
+    background: linear-gradient(180deg,#f8cb24,#e79211)!important;
+}
+
+.cg-registerButton {
+    border-width: 0px!important;
+    border-radius: 0px!important;
+    border-color: #fdcd0900;
+    background: linear-gradient(180deg,#a0d743,#a0d743 49%,#a0d743 50%,#a0d743)!important;
+}
+
+.cg-inputContainer > input {
+    border-width: 0px!important;
+    border-style: unset!important;
+    border-radius: 0px!important;
+}
+
+.cg-registerButton > div {
+    margin-top: 6px!important;
+}
+
+
+
+/* REGISTRAZIONE */
+
+.cg-signup-input {
+    border-bottom: 1px solid #00000021!important;
+}
+
+.cg-signup-top-navbar {
+    background: #000!important;
+}
+.cg-signup-section-header {
+    display: flex;
+    position: relative;
+    top: -15px;
+    margin: auto;
+    width: max-content;
+    padding: 5px 100px;
+
+background: linear-gradient(180deg,#f8cb24,#e79211)!important;
+
+}
+
+.cg-signup-section-container {
+    border-top: 0px!important;
+}
+.cg-signup-input-border.cg-top {
+    border-top-left-radius: 0px!important;
+    border-top-right-radius: 0px!important;
+  
+}
+
+.cg-signup-input-border.cg-bot {
+    border-bottom-left-radius: 0px!important;
+    border-bottom-right-radius: 0px!important;
+   
+}
+
+.cg-signup-input-date {
+    background: #fff!important;
+    border-radius: 0px!important;
+    border-width: 1px!important;
+	border-style: groove;
+	color: #ea9b14;
+}
+
+input {
+    font-weight: normal!important;
+}
+
+.cg-signup-input-border select, .cg-signup-input-left select, .cg-signup-input-right select, .cg-signup-input-center select {
+    background: #fff!important;
+}
+
+.cg-signup-input-border.cg-alone {
+    border-radius: 0px!important;
+    border-width: 0px!important;
+}
+
+.cg-signup-input-label {
+    font-weight: normal!important;
+    font-size: 16px!important;
+	color: #ffffff!important;
+}
+
+.cg-signup-button-border {
+    border-radius: 0px!important;
+    background: #fdce0e!important;   
+}
+
+.cg-signup-infopsw-icon {
+    background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/registraione/infopsw.svg)!important;
+    }
+
+.cg-signup-info-text {
+    font-weight: normal!important;
+    background-color: #19384d!important;
+}
+
+/* conto gioco */
+
+.cg-tabLayerMobile {
+    background: #404040!important;
+	color: #fff!important;
+}
+
+.cg-ico-pvr-refresh-arrows {
+    background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/contogioco/refresh.svg)!important;
+}
+
+#cg-pvr-body {
+    background-color: #0a1d2c!important;
+	}
+
+.dx-datagrid-header-panel, .dx-datagrid-header-panel .dx-toolbar {
+    background: #0a1d2c!important;
+}
+
+/*messaggi*/
+
+.cg-cross {
+    color: #ffffff!important;
+    }
+
+/* calcolatrice */
+#xp-pad-keys {
+    background-color: #0d3652!important;
+    border-radius: 0px!important;
+}
+
+.xp-lite-pad-display {
+    background: none #ffffff!important;
+    color: #000!important;
+	   border-radius: 0px!important;
+   }
+.xp-key-child span {
+    background-color: #0a1d2c!important;
+    border-radius: 0px!important;
+}
+
+/*calendario */
+
+.cg-select-range-calendar-icon {
+    background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/contogioco/calendar.svg)!important;
+	
+}
+
+.ui-datepicker-title {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1ba6ab+0,05b0dd+100 */
+background: #a0d743; /* Old browsers */
+background: linear-gradient(180deg,#a0d743,#a0d743 49%,#a0d743 50%,#a0d743);
+
+}
+
+.ui-datepicker-next span {
+    background-image: url(../../images/conto/calendar/right-arrow.svg) !important;
+    filter: invert(1)!important;
+}
+
+.ui-datepicker-prev span {
+    background-image: url(../../images/conto/calendar/left-arrow.svg) !important;
+    filter: invert(1)!important;
+   }
+
+.ui-datepicker thead {
+    background-color: #19384d!important;
+	
+}
+
+.ui-datepicker-calendar .ui-state-default {
+    background: #f4f4f4!important;
+}
+.ui-datepicker-calendar .ui-state-active {
+    background: #a0d743!important;
+    border: 0px!important;
+}
+
+.ui-datepicker table {
+    border-spacing: 1px!important;
+}
+
+.top-arrow {
+    background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/icons-prematch/top.svg)!important;
+    }
+
+.cg-tabLayerMobile {
+    color: #ececec!important;
+}
+
+/*pop up promo*/
+.cg-header-popup-title {
+    
+    border: 0px solid var(--cg-popup-border)!important;
+    border-radius: 0px!important;
+    padding: 5px!important;
+}
+
+
+.cg-header-popup-container {
+    width: 90%!important;
+}
+
+/* POKER PAGE - PROMO PAGE */
+
+.cg-promo-body, #cg-iframe-body, .cg-other-body, #cg-lotterie-section, #cg-poker-body {
+	background: #404040;
+    color: #fff;
+   }
+
+
+.cg-poker-background {
+    background-image: url(/external_cms/SCOMMETTENDO/new-poker-images/mobile/PokerBtnsMobile-Play.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 10px auto;
+    height: 150px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 0;
+}
+
+.cg-field-wrapper {
+    background: transparent!important;
+    border-radius: 0px!important;
+    border-style: none!important;
+    border-width: 0!important;
+	color: #fff!important;
+}
+
+.cg-function-field {
+    color: #fff!important;
+}
+
+.cg-poker-info-button a {
+    border: 0px!important;
+    border-radius: 0px!important;
+    background: #fdce0e!important;
+    }
+
+.cg-container-border.cg-poker-fix {
+    margin: 10px auto;
+    max-width: 1000px;
+    height: 280px;
+    background: #000!important;
+	border: 0px;
+}
+
+.cg-info-field-container {
+    border-bottom-style: unset!important;
+	}
+
+.cg-container-image-section {
+    height: 150px!important;
+    background-size: 100% 150px!important;
+}
+
+.cg-info-filled-msg {
+    font-weight: normal!important;
+}
+
+.cg-promo-bonus-icon {
+    background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-promotions.svg)!important;
+}
+
+.cg-promo-football-icon {
+    background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-prematch.svg)!important;
+    }
+
+.cg-promo-slot-icon {
+    background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-casino.svg)!important;
+}
+
+.cg-promo-cards-icon {
+    background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-poker.svg)!important;
+}
+
+.cg-container-border {
+    border: 0!important;
+    background: #000!important;
+}
+
+.cg-labelMenu {
+    text-transform: uppercase!important;
+	font-size: 12px!important;
+}
+
+.cg-ico-pvr-scratch-card {
+    background-image: url(../../images/footer/scratch-card.svg);
+    filter: invert(1)!important;
+}
+
+.cg-ico-mybet {
+    background-image: url(https://www.scommettendo.it/external_css/SCOMMETTENDO/img/mybet.svg);
+}
+
+.cg-mybet-section{
+	color:black;
+}
+
+.cg-mybet-section .text-small {
+    color: black !important;
+}
+
+#cg-pagina-xcasino div#cg-vipclub-container .active{
+	background: #0a1d2c !important;
+}

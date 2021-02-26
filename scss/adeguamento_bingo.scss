@@ -1,0 +1,62 @@
+body {
+  background: #000 !important;
+}
+
+iframe#bingoframe {
+  overflow: auto !important;
+  height: 900px !important;
+  width: 900px !important;
+  max-width: 1000px !important;
+  margin-left: 100px !important;
+  min-width: 600px !important;
+}
+
+#leftContainer,
+#rightContainer {
+  float: right !important;
+  margin-top: 30px;
+}
+
+.widget {
+  margin-top: 58px;
+}
+
+div#ultimeVittorieWidget {
+  margin-top: 28px;
+}
+.widgetHeader {
+  background: linear-gradient(180deg, #f8cb24, #e79211) !important;
+}
+
+.widget .label {
+  color: black !important;
+}
+
+.widgetDescriptionContainer {
+  border-top: 1px solid #f8cb24;
+  border-left: 1px solid #f8cb24;
+  padding: 13px 0;
+  font-weight: normal;
+  color: white;
+}
+.widget .btn {
+  margin-left: 10px !important;
+  color: #000 !important;
+  background: linear-gradient(180deg, #f8cb24, #e79211) !important;
+  border-radius: 0rem !important;
+  font-weight: normal !important;
+  font-size: 11px !important;
+  text-transform: uppercase !important;
+}
+
+div#ultimeVittorieWidget:before {
+  content: "";
+  display: inline-block;
+  background: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-casino-images/recent-winners.png)
+    no-repeat center center;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -26px;
+  right: 11pc;
+}

@@ -455,3 +455,30 @@ html .btn-azure {
 .buttons-container-header .ico-print {
   margin-left: auto !important;
 }
+.next-live-plus-quote-container {
+  background: transparent;
+}
+.spacer-1 {
+  display: none;
+}
+.match-titles-table .border-right {
+  border-color: var(--tableBorders);
+}
+.sport-prematch-container:hover,
+.sport-prematch-container:hover .next-live-plus-quote-container,
+.sport-prematch-container:hover .td-alias {
+  background-color: transparent !important;
+}
+
+.sport-prematch-container:hover .event-title-width p,
+.sport-prematch-container:hover .td-alias,
+.sport-prematch-container:hover .next-live-plus-quote-container,
+.sport-prematch-container:hover #tbd-fav-table td {
+  text-shadow: none;
+}
+.td-alias {
+  background: transparent;
+}
+.sport-prematch-container {
+  border-bottom: 1px solid var(--tableBorders);
+}

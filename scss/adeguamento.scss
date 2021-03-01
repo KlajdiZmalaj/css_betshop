@@ -548,3 +548,21 @@ html .btn-azure {
 .overview-live-fluid-fluid-btn-g:visited {
   text-shadow: none;
 }
+#fluid-overview-live-container .simple-row .fluid-overview-live-infos-td {
+  background-color: var(--mainBg);
+  color: var(--mainBgCol);
+}
+.simple-row .fluid-overview-live-initials-td {
+  border-color: var(--tableBorders);
+}
+.close-box-container {
+  background: var(--teableHeadersBg);
+  color: var(--teableHeadersCol);
+}
+i.fa.fa-2x.fa-question-circle.fa-3 {
+  color: var(--mainBgCol);
+}
+.bg-colore-1 {
+  background: var(--accent-bg);
+  color: var(--accent-txt) !important;
+}

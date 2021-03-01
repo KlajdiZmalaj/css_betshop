@@ -55,6 +55,7 @@
 .menu-principale-barra ul.menu-principale {
   background: var(--secondary-bg);
   color: var(--secondary-txt);
+  flex-grow: 1;
   li,
   a {
     color: var(--secondary-txt);

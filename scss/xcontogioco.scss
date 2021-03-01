@@ -202,12 +202,16 @@ a.bottone.bottone-login {
 //inherit +++++++++++++++++++++
 html {
   .voce-casino {
-    color: inherit;
+    color: inherit !important;
   }
 }
-
+a.bg-colore-1 {
+  background: var(--accent-bg) !important;
+  color: var(--accent-txt) !important;
+}
 //casino styles
-[page="xcasino"] {
+[page="xcasino"],
+[page="xcasinolive"] {
   #casino-principale {
     margin-top: 0;
   }
@@ -221,8 +225,24 @@ html {
   }
   .tipoPaginaLancio.active,
   .casino-acceso DIV {
-    background: var(--accent-bg);
+    background: var(--accent-bg) !important;
     color: var(--accent-txt);
     border: 1px solid var(--accent);
+  }
+  .descIconGameFooter {
+    background: var(--teableSubHeadersBg);
+    color: var(--teableSubHeadersCol);
+    border: 0;
+  }
+  .buttonGiocaBG {
+    background: var(--accent-bg);
+    color: var(--accent-txt);
+  }
+  .casino a.voce-casino:hover,
+  .casino a.voce-casino.selezionato {
+    border-bottom-color: var(--accent);
+  }
+  a span {
+    filter: unset;
   }
 }

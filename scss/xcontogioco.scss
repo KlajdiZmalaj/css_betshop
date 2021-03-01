@@ -210,12 +210,16 @@ a.bg-colore-1 {
   color: var(--accent-txt) !important;
 }
 //casino styles
-[page="xcasino"],
-[page="xcasinolive"] {
+body {
   #casino-principale {
     margin-top: 0;
   }
-  .bg-filtri-casino {
+  .container.blocco-casino-bg {
+    background: var(--bg1);
+    color: var(--col1);
+  }
+  .bg-filtri-casino,
+  .barra-bg-casino {
     background: var(--teableHeadersBg);
     color: var(--teableHeadersCol);
   }

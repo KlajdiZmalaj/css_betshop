@@ -171,8 +171,8 @@ div#content {
 .bottone-registrazione {
   height: 26px;
   border-radius: 13px;
-  background: linear-gradient(#0af 0%, #0067b6 25.12%, #003465 100%);
-  color: #fff;
+  background: var(--headerBtnsRightBg);
+  color: var(--headerBtnsRightTxt);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,8 +187,8 @@ div#content {
 a.bottone.bottone-login {
   height: 26px;
   border-radius: 13px;
-  background: linear-gradient(#0af 0%, #0067b6 25.12%, #003465 100%);
-  color: #fff !important;
+  background: var(--headerBtnsRightBg);
+  color: var(--headerBtnsRightTxt) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -252,4 +252,8 @@ body {
   a span {
     filter: unset;
   }
+}
+.cg-tickets-button {
+  background: var(--accent-bg) !important;
+  color: var(--accent-txt) !important;
 }

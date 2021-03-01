@@ -118,7 +118,9 @@ button.btn.btn-primary {
     position: relative;
   }
 }
-
+.box-live #center-content {
+  width: 100%;
+}
 .left-column-search-container {
   margin: 0;
   background: var(--mainBg);
@@ -492,4 +494,23 @@ html .btn-azure {
 }
 .sport-prematch-container {
   border-bottom: 1px solid var(--tableBorders);
+}
+.buttons-container-header.tabs-container {
+  background-image: var(--teableHeadersBg);
+  color: var(--teableHeadersCol);
+}
+#fluid-overview-live-container {
+  border: 0;
+}
+#fluid-overview-live-table .heading-row {
+  background: var(--teableSubHeadersBg);
+  color: var(--teableSubHeadersCol);
+}
+.overview-live-black-tab {
+  background: transparent;
+  color: inherit;
+}
+
+#fluid-overview-live-container table {
+  color: inherit;
 }

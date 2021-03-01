@@ -1,5 +1,8 @@
 @import "vars";
-
+html body {
+  background-color: var(--mainBg);
+  color: var(--mainBgCol);
+}
 .logo a {
   &::before {
     content: "";
@@ -52,6 +55,7 @@
   flex: auto;
   justify-content: center;
 }
+
 .menu-principale-barra ul.menu-principale {
   background: var(--secondary-bg);
   color: var(--secondary-txt);
@@ -62,9 +66,14 @@
     font-family: $font;
   }
 }
-
+#cg-header .row.bg-bianco {
+  background: var(--secondary-bg);
+  color: var(--secondary-txt);
+}
 .menu-principale-barra {
   display: flex;
+  max-width: 1247px;
+  margin: 0 auto;
   > ul {
     width: auto;
     font-family: $font;
@@ -188,4 +197,32 @@ a.bottone.bottone-login {
 .flag-lang {
   display: flex;
   align-items: center;
+}
+
+//inherit +++++++++++++++++++++
+html {
+  .voce-casino {
+    color: inherit;
+  }
+}
+
+//casino styles
+[page="xcasino"] {
+  #casino-principale {
+    margin-top: 0;
+  }
+  .bg-filtri-casino {
+    background: var(--teableHeadersBg);
+    color: var(--teableHeadersCol);
+  }
+  .riga-titoli-casino {
+    background: inherit;
+    color: inherit;
+  }
+  .tipoPaginaLancio.active,
+  .casino-acceso DIV {
+    background: var(--accent-bg);
+    color: var(--accent-txt);
+    border: 1px solid var(--accent);
+  }
 }

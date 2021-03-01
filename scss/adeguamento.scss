@@ -188,6 +188,7 @@ button.btn.btn-primary {
 .corporate-blue,
 .match-team-name,
 .widget-bestseller-match-title,
+.fluid-overview-sport-title,
 .qualification-group {
   color: inherit !important;
 }
@@ -513,4 +514,37 @@ html .btn-azure {
 
 #fluid-overview-live-container table {
   color: inherit;
+}
+#fluid-overview-live-container .subtitle-row td table td {
+  background: var(--accent-bg);
+  color: var(--accent-txt);
+}
+.fluid-overview-sport-title {
+  top: 0;
+}
+
+#fluid-overview-live-container
+  .subtitle-row
+  .fluid-overview-live-quotes-box-table
+  td,
+#fluid-overview-live-container
+  .fluid-overview-live-no-subtitle-bg
+  .fluid-overview-live-initials-td,
+#fluid-overview-live-container
+  .fluid-overview-live-no-subtitle-bg
+  .fluid-overview-live-full-time-td {
+  background: var(--teableHeadersBg);
+  color: var(--teableHeadersCol);
+}
+#fluid-overview-live-container .simple-row {
+  background: var(--mainBg);
+  color: var(--mainBgCol);
+}
+.fluid-overview-live-time-td {
+  background: var(--bg1);
+  color: var(--col1);
+}
+.overview-live-fluid-fluid-btn-g,
+.overview-live-fluid-fluid-btn-g:visited {
+  text-shadow: none;
 }

@@ -192,6 +192,10 @@ button.btn.btn-primary {
 .qualification-group {
   color: inherit !important;
 }
+.overview-live-fluid-fluid-btn-g,
+.overview-live-fluid-fluid-btn-g:visited {
+  color: inherit;
+}
 //INHERIT ALL COLORS TO PARENTS BG END +++++++++++++++++++++++++++++++++++++++++++++
 
 .qualification-group-container li,
@@ -565,4 +569,111 @@ i.fa.fa-2x.fa-question-circle.fa-3 {
 .bg-colore-1 {
   background: var(--accent-bg);
   color: var(--accent-txt) !important;
+}
+
+.match-stats-icon {
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:before {
+    content: "\f68f";
+    font-family: "Font Awesome 5 Pro";
+  }
+}
+
+.shopping-cart-extra-icons-container a:hover {
+  background: var(--accent-bg);
+  color: var(--accent-txt);
+}
+.cart-potential-winning-box {
+  background: var(--accent-bg);
+  color: var(--accent-txt);
+}
+.team-chose-cart-table .evidence-color {
+  color: var(--accent);
+}
+.nav-pills > li > a {
+  background: var(--bg1);
+  color: var(--col1);
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  background: var(--accent-bg);
+  color: var(--accent-txt);
+}
+.cart-header {
+  background: var(--teableHeadersBg);
+  color: var(--teableHeadersCol);
+}
+.fa-caret-down:before {
+  content: "\f0d7";
+  font-weight: 300 !important;
+  font-family: "Font Awesome 5 Pro";
+}
+body {
+  #fluid-overview-live-table .match-stats-icon {
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .giocabilita-s {
+    background: var(--accent-bg);
+    color: var(--accent-txt);
+  }
+  #fluid-overview-live-container .fluid-overview-live-handicap-table {
+    height: 35px;
+    padding: 0;
+    margin: auto;
+  }
+  .overview-live-fluid-giocabilita-s,
+  .overview-live-fluid-giocabilita-s:visited,
+  a.overview-live-fluid-fluid-btn-g.centinaia {
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+    background: var(--bg1);
+    color: var(--col1);
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    &.giocabilita-s {
+      background: var(--accent-bg);
+      color: var(--accent-txt);
+    }
+  }
+  #fluid-overview-live-container .handicap-green-bg {
+    background: var(--teableSubHeadersBg);
+    color: var(--teableSubHeadersCol);
+  }
+  #fluid-overview-live-container .subtitle-row .fluid-overview-live-infos-td {
+    background: transparent;
+  }
+  .selectedAvv {
+    background: var(--mainBg) !important;
+  }
+  .hdnButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fluid-heading-span {
+    font-size: 12px;
+    line-height: 11px;
+    margin: 0;
+    height: 23px;
+    display: inline-block;
+    vertical-align: middle;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+  }
+  #fluid-overview-live-container .simple-row td {
+    padding: 0;
+  }
 }

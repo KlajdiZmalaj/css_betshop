@@ -121,3 +121,7 @@ body {
     border-right: 5px solid transparent;
   }
 }
+
+.main-content.casino.cg-bg-live {
+  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/casinobg.jpeg");
+}

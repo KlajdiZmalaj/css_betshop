@@ -214,8 +214,14 @@ a.bg-colore-1 {
 }
 //casino styles
 body {
+  .row.mosaico-casino {
+    margin-top: 0;
+    padding: 10px;
+  }
   #casino-principale {
     margin-top: 0;
+    background: var(--mainBg);
+    color: var(--mainBgCol);
   }
   .container.blocco-casino-bg {
     background: var(--bg1);

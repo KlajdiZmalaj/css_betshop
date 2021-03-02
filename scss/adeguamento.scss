@@ -613,6 +613,9 @@ i.fa.fa-2x.fa-question-circle.fa-3 {
   font-family: "Font Awesome 5 Pro";
 }
 body {
+  .list-group {
+    margin-bottom: 0;
+  }
   #fluid-overview-live-table .match-stats-icon {
     top: 0;
     display: flex;
@@ -676,4 +679,10 @@ body {
   #fluid-overview-live-container .simple-row td {
     padding: 0;
   }
+}
+#content .box-container {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }

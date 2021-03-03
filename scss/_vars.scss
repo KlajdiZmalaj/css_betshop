@@ -1,16 +1,16 @@
 html:root {
-  --accent: #0af;
-  --accent-bg: #0053a3;
+  --accent: #fd7101;
+  --accent-bg: #ec411a;
   --accent-txt: #fff;
   --primary-bg: #fff;
   --primary-txt: #000;
-  --secondary-bg: #0053a3;
+  --secondary-bg: #ec411a;
   --secondary-txt: #fff;
   --mainBg: #fdfdfd;
   --mainBgCol: #000;
   --bg1: #efefef;
   --col1: #000;
-  --teableHeadersBg: linear-gradient(#0af 0%, #0067b6 25.12%, #003465 100%);
+  --teableHeadersBg: linear-gradient(#ec411a 0%, #e63312 25.12%, #ff7600 100%);
   --teableHeadersCol: #fff;
   --teableSubHeadersBg: #cccccc;
   --teableSubHeadersCol: #000;
@@ -19,7 +19,11 @@ html:root {
   --skin: "betshop";
 
   //base
-  --headerBtnsRightBg: linear-gradient(#0af 0%, #0067b6 25.12%, #003465 100%);
+  --headerBtnsRightBg: linear-gradient(
+    #ec411a 0%,
+    #e63312 25.12%,
+    #ff7600 100%
+  );
   --headerBtnsRightTxt: #fff;
   --border-color-1: var(--accent);
   --bg-color-1: #ffffff;

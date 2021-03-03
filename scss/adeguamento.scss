@@ -314,10 +314,10 @@ span#slide-submenu {
     padding: 0;
     border-left: 1px solid var(--tableBorders);
   }
+
   .btn-widget {
     width: 100%;
     border-radius: 0;
-    border: 0;
     background: transparent;
     color: inherit;
     text-shadow: none;
@@ -329,6 +329,7 @@ span#slide-submenu {
     margin: 0;
     padding: 0;
     height: 30px;
+    border: 0 !important;
     &.giocabilita-s,
     &:hover {
       background: var(--accent-bg);
@@ -565,6 +566,8 @@ html .btn-azure {
 }
 i.fa.fa-2x.fa-question-circle.fa-3 {
   color: var(--mainBgCol);
+  font-size: 15px;
+  margin-left: 10px;
 }
 .bg-colore-1 {
   background: var(--accent-bg);
@@ -623,8 +626,20 @@ body {
     justify-content: center;
   }
   .giocabilita-s {
-    background: var(--accent-bg);
-    color: var(--accent-txt);
+    background: var(--mainBg);
+    color: var(--mainBgCol);
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    border: 0;
+    font-weight: 300;
+    text-shadow: none;
+    &:hover {
+      background: var(--accent-bg);
+      color: var(--accent-txt);
+    }
   }
   #fluid-overview-live-container .fluid-overview-live-handicap-table {
     height: 35px;
@@ -725,6 +740,9 @@ body {
     justify-content: center;
     font-weight: 300;
     text-shadow: none;
+    border: 0;
+    box-shadow: none;
+    background-image: none;
     border-left: 1px solid var(--tableBorders);
     span {
       color: var(--col1);
@@ -732,6 +750,144 @@ body {
     &:hover {
       background: var(--accent-bg);
       color: var(--accent-txt);
+      span {
+        color: var(--accent-txt);
+      }
     }
   }
+  .prematch-fluid-giocabilita-s,
+  .prematch-fluid-giocabilita-s:visited,
+  .giocabilita-q5-ex,
+  .giocabilita-q5-ex:hover {
+    background: var(--accent-bg);
+    color: var(--accent-txt);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    text-shadow: none;
+    border: 0;
+    box-shadow: none;
+    background-image: none;
+    border-left: 1px solid var(--tableBorders);
+    span {
+      color: var(--accent-txt);
+    }
+  }
+  .next-live-btns-container {
+    padding: 0;
+  }
+}
+#widget-hotbet-tab-result-percent-table {
+  .hotbet-tab-result-progress-td .progress {
+    border-radius: 0;
+    height: 4px;
+  }
+  td.hotbet-tab-result-percent-td,
+  .hotbet-tab-result-txt-td,
+  .hotbet-tab-result-quote-td {
+    width: 10%;
+    text-align: center;
+  }
+  td.hotbet-tab-result-progress-td {
+    width: 70%;
+  }
+}
+.btn-widget.white {
+  background: var(--mainBg);
+  border: 1px solid var(--tableBorders);
+  border-radius: 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+
+  &:hover {
+    background: var(--accent-bg);
+    color: var(--accent-txt);
+  }
+}
+.widget-hotbet-tab-result-container {
+  border: 0;
+}
+.tab-coupon-final-count-box {
+  background: var(--bg1);
+  color: var(--col1);
+}
+
+.cart-potential-winning-result {
+  background: none;
+  background-color: var(--bg1);
+  color: var(--col1);
+}
+.cart-boxes-number {
+  background: var(--teableSubHeadersBg);
+  color: var(--teableSubHeadersCol);
+}
+
+.cart-sistema-final-input-table {
+  background: var(--bg1);
+  color: var(--col1);
+  border: 0;
+}
+.cart-event-summary-table {
+  background: var(--bg1);
+  color: var(--col1);
+  border: 0;
+}
+.tab-coupon-final-count-box .evidence-color,
+.cart-event-summary-table .evidence-color {
+  color: var(--accent);
+}
+
+.cart-system-bet-all-box {
+  background: var(--bg1);
+  color: var(--col1);
+  border: 0;
+}
+
+.cart.btn-red,
+.cart.btn-yellow,
+.cart.btn-green {
+  text-shadow: none !important;
+  border-radius: 0;
+  color: #222 !important;
+}
+.big-star-icon {
+  filter: grayscale(1);
+}
+.cart-sistema-final-input-table div.cart-input-winnings {
+  border-right: 0;
+}
+.cart-event-summary.cart-event-option,
+.cart-sistema-final-input-table div,
+.cart-event-summary-table .system-event {
+  border-color: var(--tableBorders);
+}
+.widget-hotbet-tab-result-quotes-title {
+  padding-left: 5px;
+}
+.cart-mode {
+  border-top: 0;
+}
+.cart-sistema-final-input-table.final-input-theader div:last-child,
+.cart-event-summary-table .system-event {
+  border-right: 0;
+}
+.shopping-cart-result-box {
+  border-bottom: 0;
+  box-shadow: none;
+  margin: 0;
+}
+.cart-sistema-arrow-up {
+  border-bottom: 5px solid var(--col1);
+}
+.cart-sistema-arrow-down {
+  border-top: 5px solid var(--col1);
+}
+#cart-multiple,
+#cart-systems {
+  width: 100% !important;
 }

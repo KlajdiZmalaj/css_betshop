@@ -686,3 +686,52 @@ body {
   align-items: flex-start;
   justify-content: space-evenly;
 }
+#upcoming-box-container .next-live-btns-container td {
+  display: none;
+}
+
+#upcoming-box-container [id*="header-data-esiti"] td {
+  display: none;
+}
+#upcoming-box-container [id*="header-data-esiti"] td:nth-child(1),
+#upcoming-box-container [id*="header-data-esiti"] td:nth-child(2),
+#upcoming-box-container [id*="header-data-esiti"] td:nth-child(3) {
+  display: table-cell;
+}
+
+#tbd-fav-table td:nth-child(1),
+#tbd-fav-table td:nth-child(2),
+#tbd-fav-table td:nth-child(3) {
+  display: table-cell;
+}
+#upcoming-box-container .buttons-container-body > div:first-child {
+  .sport-match-container-header {
+    display: none;
+  }
+}
+#upcoming-box-container {
+  .game-bonus-container {
+    display: none;
+  }
+  .tbl-title-box td {
+    height: 30px;
+  }
+  .giocabilita-s {
+    height: 30px;
+    background: var(--bg1);
+    color: var(--col1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    text-shadow: none;
+    border-left: 1px solid var(--tableBorders);
+    span {
+      color: var(--col1);
+    }
+    &:hover {
+      background: var(--accent-bg);
+      color: var(--accent-txt);
+    }
+  }
+}

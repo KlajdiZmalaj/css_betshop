@@ -1092,8 +1092,8 @@ body {
     margin: 0 !important;
     background: var(--mainBg);
     color: var(--mainBgCol);
-    border-right: 1px solid var(--tableBorders);
-    border-bottom: 1px solid var(--tableBorders);
+    border-right: 1px solid var(--tableBorders) !important;
+    border-bottom: 1px solid var(--tableBorders) !important;
     &:hover {
       background: var(--accent-bg);
       color: var(--accent-txt);
@@ -1101,7 +1101,11 @@ body {
     }
   }
 }
-
+#fluid-prematch-matches-container .match-stats-icon {
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
 .games-btn-container .game-btn.selected,
 #wrapper.live_prematch .games-btn-container.oven,
 #wrapper.prematch .games-btn-container.oven .dropdown-toggle.selected,
@@ -1152,4 +1156,43 @@ span.menu_left_it.ico-categoria-codice-sport-1-codice-categoria-31 {
 }
 #fluid-prematch-matches-container .simple-row td {
   padding: 0;
+}
+.prematch-fluid-giocabilita-s,
+.prematch-fluid-giocabilita-s:visited {
+  background-image: none;
+  box-shadow: none;
+  background: var(--mainBg);
+  color: var(--mainBgCol) !important;
+  text-shadow: none !important;
+  border-radius: 0 !important;
+  border: 1px solid var(--tableBorders) !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 32px !important;
+  &:hover {
+    background: var(--accent-bg) !important;
+    color: var(--accent-txt) !important;
+  }
+}
+.giocabilita-q5-ex,
+.giocabilita-q5-ex:hover {
+  background-image: none;
+  box-shadow: none;
+  background: var(--accent-bg) !important;
+  color: var(--accent-txt) !important;
+  text-shadow: none !important;
+  border-radius: 0 !important;
+  border: 1px solid var(--tableBorders) !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 32px !important;
+}
+.simple-row .fluid-prematch-intertd-spacer {
+  display: none;
 }

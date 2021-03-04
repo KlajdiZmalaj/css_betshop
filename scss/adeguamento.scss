@@ -163,6 +163,20 @@ button.btn.btn-primary {
     }
   }
 }
+#datepicker input {
+  border-radius: 0;
+  cursor: pointer;
+  border: 1px solid var(--tableBorders);
+}
+.search-calendar-icon {
+  filter: grayscale(1);
+}
+.slider-time-range-box {
+  color: inherit;
+}
+.ui-slider .ui-slider-handle {
+  background: var(--accent);
+}
 .widget-hotbet-blasoni.column {
   padding: 10px;
 }
@@ -172,10 +186,13 @@ button.btn.btn-primary {
   border: 0;
   outline: none;
   border-radius: 0;
+  box-shadow: none;
   &:hover {
+    box-shadow: none;
+    border: 0;
     background: var(--accent-bg);
     color: var(--accent-txt);
-    filter: invert(1);
+    filter: brightness(0.9);
   }
 }
 //INHERIT ALL COLORS TO PARENTS BG +++++++++++++++++++++++++++++++++++++++++++++

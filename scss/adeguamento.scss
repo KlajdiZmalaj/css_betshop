@@ -1130,3 +1130,26 @@ span.menu_left_it.ico-categoria-codice-sport-1-codice-categoria-31 {
   margin: 0 !important;
   margin-right: 10px !important;
 }
+#fluid-prematch-matches-container .simple-row:hover,
+.simple-row:hover .fluid-prematch-info-esiti-td {
+  background: var(--mainBg) !important;
+  color: var(--mainBgCol);
+}
+.fluid-prematch-matches-event-td,
+.fluid-prematch-matches-time-td {
+  border-color: var(--tableBorders);
+}
+.fluid-prematch-matches-alias-td {
+  border-color: var(--tableBorders);
+}
+.fluid-prematch-plus-quote-box,
+.fluid-prematch-plus-quote-box a {
+  color: inherit;
+}
+.fluid-prematch-info-esiti-td {
+  background: var(--bg1);
+  color: var(--col1);
+}
+#fluid-prematch-matches-container .simple-row td {
+  padding: 0;
+}

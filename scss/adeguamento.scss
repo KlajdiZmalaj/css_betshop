@@ -1261,3 +1261,11 @@ span.ico-fav {
 #fluid-overview-live-container .simple-row {
   border-bottom: 1px solid var(--tableBorders);
 }
+.live-menu-title.live-menu-title-header-tournament {
+  background: var(--bg1);
+  color: var(--col1);
+  > a,
+  span {
+    color: inherit;
+  }
+}

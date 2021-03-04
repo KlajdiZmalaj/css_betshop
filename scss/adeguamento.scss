@@ -1219,6 +1219,7 @@ span.ico-fav {
 }
 .titoloSportStampaQuoteRightArrow {
   color: inherit;
+  border: 0;
 }
 #shopping-cart .live-menu-title {
   margin: 0;
@@ -1239,4 +1240,24 @@ span.ico-fav {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+.generalSportButtonHeader > .ico-sport {
+  background-color: var(--teableHeadersCol);
+  padding: 12px;
+  border-radius: 25px;
+  border: 2px solid var(--teableHeadersCol);
+  cursor: pointer;
+}
+.box-live .subtitle-row td.fluid-overview-live-quotes-td {
+  background: transparent;
+}
+.fluid-overview-sport-title {
+  max-width: 190px;
+}
+.service-tennis,
+.service-volley {
+  margin: 0;
+}
+#fluid-overview-live-container .simple-row {
+  border-bottom: 1px solid var(--tableBorders);
 }

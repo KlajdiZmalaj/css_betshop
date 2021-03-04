@@ -259,3 +259,19 @@ body {
   background: var(--accent-bg) !important;
   color: var(--accent-txt) !important;
 }
+.elementi-footer {
+  position: relative;
+}
+#blocco-tasti-bottom {
+  display: none !important;
+}
+footer#nascondifooter {
+  display: flex !important;
+  flex-flow: column;
+  .col-lg-4.cg-align-self-center .cg-flex-container > a {
+    filter: invert($invert);
+  }
+}
+iframe[title="Zendesk Chat widget button"] {
+  display: none !important;
+}

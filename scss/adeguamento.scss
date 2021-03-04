@@ -1155,9 +1155,7 @@ span.menu_left_it.ico-categoria-codice-sport-1-codice-categoria-31 {
 .stampa-quote-container {
   color: inherit;
 }
-.titoloNazioneStampaQuote {
-  border-color: var(--tableBorders);
-}
+
 .fluid-prematch-info-esiti-td {
   background: var(--bg1);
   color: var(--col1);
@@ -1224,4 +1222,21 @@ span.ico-fav {
 }
 #shopping-cart .live-menu-title {
   margin: 0;
+}
+.titoloNazioneStampaQuote {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-color: var(--tableBorders);
+  background: var(--teableSubHeadersBg);
+  color: var(--teableSubHeadersCol);
+  font-weight: 300;
+}
+.stampa-quote-classi-table-row {
+  margin: 0;
+  line-height: initial;
+  width: 100%;
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }

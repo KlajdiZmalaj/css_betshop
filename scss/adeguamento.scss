@@ -451,7 +451,7 @@ html .btn-azure {
   border-radius: 0;
 }
 .btn-live-text {
-  display: none;
+  display: none !important;
 }
 .livebetting-prematch,
 .btn-live {
@@ -756,6 +756,7 @@ body {
   }
   .giocabilita-s {
     height: 30px;
+    width: 100%;
     background: var(--bg1);
     color: var(--col1);
     display: flex;
@@ -784,8 +785,9 @@ body {
   .giocabilita-q5-ex:hover {
     background: var(--accent-bg);
     color: var(--accent-txt);
-    height: 30px;
+    height: 30px !important;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
     font-weight: 300;
@@ -793,7 +795,7 @@ body {
     border: 0;
     box-shadow: none;
     background-image: none;
-    border-left: 1px solid var(--tableBorders);
+    border-left: 1px solid var(--tableBorders) !important;
     span {
       color: var(--accent-txt);
     }
@@ -1052,6 +1054,7 @@ span.btn-live.arrow.closeAllButtonPrematch {
 }
 .buttons-container-header .right {
   margin-left: auto;
+  display: flex;
 }
 #right-column-search-box {
   padding: 0 !important;
@@ -1147,8 +1150,13 @@ span.menu_left_it.ico-categoria-codice-sport-1-codice-categoria-31 {
   border-color: var(--tableBorders);
 }
 .fluid-prematch-plus-quote-box,
-.fluid-prematch-plus-quote-box a {
+.fluid-prematch-plus-quote-box a,
+.titoloNazioneStampaQuote,
+.stampa-quote-container {
   color: inherit;
+}
+.titoloNazioneStampaQuote {
+  border-color: var(--tableBorders);
 }
 .fluid-prematch-info-esiti-td {
   background: var(--bg1);
@@ -1185,14 +1193,35 @@ span.menu_left_it.ico-categoria-codice-sport-1-codice-categoria-31 {
   color: var(--accent-txt) !important;
   text-shadow: none !important;
   border-radius: 0 !important;
-  border: 1px solid var(--tableBorders) !important;
+  border: 0 !important;
   display: flex !important;
   align-items: center;
   justify-content: center;
   margin: 0 !important;
   padding: 0 !important;
-  height: 32px !important;
 }
 .simple-row .fluid-prematch-intertd-spacer {
   display: none;
+}
+#prematch-left-menu-match-2-level li a,
+#prematch-left-menu-match-2-level li a:hover {
+  display: flex;
+}
+span.ico-fav {
+  filter: grayscale(1) brightness(11);
+  mix-blend-mode: exclusion;
+}
+#left-menu-primary li.hand-pointer {
+  background: var(--secondary-bg);
+  color: var(--secondary-txt);
+  padding-left: 10px;
+  .ico-left-col-sport {
+    display: none;
+  }
+}
+.titoloSportStampaQuoteRightArrow {
+  color: inherit;
+}
+#shopping-cart .live-menu-title {
+  margin: 0;
 }

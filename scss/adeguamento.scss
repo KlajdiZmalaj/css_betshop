@@ -1265,7 +1265,8 @@ span.ico-fav {
   background: var(--bg1);
   color: var(--col1);
   > a,
-  span {
+  span,
+  .text-white {
     color: inherit !important;
   }
 }
@@ -1296,4 +1297,109 @@ span.ico-fav {
       border-right: 1px solid var(--tableBorders);
     }
   }
+}
+.text-white,
+.live-team-time,
+.match-info-text-team-names-box.match-finished {
+  color: inherit !important;
+}
+.info-text-box-container.title-big {
+  background: var(--bg1);
+  color: var(--col1);
+  border: 0;
+  margin: 0;
+}
+.game-event-btn {
+  background: var(--mainBg);
+  color: var(--mainBgCol);
+  text-shadow: none;
+  border: 1px solid var(--tableBorders) !important;
+  margin: 3px !important;
+  &:hover,
+  &.selected {
+    background: var(--accent-bg);
+    color: var(--accent-txt);
+    text-shadow: none;
+  }
+}
+.live-match-singolar-match-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.live-match-match-box {
+  margin: 1px !important;
+  width: calc(100% / 3 - 2px);
+  float: none;
+  display: flex !important;
+  flex-flow: column;
+  [class*="live-multi-match-details-box"] {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .live-multi-match-3col-box,
+  .live-multi-match-2col-box,
+  .live-multi-match-1col-box {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .live-multi-2col-singolar-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% / 2);
+    flex-grow: 1;
+
+    margin: 0;
+    padding: 0;
+  }
+  .live-multi-1col-singolar-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100%);
+    flex-grow: 1;
+
+    margin: 0;
+    padding: 0;
+  }
+  .live-multi-3col-singolar-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% / 3);
+    flex-grow: 1;
+
+    margin: 0;
+    padding: 0;
+  }
+  .live-multi-match-3col-box a,
+  .live-multi-match-2col-box a,
+  .live-multi-match-1col-box a {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    border: 0;
+    box-shadow: none;
+    background: var(--bg1);
+    color: var(--col1);
+    border-right: 1px solid var(--tableBorders);
+    &:last-child {
+      border-right: 0;
+    }
+  }
+  .giocabilita-q5-ex,
+  .giocabilita-q5-ex:hover {
+    padding: 2px 5px !important;
+  }
+}
+.live-match-match-title {
+  background: var(--teableSubHeadersBg);
+  border: 0;
+  color: var(--teableSubHeadersCol);
+}
+.live-match-match-box:nth-child(3n + 3) {
+  margin: 1px !important;
 }

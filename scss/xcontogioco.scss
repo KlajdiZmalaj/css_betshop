@@ -3,6 +3,7 @@ html body {
   background-color: var(--mainBg);
   color: var(--mainBgCol);
 }
+
 .logo a {
   &::before {
     content: "";
@@ -82,12 +83,7 @@ html body {
     justify-content: flex-start;
   }
   > nav {
-    width: auto;
-    flex-grow: 1;
-    font-family: $font;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    display: none;
   }
 }
 .menu-principale-barra .sottomenu-principale ul {

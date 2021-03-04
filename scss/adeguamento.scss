@@ -172,6 +172,11 @@ button.btn.btn-primary {
   border: 0;
   outline: none;
   border-radius: 0;
+  &:hover {
+    background: var(--accent-bg);
+    color: var(--accent-txt);
+    filter: invert(1);
+  }
 }
 //INHERIT ALL COLORS TO PARENTS BG +++++++++++++++++++++++++++++++++++++++++++++
 .left-column-search-calendar-button,
@@ -843,9 +848,13 @@ body {
 }
 
 .cart-system-bet-all-box {
-  background: var(--bg1);
-  color: var(--col1);
+  background: var(--teableSubHeadersBg);
+  color: var(--teableSubHeadersCol);
   border: 0;
+}
+.cart-sistema-final-input-table.final-input-theader div {
+  background: var(--mainBg);
+  color: var(--mainBgCol);
 }
 
 .cart.btn-red,
@@ -890,4 +899,50 @@ body {
 #cart-multiple,
 #cart-systems {
   width: 100% !important;
+}
+.cart-input-import-input {
+  background: var(--mainBg);
+  color: var(--mainBgCol);
+  height: 20px;
+  border-radius: 0;
+  text-align: center;
+}
+.banker-letter-box.oven {
+  background: var(--teableHeadersBg);
+  color: var(--teableHeadersCol);
+}
+.fluid-prematch-matches-event-td,
+.fluid-prematch-matches-time-td,
+.fluid-prematch-matches-alias-td,
+#fluid-prematch-matches-container .date-time-row td,
+.fluid-prematch-time-span,
+.fluid-prematch-event-span,
+.fluid-prematch-black-tab {
+  color: inherit;
+}
+.fluid-prematch-black-tab {
+  background: transparent;
+}
+#fluid-prematch-matches-container .date-time-row {
+  background: var(--teableSubHeadersBg);
+  color: var(--teableSubHeadersCol);
+}
+.fluid-prematch-matches-event-td,
+.fluid-prematch-matches-time-td {
+  border-color: var(--tableBorders);
+}
+#fluid-prematch-matches-container {
+  border-top: 0;
+  .heading-row {
+    background: var(--teableSubHeadersBg);
+    color: var(--teableSubHeadersCol);
+  }
+}
+span.lockitem.ico-lock-live-betting {
+  background-image: none;
+  &:before {
+    content: "\f023";
+
+    font: normal normal normal 14px/1 FontAwesome;
+  }
 }

@@ -1269,13 +1269,31 @@ span.ico-fav {
     color: inherit !important;
   }
 }
+.live-menu-team-detail-events {
+  border-top: 1px solid var(--tableBorders);
+}
 .live-menu-pref li {
   background: var(--mainBg);
   color: var(--mainBgCol);
+  margin-bottom: 0;
   .live-menu-team-titl-box,
   > div,
   .live-menu-team-game,
   div .live-team-game-situation {
     color: inherit;
+  }
+  .live-menu-team-detail-events {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 30px;
+    > .live-detail-event-box {
+      width: calc(100% / 3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-right: 1px solid var(--tableBorders);
+    }
   }
 }

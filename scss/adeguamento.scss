@@ -241,6 +241,12 @@ input {
   .prematch-left-menu-container.menuLeftCollapsable.collapse.in {
     width: 100%;
   }
+  .prematch-left-menu-container {
+    bottom: 0;
+    .prematch-left-menu-match-2-level > li {
+      border: 0;
+    }
+  }
   span.ico-left-col-sport.left {
     flex-shrink: 0;
   }

@@ -1266,6 +1266,16 @@ span.ico-fav {
   color: var(--col1);
   > a,
   span {
+    color: inherit !important;
+  }
+}
+.live-menu-pref li {
+  background: var(--mainBg);
+  color: var(--mainBgCol);
+  .live-menu-team-titl-box,
+  > div,
+  .live-menu-team-game,
+  div .live-team-game-situation {
     color: inherit;
   }
 }

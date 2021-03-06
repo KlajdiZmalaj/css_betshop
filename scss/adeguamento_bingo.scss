@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   justify-content: flex-start;
+  text-align: center;
   border: 0;
   background: var(--teableHeadersBg);
   color: var(--teableHeadersCol);
@@ -13,4 +14,14 @@
     margin: 0%;
     padding: 0;
   }
+}
+.widgetBody {
+  background: var(--bg1);
+  color: var(--col1);
+  border-radius: 0;
+}
+.widgetDescriptionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

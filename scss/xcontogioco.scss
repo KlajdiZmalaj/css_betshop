@@ -288,3 +288,9 @@ html {
     align-items: flex-start;
   }
 }
+html {
+  .dropdown-menu.bg-nero.bianco.container.show {
+    background: var(--mainBg);
+    color: var(--mainBgCol) !important;
+  }
+}

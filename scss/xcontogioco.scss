@@ -293,4 +293,11 @@ html {
     background: var(--mainBg);
     color: var(--mainBgCol) !important;
   }
+  #cg-profile-popup-container .dropdown-menu.bianco span {
+    color: inherit !important;
+  }
+  .bottone:hover {
+    filter: none;
+    color: inherit;
+  }
 }

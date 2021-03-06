@@ -278,3 +278,13 @@ iframe[title="Zendesk Chat widget button"] {
 #cg-top-button {
   bottom: 20px !important;
 }
+html {
+  //poker
+  .blocco-principale-poker {
+    background: var(--mainBg);
+    color: var(--mainBgCol);
+  }
+  .schede-poker .col-md-8 {
+    align-items: flex-start;
+  }
+}

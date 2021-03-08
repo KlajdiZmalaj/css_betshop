@@ -1409,3 +1409,30 @@ span.ico-fav {
 .live-match-match-box:nth-child(3n + 3) {
   margin: 1px !important;
 }
+.prematch-event-selected-btn-table td {
+  background-color: var(--mainBg);
+  color: var(--mainBgCol);
+}
+.sport-team-title-container {
+  background: var(--teableSubHeadersBg);
+  color: var(--teableSubHeadersCol);
+}
+
+.prematch-avvenimento-tbl-btn-container a {
+  background: var(--bg1);
+  color: var(--col1);
+  box-shadow: none;
+  border-color: var(--tableBorders);
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background: var(--bg1);
+    color: var(--col1);
+    border-color: var(--tableBorders);
+  }
+}
+.td-right-border {
+  border-color: var(--tableBorders);
+}

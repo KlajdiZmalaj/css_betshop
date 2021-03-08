@@ -21,7 +21,6 @@ html body {
     display: none;
   }
 }
-
 .row.barra-superiore {
   position: absolute;
   height: 70px;
@@ -56,7 +55,6 @@ html body {
   flex: auto;
   justify-content: center;
 }
-
 .menu-principale-barra ul.menu-principale {
   background: var(--secondary-bg);
   color: var(--secondary-txt);
@@ -100,12 +98,10 @@ div#cg-scommesse-submenu {
 .menu-principale-barra a:hover {
   border-bottom: 3px solid var(--accent);
 }
-
 //iframe sport
 iframe#sport-frame {
   margin-top: 0 !important;
 }
-
 div#content {
   padding-top: 10px !important;
 }
@@ -179,7 +175,6 @@ div#content {
 .login-header .blocco-header {
   align-items: center;
 }
-
 a.bottone.bottone-login {
   height: 26px;
   border-radius: 13px;
@@ -194,7 +189,6 @@ a.bottone.bottone-login {
   display: flex;
   align-items: center;
 }
-
 //inherit +++++++++++++++++++++
 html {
   .voce-casino {
@@ -259,7 +253,6 @@ body {
   background: var(--accent-bg) !important;
   color: var(--accent-txt) !important;
 }
-
 .elementi-footer {
   position: relative;
 }

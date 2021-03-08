@@ -295,3 +295,9 @@ html {
     color: inherit;
   }
 }
+.big-star-icon {
+  &:before {
+    content: "\f005";
+    font-family: "FontAwesesome";
+  }
+}

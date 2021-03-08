@@ -282,6 +282,7 @@ html {
     align-items: flex-start;
   }
 }
+
 html {
   .dropdown-menu.bg-nero.bianco.container.show {
     background: var(--mainBg);
@@ -293,11 +294,5 @@ html {
   .bottone:hover {
     filter: none;
     color: inherit;
-  }
-}
-.big-star-icon {
-  &:before {
-    content: "\f005";
-    font-family: "FontAwesesome";
   }
 }

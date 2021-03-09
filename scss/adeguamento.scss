@@ -1444,3 +1444,160 @@ span.ico-fav {
 .puls-widg-hotbet {
   display: none;
 }
+.livebet-widget-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .livebet-widget-td.td-33 {
+    width: calc(100% / 3);
+    max-width: 100%;
+    min-width: auto;
+  }
+  .livebet-widget-game-result-container {
+    background: var(--bg1);
+    background-image: none;
+    color: var(--col1);
+    border-radius: 0;
+    padding: 5px;
+    border: 1px solid var(--tableBorders);
+    margin: 5px !important;
+  }
+  .livebet-status-icon-container.green {
+    display: none;
+  }
+  .livebet-widget-bg {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .livebet-widget-title-box.hand-pointer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    > div {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 11px !important;
+      font-weight: 300 !important;
+    }
+  }
+  .livebet-widget-result {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    > div {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .livebet-widget-singolar-quotes-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
+    width: calc(100% / 3);
+    max-width: inherit;
+    min-width: unset;
+
+    &:first-child {
+      .livebet-widget-quota-button-box {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+    }
+    &:last-child {
+      .livebet-widget-quota-button-box {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+  }
+  .livebet-widget-singolar-quotes-box:last-child
+    .livebet-widget-quota-button-box {
+    padding: 0 !important;
+  }
+  .livebet-widget-quota-button-box {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    > div {
+      margin: 0 !important;
+    }
+  }
+  .livebet-widget-quota-title {
+    padding: 0;
+    margin: 0;
+    order: 2;
+    margin-top: 7px;
+  }
+  .livebet-widget-quotes-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.livebet-widget-bg.calcio-live {
+  background: url(https://test.betshop375.it/external_css/BETSHOP375/img/calciobg.png);
+}
+.widget-hotbet-match-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.widget-hotbet-blasoni.column {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  .match-blasoni-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.widget-match-container {
+  max-width: 60%;
+}
+.match-team-1-blason {
+  position: absolute;
+  transform: translateY(-50%);
+  right: 10px;
+}
+.match-team-name.team-1 {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+.match-team-2-blason {
+  position: absolute;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.match-team-name.team-2 {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}

@@ -5,7 +5,7 @@ body {
   background-image: url(#{$bodyBg});
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 2019px;
+  background-size: 2000px;
   background-attachment: fixed;
 }
 .box-container {
@@ -740,7 +740,7 @@ body {
 #content .box-container {
   display: flex;
   flex-flow: row;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-evenly;
 }
 #upcoming-box-container .next-live-btns-container td {

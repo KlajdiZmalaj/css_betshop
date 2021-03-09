@@ -2241,9 +2241,25 @@ a.right.live-match-switch-btn-a.btn-noscroll-top.hand-pointer {
   align-items: center;
   justify-content: flex-start;
 }
-.live-menu-tourney-country + div {
+.live-menu-tourney-country {
+  margin: 0 !important;
+}
+.live-menu-tourney-country + span {
   text-align: center;
   display: flex;
   align-items: center;
   width: 100%;
+}
+#overview-live-box {
+  .buttons-container-header .right {
+    display: none;
+  }
+}
+.live-team-game-details-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  padding-left: 23px;
 }

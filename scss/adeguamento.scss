@@ -2132,3 +2132,118 @@ div#prenotazione {
   align-items: center;
   justify-content: center;
 }
+.live-match-switch.btn-zoom {
+  background: none;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300 !important;
+  &::before {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f326";
+    font-style: initial;
+    color: inherit;
+    font-size: 30px;
+  }
+}
+a.right.live-match-switch-btn-a.btn-scroll-top.hand-pointer,
+a.right.live-match-switch-btn-a.btn-noscroll-top.hand-pointer {
+  display: none;
+}
+
+.info-text-box-container {
+  padding: 0;
+}
+.info-text-box-1-col,
+.info-text-box-2-col {
+  padding: 0 10px;
+  background: var(--teableSubHeadersBg);
+  color: var(--teableSubHeadersCol);
+  height: 28px;
+  display: flex;
+  align-items: center;
+}
+.match-info-text-box-table {
+  display: flex;
+}
+.info-text-box-1-col {
+  flex-grow: 1;
+}
+.liveToolbar {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.live-match-switch.btn-1col {
+  background: none;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300 !important;
+  &::before {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f03a";
+    font-style: initial;
+    color: inherit;
+    font-size: 30px;
+  }
+}
+.live-match-switch.btn-2col {
+  background: none;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300 !important;
+  &::before {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f0ae";
+    font-style: initial;
+    color: inherit;
+    font-size: 30px;
+  }
+}
+.live-match-switch.btn-3col {
+  background: none;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300 !important;
+  &::before {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f828";
+    font-style: initial;
+    color: inherit;
+    font-size: 30px;
+  }
+}
+.live-match-switch-btn-a {
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+}
+.live-menu-team-titl-box {
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column;
+  padding-left: 24px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.live-menu-team-title {
+  width: 100%;
+
+  max-width: 100% !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+}
+.live-menu-tourney-country + div {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}

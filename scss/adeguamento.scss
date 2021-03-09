@@ -2075,3 +2075,60 @@ div#prenotazione {
     }
   }
 }
+
+.live-collapse-bets {
+  background: none;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300 !important;
+  &::before {
+    font-family: "FontAwesome";
+    content: "\f066";
+    font-style: initial;
+  }
+}
+
+.live-collapse-all {
+  background: none;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300 !important;
+  &::before {
+    font-family: "FontAwesome";
+    content: "\f062";
+    font-style: initial;
+  }
+}
+.live-collapse-detail {
+  background: none;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300 !important;
+  &::before {
+    font-family: "FontAwesome";
+    content: "\f063";
+    font-style: initial;
+  }
+}
+
+.live-collapse-opened {
+  background: none;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300 !important;
+  &::before {
+    font-family: "FontAwesome";
+    content: "\f053";
+    font-style: initial;
+  }
+}
+.collapse-live-menu,
+.collapse-prematch-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1225,8 +1225,7 @@ span.menu_left_it.ico-categoria-codice-sport-1-codice-categoria-31 {
   display: flex;
 }
 span.ico-fav {
-  filter: grayscale(1) brightness(11);
-  mix-blend-mode: exclusion;
+  filter: brightness(0);
 }
 #left-menu-primary li.hand-pointer {
   background: var(--teableSubHeadersBg);
@@ -1292,6 +1291,7 @@ span.ico-fav {
 }
 .live-menu-team-detail-events {
   border-top: 1px solid var(--tableBorders);
+  border-bottom: 1px solid var(--tableBorders);
 }
 .live-menu-pref li {
   background: var(--mainBg);
@@ -1313,7 +1313,7 @@ span.ico-fav {
       display: flex;
       align-items: center;
       justify-content: center;
-
+      flex-grow: 1;
       border-right: 1px solid var(--tableBorders);
     }
   }
@@ -2262,4 +2262,15 @@ a.right.live-match-switch-btn-a.btn-noscroll-top.hand-pointer {
   align-items: center;
   padding: 0;
   padding-left: 23px;
+}
+.live-menu-pref > div {
+  position: relative;
+  span.ico-fav {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+}
+.live-menu-pref li.selected {
+  color: #fff;
 }

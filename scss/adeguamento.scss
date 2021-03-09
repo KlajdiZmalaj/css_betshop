@@ -2274,3 +2274,18 @@ a.right.live-match-switch-btn-a.btn-noscroll-top.hand-pointer {
 .live-menu-pref li.selected {
   color: #fff;
 }
+#prefers_container > li {
+  position: relative;
+}
+.ico-fav.selected {
+  background-color: transparent;
+  filter: brightness(11);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.collapse-live-menu li,
+.collapse-prematch-menu li {
+  margin: 0 !important;
+  flex-grow: 1;
+}

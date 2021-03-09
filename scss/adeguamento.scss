@@ -1584,7 +1584,7 @@ span.ico-fav {
 .match-team-1-blason {
   position: absolute;
   transform: translateY(-50%);
-  right: 10px;
+  left: 10px;
 }
 .match-team-name.team-1 {
   position: absolute;
@@ -1600,4 +1600,17 @@ span.ico-fav {
   position: absolute;
   right: 10px;
   top: 20px;
+}
+#widget-hotbet-match-table tr {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  > td {
+    order: 2;
+    &.widget-progressbar-container {
+      order: 1;
+    }
+  }
 }

@@ -1229,9 +1229,10 @@ span.ico-fav {
   mix-blend-mode: exclusion;
 }
 #left-menu-primary li.hand-pointer {
-  background: var(--secondary-bg);
-  color: var(--secondary-txt);
+  background: var(--teableSubHeadersBg);
+  color: var(--teableSubHeadersCol);
   padding-left: 10px;
+  border-bottom: 1px solid var(--accent);
   .ico-left-col-sport {
     display: none;
   }
@@ -1468,11 +1469,7 @@ span.ico-fav {
     background-position: 0% 50%;
   }
 }
-.progress-bar-success {
-  background: linear-gradient(-45deg, #2ebb0b, #dd1dee, #3ea2ff, #d5d223);
-  background-size: 400% 400%;
-  animation: gradient 2s ease infinite;
-}
+
 .livebet-widget-row {
   display: flex;
   align-items: center;
@@ -1746,7 +1743,9 @@ td.widget-hotbet-quote {
   border-bottom: 1px solid var(--accent);
 }
 .progress-bar-success {
-  background-color: #009688;
+  background: linear-gradient(-45deg, #2ebb0b, #ff9800, #f44336, #d5d223);
+  background-size: 400% 400%;
+  animation: gradient 2s ease infinite;
 }
 
 /* sports icons  */
@@ -2044,4 +2043,35 @@ td.fluid-overview-live-time-td {
   background-position: center;
   background-size: contain;
   filter: hue-rotate(0deg) sepia(1) brightness(0.4);
+}
+
+div#prenotazione {
+  .buttons-container-body > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input {
+      width: 100% !important;
+      flex-grow: 1;
+      height: 28px;
+      border: 1px solid var(--accent);
+      border-right: 0;
+    }
+  }
+}
+#checkbet-submit {
+  .buttons-container-body > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    flex-grow: 1;
+    input {
+      width: 100% !important;
+      flex-grow: 1;
+      height: 28px;
+      border: 1px solid var(--accent);
+      border-right: 0;
+    }
+  }
 }

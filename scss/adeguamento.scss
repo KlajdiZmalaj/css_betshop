@@ -144,6 +144,17 @@ input {
 }
 .ui-slider .ui-slider-handle {
   background: var(--accent) !important;
+  width: 4px !important;
+  border-radius: 0;
+}
+html a.ui-slider-handle.ui-state-default.ui-corner-all:before {
+  content: "";
+  width: 500px;
+  height: 6px;
+  background: var(--accent);
+  position: absolute;
+  right: 0;
+  bottom: 2px;
 }
 #left-menu-container {
   border: 0;
@@ -553,8 +564,8 @@ html .btn-azure {
   color: inherit;
 }
 #fluid-overview-live-container .subtitle-row td table td {
-  background: var(--accent-bg);
-  color: var(--accent-txt);
+  background: var(--bg1);
+  color: var(--col1);
   height: 28px;
 }
 .fluid-overview-sport-title {
@@ -579,8 +590,8 @@ html .btn-azure {
   color: var(--mainBgCol);
 }
 .fluid-overview-live-time-td {
-  background: var(--bg1);
-  color: var(--col1);
+  background: var(--mainBg);
+  color: var(--mainBgCol);
 }
 .overview-live-fluid-fluid-btn-g,
 .overview-live-fluid-fluid-btn-g:visited {
@@ -1993,6 +2004,8 @@ html .box-prematch div#center-content:before {
 }
 .widget-last-winnings-box {
   border-color: var(--tableBorders);
+  padding: 0;
+  margin: 0;
 }
 .led-green {
   box-shadow: none;

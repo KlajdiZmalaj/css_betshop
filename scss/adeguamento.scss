@@ -16,6 +16,7 @@ body {
   margin-right: 8px !important;
   background: var(--mainBg);
   color: var(--mainBgCol);
+  width: auto !important;
   border: 1px solid var(--tableBorders);
 }
 div#shopping-cart {
@@ -376,6 +377,7 @@ span#slide-submenu {
   }
 }
 #upcoming-box-container {
+  margin-bottom: 0 !important;
   .buttons-container-header {
     .right {
       margin-left: auto;
@@ -1466,6 +1468,11 @@ span.ico-fav {
     background-position: 0% 50%;
   }
 }
+.progress-bar-success {
+  background: linear-gradient(-45deg, #2ebb0b, #dd1dee, #3ea2ff, #d5d223);
+  background-size: 400% 400%;
+  animation: gradient 2s ease infinite;
+}
 .livebet-widget-row {
   display: flex;
   align-items: center;
@@ -2033,5 +2040,8 @@ td.fluid-overview-live-time-td {
 }
 .hotbet-blason-home,
 .hotbet-blason-away {
-  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/curstumflag.png");
+  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/custumflag.png");
+  background-position: center;
+  background-size: contain;
+  filter: hue-rotate(0deg) sepia(1) brightness(0.4);
 }

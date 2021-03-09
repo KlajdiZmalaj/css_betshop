@@ -142,6 +142,9 @@ button.btn.btn-primary {
 input {
   border-radius: 0;
 }
+#temporal-filters {
+  overflow: hidden;
+}
 .ui-slider .ui-slider-handle {
   background: var(--accent) !important;
   width: 4px !important;
@@ -886,6 +889,7 @@ body {
   background: var(--bg1);
   color: var(--col1);
   border: 0;
+  filter: brightness(0.9);
 }
 .cart-event-summary-table {
   background: var(--bg1);
@@ -1735,6 +1739,7 @@ td.widget-hotbet-quote {
 .widget-bestseller-tab-result-box,
 .widget-hotbet-tab-result-box {
   border-color: var(--tableBorders);
+  padding: 5px;
 }
 .widget-hotbet-tab-result-container,
 .widget-hotbet-tab-result-box {

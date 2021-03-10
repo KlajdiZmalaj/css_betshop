@@ -210,4 +210,37 @@ body {
   .shopping-cart-bet-options-box {
     padding: 0;
   }
+  .cg-landing-section-container {
+    background: var(--teableHeadersBg);
+    color: var(--teableHeadersCol);
+  }
+  .cg-live-circle {
+    background: green;
+  }
+  .cg-odds-color,
+  .cg-odd-live > .cg-top,
+  .cg-odd.cg-selected > .cg-odd-right,
+  .cg-odd-live.cg-selected > .cg-bottom,
+  .cg-odd-antepost.cg-selected > .cg-bottom {
+    color: inherit;
+  }
+  .cg-live-num-avvenimenti-sport {
+    background: var(--accent-bg);
+    color: var(--accent-txt);
+  }
+  .cg-live-sport.cg-acceso > .cg-live-sport-underline {
+    background: var(--accent);
+  }
+  .cg-odd-live {
+    border-color: var(--tableBorders);
+  }
+  .cg-odd.cg-selected,
+  .cg-odd-live.cg-selected,
+  .cg-odd-antepost.cg-selected {
+    background: var(--accent-bg);
+    color: var(--accent-txt);
+    .cg-bottom {
+      border-top-color: var(--accent-txt);
+    }
+  }
 }

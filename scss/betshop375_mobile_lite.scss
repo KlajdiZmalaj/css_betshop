@@ -1,23 +1,4 @@
-@import "vars";
-html body {
-  background-color: var(--mainBg);
-  color: var(--mainBgCol);
-}
 body {
-  a.cg-nav-logo.cg-customerLiteLogo {
-    background-image: none;
-    &::before {
-      content: "";
-      background-image: url("#{$logoUrl}");
-      background-position: center;
-      background-size: contain;
-      display: block;
-      height: 44px;
-      width: 150px;
-      transform: translateX(-67px);
-      background-repeat: no-repeat;
-    }
-  }
   .cg-deposit-button {
     background: var(--accent-bg);
     color: var(--accent-txt);
@@ -74,6 +55,12 @@ body {
     text-transform: uppercase;
     padding: 0;
   }
+  .cg-slide-alternative-button > div {
+    font-size: 11px;
+    text-align: center;
+    font-weight: 450;
+    line-height: 12px;
+  }
 }
 .nav-slider-item,
 .cg-iconContainer {
@@ -103,4 +90,12 @@ body {
 }
 #cg-right-block-menu {
   background: var(--backDrops);
+}
+.search-overlay .input-container {
+  background: var(--accent-bg);
+  color: var(--accent-txt);
+  box-shadow: none;
+}
+#input-search-events {
+  color: var(--accent-txt);
 }

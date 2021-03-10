@@ -1,1 +1,19 @@
-/*bosh*/
+@import "vars";
+body a.cg-nav-logo.cg-customerLiteLogo {
+  background-image: none;
+  &::before {
+    content: "";
+    background-image: url("#{$logoUrl}");
+    background-position: center;
+    background-size: contain;
+    display: block;
+    height: 44px;
+    width: 150px;
+    transform: translateX(-67px);
+    background-repeat: no-repeat;
+  }
+}
+html body {
+  background-color: var(--mainBg);
+  color: var(--mainBgCol);
+}

@@ -3,3 +3,18 @@ html body {
   background-color: var(--mainBg);
   color: var(--mainBgCol);
 }
+a.cg-nav-logo.cg-customerLiteLogo {
+  background-image: none;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 70px;
+    background-image: url("#{$logoUrl}");
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 360px;
+    background-repeat: no-repeat;
+    height: 40px;
+  }
+}

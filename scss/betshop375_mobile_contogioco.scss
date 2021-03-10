@@ -169,4 +169,9 @@ body {
     justify-content: center;
     text-transform: uppercase;
   }
+  #cg-slide-footer2 {
+    [style*="font-size: 10px"] {
+      font-size: 12px !important;
+    }
+  }
 }

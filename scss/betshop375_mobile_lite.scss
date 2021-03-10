@@ -3,18 +3,85 @@ html body {
   background-color: var(--mainBg);
   color: var(--mainBgCol);
 }
-a.cg-nav-logo.cg-customerLiteLogo {
-  background-image: none;
-  &::before {
-    content: "";
-    width: 100%;
-    height: 70px;
-    background-image: url("#{$logoUrl}");
-    background-position: center;
-    background-size: contain;
-    display: block;
-    height: 44px;
-    width: 100%;
-    background-repeat: no-repeat;
+body {
+  a.cg-nav-logo.cg-customerLiteLogo {
+    background-image: none;
+    &::before {
+      content: "";
+      width: 100%;
+      background-image: url("#{$logoUrl}");
+      background-position: center;
+      background-size: contain;
+      display: block;
+      height: 44px;
+      width: 100%;
+      background-repeat: no-repeat;
+    }
   }
+  .cg-deposit-button {
+    background: var(--accent-bg);
+    color: var(--accent-txt);
+    border: 1px solid var(--accent);
+    border-radius: 0;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  .cg-top-navbar {
+    background: var(--primary-bg);
+    color: var(--primary-txt);
+  }
+  #nav-temporal-filter {
+    background: var(--bg1);
+    color: var(--col1);
+    border: 0;
+    box-shadow: none;
+  }
+  .main-content {
+    background: var(--mainBg);
+    color: var(--mainBgCol);
+  }
+  .menu-container {
+    display: flex;
+    display: flex;
+    flex-flow: column;
+  }
+  .list-element {
+    background: var(--bg1) !important;
+    color: var(--col1) !important;
+    margin: 4px;
+    width: calc(100% - 18px);
+    margin: 4px auto;
+    border-radius: 20px;
+    padding: 0 15px;
+    border-bottom: 3px solid var(--tableBorders);
+  }
+  .prematch-sport-img {
+    border-radius: 25px;
+  }
+  .nav-item-container.selected,
+  .nav-slider-item-container.selected {
+    border-color: var(--accent);
+  }
+  .list-heading {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 0;
+  }
+}
+.nav-slider-item {
+  color: inherit;
+}
+.cg-iconContainer .cg-selection-border {
+  background: var(--accent);
+}
+.cg-notification-circle {
+  background: var(--accent-bg);
+  color: var(--accent-txt);
 }

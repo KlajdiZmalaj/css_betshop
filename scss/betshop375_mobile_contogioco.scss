@@ -155,4 +155,18 @@ body {
   .cg-signup-logo {
     display: none;
   }
+  .cg-slide-field-wrapper {
+    border-radius: 0;
+    border-color: var(--tableBorders);
+  }
+  .cg-slide-field-container:last-of-type {
+    border-bottom-width: 0 !important;
+  }
+  .cg-slide-title span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
 }

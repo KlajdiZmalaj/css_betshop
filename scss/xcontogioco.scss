@@ -272,16 +272,6 @@ iframe[title="Zendesk Chat widget button"] {
 #cg-top-button {
   bottom: 20px !important;
 }
-html {
-  //poker
-  .blocco-principale-poker {
-    background: var(--mainBg);
-    color: var(--mainBgCol);
-  }
-  .schede-poker .col-md-8 {
-    align-items: flex-start;
-  }
-}
 
 html {
   .dropdown-menu.bg-nero.bianco.container.show {
@@ -294,5 +284,62 @@ html {
   .bottone:hover {
     filter: none;
     color: inherit;
+  }
+}
+
+[subpage="poker"] {
+  //poker
+  .blocco-principale-poker {
+    background: var(--mainBg);
+    color: var(--mainBgCol);
+  }
+  .schede-poker .col-md-8 {
+    align-items: flex-start;
+  }
+  .cg-poker-banner-container {
+    display: none;
+  }
+  .blocco-principale-poker {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 90px !important;
+    background: #00000078;
+    backdrop-filter: blur(5px);
+    margin-top: 45vh;
+    > .row {
+      margin: 0 !important;
+    }
+  }
+  .poker-landing::before {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/pokerbg.jpeg") !important;
+    background-color: #140e0e;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+  }
+  .barra-titolo-sezione-poker {
+    display: none;
+  }
+  .azione-poker.cg-download-client,
+  .azione-poker.cg-gioca-ora {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/clientdownload.jpg") !important;
+    i {
+      display: none;
+    }
+  }
+  .azione-poker {
+    padding: 10px;
+    border-radius: 0;
+  }
+  a.btn.bg-colore-1.bianco.maiuscolo.pointer {
+    border-radius: 0;
+  }
+  .card {
+    background: #000000a3;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 0;
+    margin: 0;
+    margin-top: 12px;
   }
 }

@@ -321,7 +321,14 @@ html {
     display: flex;
     flex-flow: column;
     max-height: 180px;
-
+    background: linear-gradient(
+      140deg,
+      transparent,
+      transparent 26%,
+      #ffffff6e 48%,
+      transparent 78%,
+      transparent 130%
+    );
     img {
       flex-grow: 1;
       object-fit: cover;

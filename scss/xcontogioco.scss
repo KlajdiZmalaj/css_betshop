@@ -236,6 +236,7 @@ body {
     background: var(--teableSubHeadersBg);
     color: var(--teableSubHeadersCol);
     border: 0;
+    flex-shrink: 0;
   }
   .buttonGiocaBG {
     background: var(--accent-bg);
@@ -274,9 +275,27 @@ iframe[title="Zendesk Chat widget button"] {
 }
 
 html {
+  [subpage="xcasino"] {
+    .filtroTipoGioco span {
+      filter: brightness(0) !important;
+    }
+    .bg-filtri-casino,
+    body .barra-bg-casino {
+      background: linear-gradient(to right, #b71514, #f1d084, #21594f, #4d85bd);
+      color: #000;
+    }
+    input.cerca {
+      border-radius: 0;
+      border: 0;
+      border-bottom: 2px solid #d492d1;
+      height: 25px;
+    }
+  }
   a.blocco-mosaico {
     display: flex;
     flex-flow: column;
+    max-height: 180px;
+
     img {
       flex-grow: 1;
       object-fit: cover;

@@ -313,7 +313,7 @@ html {
   .poker-landing::before {
     background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/pokerbg.jpeg") !important;
     background-color: #140e0e;
-    background-position: center;
+    background-position: center -29px;
     background-size: contain;
     background-attachment: fixed;
   }
@@ -330,16 +330,70 @@ html {
   .azione-poker {
     padding: 10px;
     border-radius: 0;
+    border: 1px solid var(--accent);
   }
   a.btn.bg-colore-1.bianco.maiuscolo.pointer {
     border-radius: 0;
   }
   .card {
     background: #000000a3;
-    color: var(--accent);
+    color: #fff15cbd;
     border: 1px solid var(--accent);
     border-radius: 0;
     margin: 0;
     margin-top: 12px;
+    width: calc(50% - 5px);
+    min-width: auto;
+    height: 230px;
+    overflow: hidden;
+  }
+  .schede-poker {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .card .row {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0;
+      .col-md-4 {
+        height: 230px;
+        flex: auto;
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        img {
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      .col-md-8 {
+        height: 230px;
+        flex: auto;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .card:hover {
+      .col-md-8 {
+        display: flex;
+        opacity: 1;
+        pointer-events: all;
+        backdrop-filter: blur(7px);
+        background-color: #000000ab;
+      }
+    }
   }
 }

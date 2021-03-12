@@ -14,8 +14,8 @@ body a.cg-nav-logo.cg-customerLiteLogo {
   }
 }
 html body {
-  background-color: var(--mainBg);
-  color: var(--mainBgCol);
+  background: var(--mainBg) !important;
+  color: var(--mainBgCol) !important;
 }
 
 body {
@@ -270,6 +270,13 @@ body {
     background: var(--teableSubHeadersBg) !important;
     color: var(--teableSubHeadersCol);
   }
+  .chooseTPLbutton {
+    width: auto;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
   .chooseTPLbutton DIV {
     width: 9px;
     height: 9px;
@@ -281,6 +288,10 @@ body {
     border-bottom: 1px solid var(--accent);
     flex-shrink: 0;
   }
+  .chooseTPLbutton.tplSelected > div {
+    background: var(--accent-bg);
+    color: var(--accent-txt);
+  }
   .chooseTPLbuttonContainer {
     margin-right: 10px;
     display: flex;
@@ -291,5 +302,46 @@ body {
     padding: 0 10px;
     align-items: center;
     justify-content: center;
+  }
+  .contentMain {
+    background: var(--mainBg) !important;
+  }
+  .gameitle span {
+    background: var(--accent-bg) !important;
+    color: var(--accent-txt) !important;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 12px;
+  }
+  .descCategoria,
+  .filtri-button-reset {
+    color: inherit;
+  }
+  .icona {
+    filter: invert(0);
+  }
+  #filtri-categorie .filtro.selected {
+    border: 1px solid var(--accent) !important;
+  }
+  .filtri-button-apply {
+    background: var(--accent-bg);
+    color: var(--accent-txt) !important;
+  }
+  .cg-inputContainer > input {
+    border-color: #ccc;
+    border-radius: 0;
+  }
+  .cg-loginButton {
+    border: 0;
+    border-radius: 0;
+    background: var(--accent-bg);
+    color: var(--accent-txt) !important;
+  }
+  .cg-registerButton {
+    border: 1px solid var(--accent);
+    border-radius: 0;
   }
 }

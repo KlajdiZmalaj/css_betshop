@@ -104,8 +104,12 @@ body {
       }
     }
   }
+
   .arrow-container {
     width: 35px;
+  }
+  #input-search-events + .arrow-container {
+    width: 75px;
   }
   .nav-section-title.centered {
     white-space: nowrap;
@@ -250,6 +254,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 0;
   }
   .cg-menuTabMobile {
     background: var(--mainBg) !important;

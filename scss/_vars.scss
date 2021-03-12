@@ -201,3 +201,6 @@ body {
   background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/casinobg.jpeg");
   padding-top: 20vh !important;
 }
+input:focus {
+  outline: none !important;
+}

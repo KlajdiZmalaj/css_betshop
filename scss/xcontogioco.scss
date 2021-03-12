@@ -302,15 +302,23 @@ html {
       color: #000;
     }
     input.cerca {
-      border-radius: 0;
-      border: 0;
       border-bottom: 2px solid #d492d1;
       height: 25px;
+      background: transparent;
+      color: #000;
+      border: 1px solid #000;
+      border-radius: 0;
+
+      &::placeholder {
+        color: #000;
+      }
+    }
+    a.voce-casino {
+      padding: 2px 10px;
     }
     a.voce-casino.selezionato {
       border-bottom-color: var(--accent);
       background: var(--accent-bg);
-      padding: 2px 10px;
       color: var(--accent-txt) !important;
       > span {
         filter: brightness(11) !important;
@@ -349,6 +357,28 @@ html {
   .bottone:hover {
     filter: none;
     color: inherit;
+  }
+  .tipoPaginaLancio {
+    border: 1px solid #000;
+    border-radius: 0;
+    i {
+      color: #000;
+      font-weight: 300 !important;
+      font-family: "Font Awesome 5 Pro";
+    }
+  }
+  .bottone-selettore {
+    display: flex;
+  }
+  .bottone-selettore div {
+    height: 10px;
+    width: 10px;
+    background-color: #000;
+    border-radius: 10px;
+    border-bottom: 3px solid var(--accent);
+  }
+  .style-filtri {
+    color: #000 !important;
   }
 }
 

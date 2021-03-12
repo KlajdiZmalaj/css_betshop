@@ -344,4 +344,12 @@ body {
     border: 1px solid var(--accent);
     border-radius: 0;
   }
+  .cg-wrapper-login-section {
+    background: var(--bg1);
+    color: var(--col1);
+  }
+  .cg-searchIcoLite {
+    width: 30px;
+    background-position: center;
+  }
 }

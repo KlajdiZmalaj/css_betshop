@@ -251,4 +251,45 @@ body {
     justify-content: flex-end;
     align-items: center;
   }
+  .cg-menuTabMobile {
+    background: var(--mainBg) !important;
+    color: var(--mainBgCol) !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cg-buttons-row {
+    box-shadow: none;
+    width: 100%;
+  }
+  #leftContainer {
+    background: var(--mainBg) !important;
+    color: var(--mainBgCol);
+  }
+  .filterGameBar {
+    background: var(--teableSubHeadersBg) !important;
+    color: var(--teableSubHeadersCol);
+  }
+  .chooseTPLbutton DIV {
+    width: 9px;
+    height: 9px;
+    /* float: left; */
+    background: black;
+    margin: 1px;
+    display: inline-block;
+    border-radius: 20px;
+    border-bottom: 1px solid var(--accent);
+    flex-shrink: 0;
+  }
+  .chooseTPLbuttonContainer {
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+  }
 }

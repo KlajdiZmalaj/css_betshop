@@ -663,6 +663,13 @@ i.fa.fa-2x.fa-question-circle.fa-3 {
   font-family: "Font Awesome 5 Pro";
 }
 body {
+  .ico-fav-live-singolo-selected-ml {
+    margin: 0;
+    filter: grayscale(1) brightness(0);
+  }
+  .ico-multilive-stats {
+    filter: invert(1);
+  }
   .mini-submenu,
   .mini-live {
     border: 0;
@@ -791,6 +798,8 @@ body {
 }
 #content {
   padding-top: 0;
+  background: var(--mainBg) !important;
+  color: var(--mainBgCol);
 }
 #wrapper {
   display: flex;

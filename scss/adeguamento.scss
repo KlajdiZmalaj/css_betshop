@@ -663,7 +663,29 @@ i.fa.fa-2x.fa-question-circle.fa-3 {
   font-family: "Font Awesome 5 Pro";
 }
 body {
-  a.match-description-a-tag {
+  .mini-live #live-menu-primary li {
+    background: var(--bg1);
+    color: var(--col1);
+    border: 0;
+    box-shadow: none;
+  }
+  .prematch-mini-menu-search-container {
+    background-color: var(--bg1);
+    color: var(--col1);
+  }
+  .ico-search-white {
+    filter: invert($invert);
+  }
+  #mini-live {
+    background: var(--accent-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  a.match-description-a-tag,
+  span.fluid-prematch-alias-span.corporate-blue {
     padding-left: 10px;
   }
   td .dropdown-menu-esiti ul li a,

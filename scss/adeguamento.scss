@@ -663,6 +663,21 @@ i.fa.fa-2x.fa-question-circle.fa-3 {
   font-family: "Font Awesome 5 Pro";
 }
 body {
+  td .dropdown-menu-esiti ul li a,
+  td .dropdown-menu-esiti ul li ul li a {
+    color: inherit;
+  }
+  td .dropdown-menu-esiti ul li ul li,
+  td .dropdown-menu-esiti ul li ul li:last-child {
+    border-bottom: 1px solid var(--tableBorders);
+  }
+  td .dropdown-menu-esiti {
+    background: var(--bg1);
+    color: var(--col1);
+  }
+  .selectable-header-manif:hover {
+    background: ss !important;
+  }
   #fluid-prematch-matches-container {
     border-bottom: 1px solid var(--tableBorders);
   }

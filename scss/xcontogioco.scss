@@ -207,6 +207,9 @@ body {
   // .cazzino-bg-squad {
   //   margin-top: auto;
   // }
+  img.user-img {
+    filter: grayscale(0) sepia(21) brightness(1.9) hue-rotate(335deg);
+  }
   .colore-1,
   .colore-1 a,
   a.colore-1,

@@ -663,6 +663,9 @@ i.fa.fa-2x.fa-question-circle.fa-3 {
   font-family: "Font Awesome 5 Pro";
 }
 body {
+  a.match-description-a-tag {
+    padding-left: 10px;
+  }
   td .dropdown-menu-esiti ul li a,
   td .dropdown-menu-esiti ul li ul li a {
     color: inherit;

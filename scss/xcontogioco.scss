@@ -207,7 +207,12 @@ body {
   // .cazzino-bg-squad {
   //   margin-top: auto;
   // }
-
+  .colore-1,
+  .colore-1 a,
+  a.colore-1,
+  a .colore-1 {
+    color: inherit;
+  }
   .casino {
     background-size: 105vw !important;
     margin-bottom: 50px !important;

@@ -663,6 +663,9 @@ i.fa.fa-2x.fa-question-circle.fa-3 {
   font-family: "Font Awesome 5 Pro";
 }
 body {
+  .info-text-box-2-col {
+    width: 47px !important;
+  }
   .live-match-match-box
     [class*="live-multi-match-details-box-"].panel-collapse.collapse.in {
     display: none;

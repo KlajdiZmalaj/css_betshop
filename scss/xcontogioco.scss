@@ -204,6 +204,13 @@ a.bg-colore-1 {
 }
 //casino styles
 body {
+  .blocco-header .btn {
+    background: var(--accent-bg);
+    color: var(--accent-txt);
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
   // .cazzino-bg-squad {
   //   margin-top: auto;
   // }

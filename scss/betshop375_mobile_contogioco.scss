@@ -63,6 +63,11 @@ body {
   .prematch-sport-img {
     border-radius: 25px;
   }
+  .nav-slider-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .nav-item-container.selected,
   .nav-slider-item-container.selected {
     border-color: var(--accent);

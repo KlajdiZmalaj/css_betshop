@@ -663,6 +663,10 @@ i.fa.fa-2x.fa-question-circle.fa-3 {
   font-family: "Font Awesome 5 Pro";
 }
 body {
+  .dropdown-menu-esiti.spread {
+    background: var(--bg1) !important;
+    color: var(--col1);
+  }
   .ico-fav-live-singolo-selected-ml {
     margin: 0;
     filter: grayscale(1) brightness(0);

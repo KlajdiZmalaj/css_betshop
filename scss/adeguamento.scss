@@ -663,6 +663,30 @@ i.fa.fa-2x.fa-question-circle.fa-3 {
   font-family: "Font Awesome 5 Pro";
 }
 body {
+  td .dropdown-menu-esiti {
+    background: var(--bg1);
+    color: var(--col1);
+  }
+  .widget-tab-favorita-icon {
+    background: url(https://test.betshop375.it/external_css/BETSHOP375/img/star.svg)
+      no-repeat center center;
+    background-size: contain;
+  }
+  .widget-tab-thriller-icon {
+    background: url(https://test.betshop375.it/external_css/BETSHOP375/img/clock.svg)
+      no-repeat center center;
+    background-size: contain;
+  }
+  .widget-tab-cassaforte-icon {
+    background: url(https://test.betshop375.it/external_css/BETSHOP375/img/lock.svg)
+      no-repeat center center;
+    background-size: contain;
+  }
+  .ico-flag.big {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+  }
   .info-text-box-2-col {
     width: 47px !important;
   }

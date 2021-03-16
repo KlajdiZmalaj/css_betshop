@@ -1402,12 +1402,49 @@ span.ico-fav {
   }
 }
 .text-white,
-.live-team-time,
-.match-info-text-team-names-box.match-finished {
+.live-team-time {
   color: inherit !important;
 }
 .info-text-box-container.title-big {
-  background: var(--bg1);
+  background: url(https://test.betshop375.it/external_css/BETSHOP375/img/calciobg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 81%;
+  height: 220px;
+  position: relative;
+}
+.info-text-box-container.title-big:before {
+  content: "";
+  width: 120px;
+  height: 40px;
+  background: url(https://test.betshop375.it/external_css/BETSHOP375/img/liveGif.gif);
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.match-info-text-team-names-box.match-finished {
+  font-size: 16px;
+  font-family: "Lato";
+  font-weight: 300;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  border-radius: 30px;
+  background: var(--teableHeadersBg);
+  color: var(--teableHeadersCol) !important;
+}
+.info-text-box-container.title-big {
+  background-color: var(--bg1);
   color: var(--col1);
   border: 0;
   margin: 0;

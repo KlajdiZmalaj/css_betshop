@@ -663,6 +663,10 @@ i.fa.fa-2x.fa-question-circle.fa-3 {
   font-family: "Font Awesome 5 Pro";
 }
 body {
+  .mini-submenu,
+  .mini-live {
+    border: 0;
+  }
   .mini-live #live-menu-primary li {
     background: var(--bg1);
     color: var(--col1);

@@ -204,6 +204,55 @@ a.bg-colore-1 {
 }
 //casino styles
 body {
+  .supporto-principale .card-body a:hover {
+    color: inherit;
+  }
+  .container.supporto-principale {
+    .card-header {
+      background: var(--teableHeadersBg);
+      color: var(--teableHeadersCol);
+      a {
+        color: inherit;
+      }
+    }
+  }
+  .modal-supporto {
+    .card-body {
+      border-bottom: 1px solid var(--tableBorders);
+      padding: 5px;
+    }
+    .card {
+      background: var(--bg1);
+      color: var(--col1);
+    }
+    .cg-flex-container {
+      height: calc(100vh - 84px);
+    }
+  }
+  .menu-laterale-supporto {
+    padding: 0;
+    background: var(--bg1);
+    color: var(--col1);
+    a {
+      color: inherit;
+    }
+    .card {
+      background: var(--bg1);
+      color: var(--col1);
+      .card-header {
+        background: var(--teableSubHeadersBg);
+        color: var(--teableSubHeadersCol);
+      }
+    }
+  }
+  .grigio-supporto {
+    background: var(--primary-bg);
+    color: var(--primary-txt);
+    border-bottom: 2px solid var(--accent);
+  }
+  .col-md-6.logo.d-flex.align-items-center {
+    margin: auto;
+  }
   .blocco-header .btn {
     background: var(--accent-bg);
     color: var(--accent-txt);

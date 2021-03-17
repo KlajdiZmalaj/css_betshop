@@ -19,6 +19,95 @@ html body {
 }
 
 body {
+  .cg-slide-field-container {
+    display: flex;
+    align-items: center;
+  }
+  .cg-ico-prematch {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/sports.svg");
+  }
+  .cg-ico-live {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/live.svg");
+  }
+  .cg-ico-cart {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/receipt.svg");
+  }
+  .cg-ico-user {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/user.svg");
+  }
+  .cg-ico-casino {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/jackpot.svg");
+  }
+  .cg-slide-ico-home {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/homepage.svg");
+  }
+  .cg-slide-ico-prematch {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/sports.svg");
+  }
+  .cg-slide-ico-promo {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/promotion.svg");
+  }
+  .cg-slide-ico-casino-live {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/chips.svg");
+  }
+  .cg-slide-ico-poker {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/poker-cards.svg");
+  }
+  .cg-slide-ico-lotterie {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/lottery.svg");
+  }
+  .cg-slide-ico-carte {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/cartee.svg");
+  }
+  .cg-slide-ico-virtual {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/race-horse.svg");
+  }
+  .cg-slide-ico-gv {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/card.svg");
+  }
+  .cg-slide-ico-bingo {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/bingo.svg");
+  }
+  div#cg-external-chat {
+    &:before {
+      content: "";
+      width: 25px;
+      height: 40px;
+      display: block;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-right: 10px;
+      background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/chat.svg");
+    }
+  }
+  div#cg-desktop-mode {
+    &:before {
+      content: "";
+      width: 25px;
+      height: 40px;
+      display: block;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: 10px;
+      background-size: contain;
+      background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/monitor.svg");
+    }
+  }
+  div#cg-faq-contogioco,
+  div#cg-faq-regole-sport {
+    &:before {
+      content: "";
+      width: 25px;
+      height: 40px;
+      margin-right: 10px;
+      display: block;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/documents.svg");
+    }
+  }
   .cg-deposit-button {
     background: var(--accent-bg);
     color: var(--accent-txt);

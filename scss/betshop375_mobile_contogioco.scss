@@ -300,6 +300,17 @@ body {
     margin-top: 11px;
     border-bottom: 1px solid var(--tableBorders);
   }
+  .headerPrenotazioniEffettuate {
+    border: 0;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    background: transparent;
+    color: inherit;
+  }
   .formReloadReservation > .reloadReservationButton {
     background: var(--bg1);
     color: var(--col1);

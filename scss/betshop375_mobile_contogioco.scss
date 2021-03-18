@@ -19,10 +19,62 @@ html body {
 }
 
 body {
+  .cg-recover-button-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: 0;
+  }
+  .cg-recover-input-border.cg-recover-ok {
+    border-radius: 0;
+    border: 1px solid var(--tableBorders);
+  }
+  .cg-recover-separator {
+    border: 0;
+    background: var(--teableHeadersBg);
+    color: var(--teableHeadersCol);
+    text-shadow: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: "Roboto";
+  }
+  .cg-recover-logo {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/logo.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .cg-slide-field-container {
     display: flex;
     align-items: center;
   }
+  i.cg-icon.ion-md-albums {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/interface.svg");
+    &::before {
+      content: "";
+    }
+  }
+  i.cg-icon.ion-md-send {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/recommendation.svg");
+    &::before {
+      content: "";
+    }
+  }
+  i.cg-icon.cg-ico-search {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/seo.svg");
+    &::before {
+      content: "";
+    }
+  }
+  .cg-ico-sport {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/sports.svg");
+    &::before {
+      content: "";
+    }
+  }
+
   .cg-ico-prematch {
     background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/sports.svg");
   }

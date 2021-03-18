@@ -204,6 +204,11 @@ a.bg-colore-1 {
 }
 //casino styles
 body {
+  .custom-checkbox
+    .custom-control-input:checked
+    ~ .custom-control-label::after {
+    filter: invert(1);
+  }
   .supporto-principale .card-body a:hover {
     color: inherit;
   }

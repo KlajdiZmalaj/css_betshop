@@ -19,6 +19,12 @@ html body {
 }
 
 body {
+  .coupon-result-text-box.multiple_live_entry {
+    margin-left: 27px;
+  }
+  .effectiveCartContainer {
+    font-size: 13px;
+  }
   .shopping-cart-result-box {
     margin: 0;
     padding: 0;
@@ -26,6 +32,9 @@ body {
     width: 95%;
     margin: auto;
     margin-top: 9px;
+    .clearfix {
+      display: none;
+    }
   }
   .system-master > .banker-result-text-box {
     width: 100%;
@@ -55,6 +64,94 @@ body {
     justify-content: center;
     margin-top: 0;
     left: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .split-stake-container {
+    margin-top: 0px !important;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+    height: 28px;
+    padding: 0 12px;
+  }
+  .combinations.left {
+    display: flex;
+    font-weight: 300;
+    align-items: center;
+    margin-left: 5px;
+  }
+  .cart-total-price {
+    height: 28px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+
+    .clearfix {
+      display: none;
+    }
+  }
+  .wave {
+    display: none;
+  }
+  .container-bet-bet-refill {
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-bet-bet-refill > .btn {
+    width: calc(100% / 3);
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid;
+    background: var(--mainBg);
+    color: var(--mainBgCol);
+    &.btn-delete {
+      color: rgb(204, 57, 31);
+      border-color: rgb(204, 57, 31);
+    }
+    &.btn-reserve {
+      color: rgb(204, 143, 31);
+      border-color: rgb(204, 143, 31);
+    }
+    &.btn-play {
+      color: rgb(31, 160, 48);
+      border-color: rgb(31, 160, 48);
+    }
+  }
+  .potential-win-multiple,
+  .potential-win-system {
+    color: var(--accent);
+    font-size: 27px;
+    font-weight: 300;
+    font-family: "Roboto";
+  }
+  .vincita-totale {
+    background: var(--mainBg);
+    color: var(--mainBgCol);
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid var(--tableBorders);
+    border-bottom: 1px solid var(--tableBorders);
+    box-shadow: none;
+    padding: 7px;
+    margin-top: 11px;
+  }
+  .cartLiner {
+    height: 1px;
+    display: inline-block;
+    background: var(--tableBorders);
   }
   .system-master > .result-letter-box.oven {
     background: var(--accent-bg);
@@ -81,19 +178,27 @@ body {
     align-items: center;
     justify-content: space-between;
     min-height: 28px;
+    padding: 2px 12px;
+  }
+  .sistemi-result-import-title {
+    background: transparent;
+    color: var(--col1);
   }
   .sistemi-result-check-box {
     width: auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 11px;
   }
   .sistemi-result-inputtype-box {
     width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .sistemi-result-ncomb-title > div {
+    padding: 0;
+    margin: 0;
   }
   .title-winner {
     margin: 0 15px;
@@ -142,8 +247,68 @@ body {
       }
     }
   }
+  .left.vminvmax {
+    border: 0;
+    background: transparent;
+    color: var(--accent);
+    border-left: 1px solid var(--tableBorders);
+    padding-left: 5px;
+    margin-left: 5px;
+  }
+  .cart-desc-scom {
+    display: flex;
+    align-items: center;
+  }
+  .cart-desc-draw-odd {
+    display: flex;
+    align-items: center;
+  }
   .shopping-cart-result-box.system-master.system_live_entry {
     padding-left: 12px;
+  }
+  .shopping-cart-result-box.system-master.system_live_entry {
+    min-height: 64px;
+  }
+  #coupon-multiple-append {
+    .shopping-cart-result-box[data-animation="false"] {
+      min-height: 63px;
+    }
+  }
+  .inputReservation {
+    height: 100%;
+    background: var(--bg1);
+    color: var(--col1);
+    border-radius: 0;
+    border: 1px solid var(--tableBorders);
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+  }
+  .reservationAreaContainer {
+    background: var(--mainBg);
+    color: var(--mainBgCol);
+    border: 0;
+    box-shadow: none;
+    width: 100% !important;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border-top: 1px solid var(--tableBorders);
+    margin-top: 11px;
+    border-bottom: 1px solid var(--tableBorders);
+  }
+  .formReloadReservation > .reloadReservationButton {
+    background: var(--bg1);
+    color: var(--col1);
+    border: 1px solid var(--tableBorders);
+    border-radius: 0;
+    height: 39px;
+    margin-top: 0;
+    position: relative;
+    top: -1px;
   }
   .coupon-result-text-box.multiple_live_entry:before,
   .system-master.system_live_entry:before {
@@ -154,7 +319,7 @@ body {
     background-repeat: no-repeat;
     content: "";
     width: 70px;
-    height: 62px;
+    height: 66px;
     top: -2px;
     left: -24px;
     z-index: 1;

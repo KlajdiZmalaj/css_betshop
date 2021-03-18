@@ -19,6 +19,12 @@ html body {
 }
 
 body {
+  .info-score {
+    background: var(--accent-bg);
+    border-radius: 0px;
+    color: var(--accent-txt);
+    box-shadow: none;
+  }
   .cg-recover-button-border {
     display: flex;
     align-items: center;

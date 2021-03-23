@@ -25,9 +25,9 @@ html body {
   position: absolute;
   height: 70px;
   background: transparent;
-  a {
-    filter: invert($invert);
-  }
+  // a {
+  //   filter: invert($invert);
+  // }
   .info-utili,
   .funzioni-menu,
   .testo-disclaimer {
@@ -47,6 +47,14 @@ html body {
   max-width: calc(100% / 3);
   flex: auto;
 }
+.allinea-centro {
+  .grassetto,
+  li.grassetto,
+  a.grassetto {
+    color: #fff;
+  }
+}
+
 .logo {
   height: 100%;
   width: calc(100% / 3);
@@ -56,18 +64,21 @@ html body {
   justify-content: center;
 }
 .menu-principale-barra ul.menu-principale {
-  background: var(--secondary-bg);
-  color: var(--secondary-txt);
+  background: var(--teableSubHeadersBg);
+  color: var(--teableSubHeadersCol);
   flex-grow: 1;
   li,
   a {
-    color: var(--secondary-txt);
+    color: var(--teableSubHeadersCol);
     font-family: $font;
   }
 }
+.cg-text-muted {
+  color: inherit;
+}
 #cg-header .row.bg-bianco {
-  background: var(--secondary-bg);
-  color: var(--secondary-txt);
+  background: var(--teableSubHeadersBg);
+  color: var(--teableSubHeadersCol);
 }
 .menu-principale-barra {
   display: flex;
@@ -123,6 +134,7 @@ div#content {
       margin: 0;
     }
   }
+
   .form-group {
     &:first-child {
       position: relative;
@@ -134,6 +146,7 @@ div#content {
         left: 16px;
         top: 5px;
         font-size: 15px;
+        color: var(--col1);
       }
       input {
         border-top-left-radius: 16px;
@@ -147,6 +160,7 @@ div#content {
         content: "\f30d";
         font-family: "Font Awesome 5 Pro";
         font-weight: 300;
+        color: var(--col1);
         position: absolute;
         left: 16px;
         top: 5px;

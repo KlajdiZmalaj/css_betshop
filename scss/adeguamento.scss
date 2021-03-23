@@ -1,7 +1,7 @@
 ﻿@import "vars";
 
 body {
-  background-color: #d9d0df;
+  background-color: #090909;
   background-image: url(#{$bodyBg});
   background-position: top center;
   background-repeat: no-repeat;
@@ -342,7 +342,7 @@ span#slide-submenu {
   margin: 0;
   th {
     background: var(--teableSubHeadersBg);
-    color: var(--teableSubHeadersCol);
+    color: var(--teableSubHeadersCol) !important;
     padding: 0;
     height: 30px;
     border-bottom: 1px solid var(--accent-bg);
@@ -377,8 +377,8 @@ span#slide-submenu {
     border: 0 !important;
     &.giocabilita-s,
     &:hover {
-      background: var(--accent-bg);
-      color: var(--accent-txt);
+      background: #222;
+      color: var(--accent);
     }
   }
 }
@@ -776,8 +776,8 @@ body {
     font-weight: 300;
     text-shadow: none;
     &:hover {
-      background: var(--accent-bg);
-      color: var(--accent-txt);
+      background: #222;
+      color: var(--accent);
     }
   }
   #fluid-overview-live-container .fluid-overview-live-handicap-table {
@@ -799,8 +799,8 @@ body {
     justify-content: center;
     margin: auto;
     &.giocabilita-s {
-      background: var(--accent-bg);
-      color: var(--accent-txt);
+      background: #222;
+      color: var(--accent);
     }
   }
   #fluid-overview-live-container .handicap-green-bg {
@@ -899,10 +899,10 @@ body {
       color: var(--col1);
     }
     &:hover {
-      background: var(--accent-bg);
-      color: var(--accent-txt);
+      background: #222;
+      color: var(--accent);
       span {
-        color: var(--accent-txt);
+        color: var(--accent);
       }
     }
   }
@@ -910,8 +910,8 @@ body {
   .prematch-fluid-giocabilita-s:visited,
   .giocabilita-q5-ex,
   .giocabilita-q5-ex:hover {
-    background: var(--accent-bg);
-    color: var(--accent-txt);
+    background: #222;
+    color: var(--accent);
     height: 30px !important;
     display: flex;
     width: 100%;
@@ -924,7 +924,7 @@ body {
     background-image: none;
     border-left: 1px solid var(--tableBorders) !important;
     span {
-      color: var(--accent-txt);
+      color: var(--accent);
     }
   }
   .next-live-btns-container {
@@ -1307,16 +1307,16 @@ span.menu_left_it.ico-categoria-codice-sport-1-codice-categoria-31 {
   padding: 0 !important;
   height: 32px !important;
   &:hover {
-    background: var(--accent-bg) !important;
-    color: var(--accent-txt) !important;
+    background: #222 !important;
+    color: var(--accent) !important;
   }
 }
 .giocabilita-q5-ex,
 .giocabilita-q5-ex:hover {
   background-image: none;
   box-shadow: none;
-  background: var(--accent-bg) !important;
-  color: var(--accent-txt) !important;
+  background: #222 !important;
+  color: var(--accent) !important;
   text-shadow: none !important;
   border-radius: 0 !important;
   border: 0 !important;
@@ -1357,8 +1357,8 @@ span.ico-fav {
   margin-top: 0;
   margin-bottom: 0;
   border-color: var(--tableBorders);
-  background: var(--teableSubHeadersBg);
-  color: var(--teableSubHeadersCol);
+  background: #c0c0c0;
+  color: #000;
   font-weight: 300;
 }
 .stampa-quote-classi-table-row {
@@ -1898,6 +1898,7 @@ td.widget-hotbet-quote {
   justify-content: center;
   height: 20px;
   background: var(--teableSubHeadersBg);
+  color: var(--teableSubHeadersCol) !important;
   border-bottom: 1px solid var(--accent);
 }
 .progress-bar-success {
@@ -2167,7 +2168,7 @@ html .box-prematch div#center-content:before {
     align-items: center;
     justify-content: center;
     height: auto;
-    background: var(--teableSubHeadersBg);
+    background: #353535;
     color: var(--teableSubHeadersCol);
   }
 }

@@ -19,6 +19,10 @@ html body {
 }
 
 body {
+  .cg-homeMenuIcoLite,
+  .cg-searchIcoLite {
+    filter: invert(1);
+  }
   .coupon-result-text-box.multiple_live_entry {
     margin-left: 27px;
   }

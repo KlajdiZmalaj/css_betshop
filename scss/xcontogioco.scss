@@ -63,13 +63,16 @@ html body {
   flex: auto;
   justify-content: center;
 }
+[page="virtuali"] .elementi-footer {
+  margin-top: 0 !important;
+}
 .menu-principale-barra ul.menu-principale {
-  background: var(--teableSubHeadersBg);
-  color: var(--teableSubHeadersCol);
+  background: var(--secondary-bg);
+  color: var(--secondary-txt);
   flex-grow: 1;
   li,
   a {
-    color: var(--teableSubHeadersCol);
+    color: var(--secondary-txt);
     font-family: $font;
   }
 }
@@ -77,8 +80,8 @@ html body {
   color: inherit;
 }
 #cg-header .row.bg-bianco {
-  background: var(--teableSubHeadersBg);
-  color: var(--teableSubHeadersCol);
+  background: var(--secondary-bg);
+  color: var(--secondary-txt);
 }
 .menu-principale-barra {
   display: flex;
@@ -89,7 +92,7 @@ html body {
     font-family: $font;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
   }
   > nav {
     display: none;
@@ -108,6 +111,7 @@ div#cg-scommesse-submenu {
 .menu-principale-barra .active,
 .menu-principale-barra a:hover {
   border-bottom: 3px solid var(--accent);
+  color: var(--accent);
 }
 //iframe sport
 iframe#sport-frame {
@@ -218,6 +222,14 @@ a.bg-colore-1 {
 }
 //casino styles
 body {
+  .menu-principale-barra ul.menu-principale li:first-child {
+    a {
+      border-left: 1px solid #000;
+    }
+  }
+  .menu-principale-barra ul.menu-principale a {
+    border-right: 1px solid #000;
+  }
   .custom-checkbox
     .custom-control-input:checked
     ~ .custom-control-label::after {

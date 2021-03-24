@@ -41,6 +41,7 @@ html body {
   height: 70px;
   background: var(--primary-bg);
   color: var(--primary-txt);
+  border-bottom: 1px solid var(--accent) !important;
 }
 .login-header.col-lg-9 {
   width: calc(100% / 3);

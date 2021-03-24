@@ -557,6 +557,7 @@ html .btn-azure {
 #fluid-overview-live-table .heading-row {
   background: var(--teableSubHeadersBg);
   color: var(--teableSubHeadersCol);
+  border-bottom: 1px solid var(--tableBorders);
 }
 .overview-live-black-tab {
   background: transparent;
@@ -1193,10 +1194,21 @@ span.btn-live.arrow.closeAllButtonPrematch {
 #wrapper.live_prematch .games-btn-container {
   display: flex;
   flex-flow: row wrap;
+  padding: 10px;
+  background: #d4d4d4;
+  border: 1px solid #a7a7a7;
+  border-radius: 10px;
+  width: calc(100% - 30px);
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #wrapper.prematch .game-btn-8,
 #wrapper.live_prematch .game-btn-8 {
-  flex-grow: 1;
+  flex-grow: 0;
+  margin-right: 5px !important;
+  margin-bottom: 5px !important;
+  margin-left: 0 !important;
 }
 
 #wrapper.prematch .games-btn-container.oven .dropdown-toggle,
@@ -2335,7 +2347,9 @@ a.right.live-match-switch-btn-a.btn-noscroll-top.hand-pointer {
   justify-content: center;
   padding: 10px;
 }
-
+.sport-team-title {
+  color: inherit !important;
+}
 .live-match-switch.btn-1col {
   background: none;
   display: flex !important;
@@ -2410,7 +2424,6 @@ a.right.live-match-switch-btn-a.btn-noscroll-top.hand-pointer {
 }
 .live-menu-team-title {
   width: 100%;
-
   max-width: 100% !important;
   display: flex !important;
   align-items: center;

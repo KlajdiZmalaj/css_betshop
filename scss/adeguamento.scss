@@ -664,6 +664,9 @@ i.fa.fa-2x.fa-question-circle.fa-3 {
   font-family: "Font Awesome 5 Pro";
 }
 body {
+  #fluid-prematch-matches-container .heading-row {
+    border-bottom: 1px solid var(--tableBorders);
+  }
   td .dropdown-menu-esiti {
     background: var(--bg1);
     color: var(--col1);
@@ -1209,6 +1212,7 @@ span.btn-live.arrow.closeAllButtonPrematch {
   margin-right: 5px !important;
   margin-bottom: 5px !important;
   margin-left: 0 !important;
+  margin-top: 0 !important;
 }
 
 #wrapper.prematch .games-btn-container.oven .dropdown-toggle,

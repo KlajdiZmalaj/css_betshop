@@ -1,7 +1,12 @@
 @import "vars";
 html body {
-  background-color: var(--mainBg);
   color: var(--mainBgCol);
+  background-color: #000;
+  background-image: url(#{$bodyBg});
+  background-position: center -140px;
+  background-repeat: no-repeat;
+  background-size: 1930px;
+  background-attachment: fixed;
 }
 
 .logo a {
@@ -235,14 +240,7 @@ a.bg-colore-1 {
   background: var(--accent-bg) !important;
   color: var(--accent-txt) !important;
 }
-html body {
-  background-color: #000;
-  background-image: url(#{$bodyBg});
-  background-position: center -140px;
-  background-repeat: no-repeat;
-  background-size: 1930px;
-  background-attachment: fixed;
-}
+
 //casino styles
 body {
   .container.registrazione-top {

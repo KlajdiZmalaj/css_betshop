@@ -5,7 +5,7 @@ body {
   background-image: url(#{$bodyBg});
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 2000px;
+  background-size: 1930px;
   background-attachment: fixed;
 }
 .box-container {
@@ -664,8 +664,16 @@ i.fa.fa-2x.fa-question-circle.fa-3 {
   font-family: "Font Awesome 5 Pro";
 }
 body {
+  #fluid-prematch-matches-table {
+    .simple-row {
+      background: #fff;
+      border-bottom: 1px solid var(--tableBorders);
+    }
+  }
   #fluid-prematch-matches-container .heading-row {
     border-bottom: 1px solid var(--tableBorders);
+    border-left: 1px solid var(--tableBorders);
+    border-right: 1px solid var(--tableBorders);
   }
   td .dropdown-menu-esiti {
     background: var(--bg1);
@@ -1224,6 +1232,14 @@ span.btn-live.arrow.closeAllButtonPrematch {
 #right-column-search-box {
   padding: 0 !important;
 }
+#prematch-market-selected-container {
+  .games-btn-container:first-child {
+    margin-bottom: 0;
+  }
+  .games-btn-container:last-child {
+    margin-top: 0;
+  }
+}
 #wrapper.prematch .games-btn-container,
 #wrapper.live_prematch .games-btn-container {
   display: flex;
@@ -1231,7 +1247,7 @@ span.btn-live.arrow.closeAllButtonPrematch {
   padding: 10px;
   background: #d4d4d4;
   border: 1px solid #a7a7a7;
-  border-radius: 10px;
+  border-radius: 0;
   width: calc(100% - 30px);
   margin: auto;
   margin-top: 10px;

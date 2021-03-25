@@ -231,6 +231,9 @@ $font: "Roboto", sans-serif;
 body {
   font-family: $font;
 }
+body.stopResponsive {
+  min-width: 1256px !important;
+}
 
 #loading {
   background: var(--backDrops);
@@ -248,4 +251,15 @@ body {
 }
 input:focus {
   outline: none !important;
+}
+body .cg-top-arrow {
+  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/up-arrow.png");
+  height: 60px;
+  width: 60px;
+  background-repeat: no-repeat;
+  align-self: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: hue-rotate(145deg) brightness(2.9);
 }

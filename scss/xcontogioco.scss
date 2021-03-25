@@ -67,10 +67,21 @@ html body {
 [page="virtuali"] .elementi-footer {
   margin-top: 0 !important;
 }
+body:not([subpage="live"])
+  .menu-principale-barra
+  ul.menu-principale
+  a.altro-principale.pointer[data-ref="promo"] {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-left: 1px solid #000;
+}
 .menu-principale-barra ul.menu-principale {
   background: var(--secondary-bg);
   color: var(--secondary-txt);
   flex-grow: 1;
+  position: relative;
+
   li,
   a {
     color: var(--secondary-txt);
@@ -98,6 +109,9 @@ html body {
   > nav {
     display: none;
   }
+}
+[subpage="live"] .menu-principale-barra > nav {
+  display: block;
 }
 .menu-principale-barra .sottomenu-principale ul {
   background: var(--secondary-bg);
@@ -376,10 +390,12 @@ footer#nascondifooter {
   }
 }
 iframe[title="Zendesk Chat widget button"] {
-  display: none !important;
+  filter: grayscale(1);
 }
-#cg-top-button {
+body #cg-top-button {
   bottom: 20px !important;
+  border-radius: 100px;
+  z-index: 2;
 }
 
 html {

@@ -723,6 +723,14 @@ body {
       flex-flow: row wrap;
     }
   }
+  .live-multi-match-3col-box a:hover,
+  .live-multi-match-2col-box a:hover,
+  .live-multi-match-1col-box a:hover,
+  .live-match-3col-singolar-box a:hover,
+  .live-match-2col-singolar-box a:hover,
+  .live-detail-event-box a:hover {
+    border: 0;
+  }
   .live-match-widget-switch-buttons-box {
     background: var(--teableHeadersBg);
     color: var(--teableSubHeadersCol);
@@ -1549,6 +1557,8 @@ span.ico-fav {
   align-items: center;
   justify-content: space-between;
   padding: 0 5px !important;
+  font-weight: 400;
+  font-family: "Roboto";
   &:hover {
     display: flex;
     align-items: center;

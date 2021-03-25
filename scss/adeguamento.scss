@@ -1,12 +1,8 @@
 ﻿@import "vars";
 
 body {
-  background-color: #000;
-  background-image: url(#{$bodyBg});
-  background-position: center -270px;
-  background-repeat: no-repeat;
-  background-size: 1930px;
-  background-attachment: fixed;
+  background-color: transparent;
+  background-image: none;
 }
 .box-container {
   display: flex;
@@ -1737,7 +1733,7 @@ span.ico-fav {
     background-image: none;
     color: var(--col1);
     border-radius: 0;
-    padding: 5px;
+    padding: 0;
     border: 1px solid var(--tableBorders);
     margin: 5px !important;
     transition: 0.3s;

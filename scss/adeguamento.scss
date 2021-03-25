@@ -692,12 +692,20 @@ body {
     border-radius: 20px;
   }
   .info-text-box-2-col {
-    width: 47px !important;
+    width: 83px !important;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .ico-fav-live-singolo-selected-ml {
+    background: url("https://#{$skinHost}/external_css/#{$skinName}/img/starevv.svg")
+      no-repeat center center;
+    background-size: contain;
   }
   .ico-fav-live-singolo {
     background: url("https://#{$skinHost}/external_css/#{$skinName}/img/starevv.svg")
       no-repeat center center;
     background-size: contain;
+    filter: grayscale(1);
   }
   .ico-multilive-stats {
     background: url("https://#{$skinHost}/external_css/#{$skinName}/img/stats.svg")
@@ -719,10 +727,7 @@ body {
     background: var(--bg1) !important;
     color: var(--col1);
   }
-  .ico-fav-live-singolo-selected-ml {
-    margin: 0;
-    filter: grayscale(1) brightness(0);
-  }
+
   .ico-multilive-stats {
     filter: invert(1);
   }

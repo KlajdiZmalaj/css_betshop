@@ -1,9 +1,9 @@
 ﻿@import "vars";
 
 body {
-  background-color: #090909;
+  background-color: #000;
   background-image: url(#{$bodyBg});
-  background-position: top center;
+  background-position: center -270px;
   background-repeat: no-repeat;
   background-size: 1930px;
   background-attachment: fixed;

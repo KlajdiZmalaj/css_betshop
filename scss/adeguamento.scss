@@ -723,6 +723,10 @@ body {
       flex-flow: row wrap;
     }
   }
+  .live-match-widget-switch-buttons-box {
+    background: var(--teableHeadersBg);
+    color: var(--teableSubHeadersCol);
+  }
   .dropdown-menu-esiti.spread {
     background: var(--bg1) !important;
     color: var(--col1);

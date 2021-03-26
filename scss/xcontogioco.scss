@@ -8,7 +8,9 @@ html body {
   background-size: 1930px;
   background-attachment: fixed;
 }
-
+.main-content {
+  margin-bottom: 35px;
+}
 .logo a {
   &::before {
     content: "";

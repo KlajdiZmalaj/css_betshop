@@ -620,3 +620,21 @@ html {
 //   text-shadow: abs($number: 12);
 //   color: #140e0e;
 // }
+
+.container.modal-account {
+  .menu-profilo-barra {
+    .nav-link.altezza-fissa {
+      color: var(--secondary-txt);
+      &.active {
+        color: var(--accent);
+      }
+    }
+  }
+  .sottomenu-main {
+    .barra-menu {
+      li a {
+        color: var(--secondary-txt);
+      }
+    }
+  }
+}

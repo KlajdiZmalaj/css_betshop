@@ -660,6 +660,10 @@ i.fa.fa-2x.fa-question-circle.fa-3 {
   font-family: "Font Awesome 5 Pro";
 }
 body {
+  td .dropdown-menu-esiti {
+    background: var(--mainBg) !important;
+    color: var(--mainBgCol) !important;
+  }
   #fluid-prematch-matches-table {
     .simple-row {
       background: #fff;

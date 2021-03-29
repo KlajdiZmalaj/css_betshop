@@ -677,6 +677,7 @@ i.fa.fa-2x.fa-question-circle.fa-3 {
   font-family: "Font Awesome 5 Pro";
 }
 body {
+ 
   td .dropdown-menu-esiti {
     background: var(--mainBg) !important;
     color: var(--mainBgCol) !important;
@@ -1283,6 +1284,7 @@ span.btn-live.arrow.closeAllButtonPrematch {
   margin-left: 0 !important;
   margin-top: 0 !important;
   border-radius: 20px !important;
+  text-overflow: ellipsis;
 }
 
 #wrapper.prematch .games-btn-container.oven .dropdown-toggle,
@@ -1379,6 +1381,10 @@ span.menu_left_it.ico-categoria-codice-sport-1-codice-categoria-31 {
 #fluid-prematch-matches-container .simple-row td {
   padding: 0;
 }
+[onclick*="openBetRadarStatsWidget"] .prematch-fluid-giocabilita-s {
+  border: 0 !important;
+  border-left: 1px solid var(--tableBorders) !important;
+}
 .prematch-fluid-giocabilita-s,
 .prematch-fluid-giocabilita-s:visited {
   background-image: none;
@@ -1394,11 +1400,20 @@ span.menu_left_it.ico-categoria-codice-sport-1-codice-categoria-31 {
   margin: 0 !important;
   padding: 0 !important;
   height: 32px !important;
+  border-right: 0 !important;
   &:hover {
     background: #222 !important;
     color: var(--accent) !important;
   }
 }
+.fluid-prematch-quotes-box-table {
+  .prematch-fluid-giocabilita-s,
+  .prematch-fluid-giocabilita-s:visited {
+    border-bottom: 0 !important;
+    border-top: 0 !important;
+  }
+}
+
 .giocabilita-q5-ex,
 .giocabilita-q5-ex:hover {
   background-image: none;
@@ -1526,6 +1541,7 @@ span.ico-fav {
   background-size: cover;
   background-position: 0 81%;
   height: 220px;
+  height: 114px;
   position: relative;
 }
 .info-text-box-container.title-big:before {
@@ -1540,6 +1556,7 @@ span.ico-fav {
   bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
+  display: none;
 }
 .match-info-text-team-names-box.match-finished {
   font-size: 16px;
@@ -2278,14 +2295,22 @@ html .box-prematch div#center-content:before {
   background: var(--mainBg);
   color: var(--mainBgCol);
 }
+html .fluid-prematch-quotes-table.quotes-10 .prematch-fluid-btn-g {
+  width: 100%;
+  border-right: 0 !important;
+}
+#menu-live-container > .live-menu-title {
+  background: var(--teableHeadersBg);
+  color: var(--teableHeadersCol);
+}
 #overview-live-box {
   #header-container-buttons-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     height: auto;
-    background: #353535;
-    color: #fff;
+    background: #d6d6d6;
+    color: #000;
   }
 }
 .underliner {

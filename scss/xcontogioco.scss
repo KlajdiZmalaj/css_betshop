@@ -245,6 +245,12 @@ a.bg-colore-1 {
 
 //casino styles
 body {
+  .bianco,
+  .bianco a,
+  a.bianco,
+  a .bianco {
+    color: inherit !important;
+  }
   .container.registrazione-top {
     background: #242424;
     color: #fff;

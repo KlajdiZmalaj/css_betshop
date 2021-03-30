@@ -1061,9 +1061,20 @@ body {
   background-color: var(--bg1);
   color: var(--col1);
 }
+.game-time-td {
+  width: auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-right: 7px;
+}
 .cart-boxes-number {
+  color: white !important;
   background: #393939;
-  color: #fff;
+  font-family: "Roboto";
+  font-size: 11px;
 }
 .cart-date-close-btn {
   background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/close.svg");
@@ -1481,9 +1492,17 @@ span.menu_left_it.ico-categoria-codice-sport-1-codice-categoria-31 {
 span.ico-fav {
   filter: brightness(0);
 }
+table.fluid-prematch-quotes-table {
+  .fluid-prematch.quotes-col:first-child {
+    display: none;
+  }
+}
+td.invisibile.fluid-prematch.quotes-col {
+  display: none;
+}
 #left-menu-primary li.hand-pointer {
-  background: var(--teableSubHeadersBg);
-  color: var(--teableSubHeadersCol);
+  background: #000;
+  color: #fff;
   padding-left: 10px;
   border-bottom: 1px solid var(--accent);
   .ico-left-col-sport {
@@ -2334,7 +2353,7 @@ html .box-prematch div#center-content:before {
   color: var(--mainBgCol);
 }
 html .fluid-prematch-quotes-table.quotes-10 .prematch-fluid-btn-g {
-  width: 100%;
+  width: auto;
   border-right: 0 !important;
 }
 #menu-live-container > .live-menu-title {

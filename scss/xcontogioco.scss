@@ -190,6 +190,7 @@ div#content {
       border: 0;
       width: 125px;
       margin: 0;
+      height: 24px;
     }
   }
 
@@ -232,8 +233,11 @@ div#content {
     }
   }
 }
+.blocco-header.login-form-header.margine-su-1x {
+  margin-top: 18px;
+}
 .bottone-registrazione {
-  height: 26px;
+  height: 24px;
   border-radius: 13px;
   background: var(--headerBtnsRightBg);
   color: var(--headerBtnsRightTxt);
@@ -248,7 +252,7 @@ div#content {
   align-items: center;
 }
 a.bottone.bottone-login {
-  height: 26px;
+  height: 24px;
   border-radius: 13px;
   background: var(--headerBtnsRightBg);
   color: var(--headerBtnsRightTxt) !important;

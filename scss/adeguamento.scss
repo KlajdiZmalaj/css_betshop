@@ -69,7 +69,7 @@ div#prematch-big-menu {
   h1,
   h2,
   span {
-    color: #000 !important;
+    color: inherit !important;
     text-shadow: none;
     font-size: 13px;
     font-weight: 400;
@@ -677,6 +677,10 @@ i.fa.fa-2x.fa-question-circle.fa-3 {
   font-family: "Font Awesome 5 Pro";
 }
 body {
+  .dropdown-menu-esiti.spread {
+    background: var(--bg1);
+    color: var(--col1);
+  }
   span.evidence-color {
     color: var(--accent);
   }
@@ -689,11 +693,21 @@ body {
       background: #fff;
       border-bottom: 1px solid var(--tableBorders);
     }
+    .heading-row {
+      .fluid-prematch-matches-alias-td,
+      .fluid-prematch-matches-time-td,
+      .fluid-prematch-matches-event-td {
+        background: #000;
+        color: #fff;
+      }
+    }
   }
   #fluid-prematch-matches-container .heading-row {
     border-bottom: 1px solid var(--tableBorders);
     border-left: 1px solid var(--tableBorders);
     border-right: 1px solid var(--tableBorders);
+    background: #ec411a;
+    color: #ffffff;
   }
   td .dropdown-menu-esiti {
     background: var(--bg1);
@@ -715,8 +729,8 @@ body {
     background-size: contain;
   }
   .ico-flag.big {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 20px;
   }
   .info-text-box-2-col {
@@ -742,6 +756,16 @@ body {
   }
   .live-match-match-box .event-lock {
     mix-blend-mode: difference;
+  }
+  .live-match-match-box {
+    .giocabilita-q5-ex,
+    .giocabilita-q5-ex:hover,
+    .live-multi-match-3col-box a:hover,
+    .live-multi-match-2col-box a:hover,
+    .live-multi-match-1col-box a:hover {
+      background: var(--accent) !important;
+      color: #222 !important;
+    }
   }
   .live-match-match-box
     [class*="live-multi-match-details-box-"].panel-collapse.collapse.in {
@@ -1057,6 +1081,14 @@ body {
   color: var(--col1);
   border: 0;
 }
+.cart-banker-results-td {
+  padding: 5px 0;
+}
+.team-title-box p {
+  height: 25px;
+  display: flex;
+  justify-content: flex-start;
+}
 .tab-coupon-final-count-box .evidence-color,
 .cart-event-summary-table .evidence-color {
   color: var(--accent);
@@ -1150,10 +1182,6 @@ body {
 }
 #fluid-prematch-matches-container {
   border-top: 0;
-  .heading-row {
-    background: var(--teableSubHeadersBg);
-    color: var(--teableSubHeadersCol);
-  }
 }
 span.lockitem.ico-lock-live-betting {
   background-image: none;
@@ -1299,8 +1327,8 @@ span.btn-live.arrow.closeAllButtonPrematch {
 #wrapper.live_prematch .games-btn-container.oven .game-event-btn {
   box-shadow: none;
   border: 0;
-  background: var(--bg1);
-  color: var(--col1) !important;
+  background: var(--teableSubHeadersBg);
+  color: var(--teableSubHeadersCol) !important;
   border-radius: 0;
   border-right: 1px solid var(--tableBorders);
   border-bottom: 1px solid var(--tableBorders);
@@ -1440,8 +1468,11 @@ span.menu_left_it.ico-categoria-codice-sport-1-codice-categoria-31 {
   margin: 0 !important;
   padding: 0 !important;
 }
+.fluid-prematch-intertd-spacer {
+  width: 10px !important;
+}
 .simple-row .fluid-prematch-intertd-spacer {
-  display: none;
+  display: table-cell;
 }
 #prematch-left-menu-match-2-level li a,
 #prematch-left-menu-match-2-level li a:hover {
@@ -1521,7 +1552,6 @@ span.ico-fav {
   background: var(--mainBg);
   color: var(--mainBgCol);
   margin-bottom: 0;
-  .live-menu-team-titl-box,
   > div,
   .live-menu-team-game,
   div .live-team-game-situation {
@@ -1538,7 +1568,12 @@ span.ico-fav {
       align-items: center;
       justify-content: center;
       flex-grow: 1;
-      border-right: 1px solid var(--tableBorders);
+      border-right: 1px solid #000;
+      background: var(--accent-bg);
+      color: var(--accent-txt);
+      > .left {
+        font-size: 13px;
+      }
     }
   }
 }
@@ -1610,9 +1645,6 @@ span.ico-fav {
 //   flex-flow: row wrap;
 // }
 
-.live-match-match-box {
-  margin: 1px !important;
-}
 .live-multi-match-3col-box a,
 .live-multi-match-2col-box a,
 .live-multi-match-1col-box a {
@@ -1715,17 +1747,14 @@ span.ico-fav {
 span.quota-value.right.text-white {
   font-weight: 600;
 }
+
 .live-match-match-title {
-  background: #cacaca;
+  background: #000000;
   border: 0;
-  color: #000;
+  color: #fff;
+  margin-bottom: 5px;
 }
-.live-match-match-box:nth-child(2n + 2) {
-  margin: 1px !important;
-}
-.live-match-match-box:nth-child(3n + 3) {
-  margin: 1px !important;
-}
+
 .prematch-event-selected-btn-table td {
   background-color: var(--mainBg);
   color: var(--mainBgCol);
@@ -1902,9 +1931,7 @@ span.quota-value.right.text-white {
     justify-content: center;
   }
 }
-.livebet-widget-bg.calcio-live {
-  background: url(https://test.betshop375.it/external_css/BETSHOP375/img/calciobg.png);
-}
+
 .widget-hotbet-match-container {
   display: flex;
   align-items: center;
@@ -2311,8 +2338,8 @@ html .fluid-prematch-quotes-table.quotes-10 .prematch-fluid-btn-g {
   border-right: 0 !important;
 }
 #menu-live-container > .live-menu-title {
-  background: var(--teableHeadersBg);
-  color: var(--teableHeadersCol);
+  background: #000;
+  color: #fff;
 }
 #overview-live-box {
   #header-container-buttons-wrapper {
@@ -2320,7 +2347,7 @@ html .fluid-prematch-quotes-table.quotes-10 .prematch-fluid-btn-g {
     align-items: center;
     justify-content: center;
     height: auto;
-    background: #d6d6d6;
+    background: #fff;
     color: #000;
   }
 }
@@ -2347,13 +2374,13 @@ td.fluid-overview-live.quotes-col.col-4 {
 
 td.fluid-overview-live.quotes-col.col-2 {
   span.overview-live-black-tab {
-    background: #ec411a;
+    background: #fa6705;
     color: #fff;
   }
 }
 td.fluid-overview-live.quotes-col.col-3 {
   span.overview-live-black-tab {
-    background: #ff532c;
+    background: #fa6705;
     color: #fff;
   }
 }
@@ -2480,7 +2507,7 @@ div#prenotazione {
     font-family: "Font Awesome 5 Pro";
     content: "\f326";
     font-style: initial;
-    color: inherit;
+    color: #fff;
     font-size: 30px;
   }
 }
@@ -2527,7 +2554,7 @@ a.right.live-match-switch-btn-a.btn-noscroll-top.hand-pointer {
     font-style: initial;
     color: inherit;
     font-size: 30px;
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDY5LjMzMyA0NjkuMzMzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NjkuMzMzIDQ2OS4zMzM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8Zz4NCgkJCTxwYXRoIGQ9Ik00Mi42NjcsODUuMzMzSDB2MzQxLjMzM2MwLDIzLjU3MywxOS4wOTMsNDIuNjY3LDQyLjY2Nyw0Mi42NjdIMzg0di00Mi42NjdINDIuNjY3Vjg1LjMzM3oiLz4NCgkJCTxwb2x5Z29uIHBvaW50cz0iMjc3LjMzMywyOTguNjY3IDMyMCwyOTguNjY3IDMyMCw4NS4zMzMgMjM0LjY2Nyw4NS4zMzMgMjM0LjY2NywxMjggMjc3LjMzMywxMjggCQkJIi8+DQoJCQk8cGF0aCBkPSJNNDI2LjY2NywwSDEyOGMtMjMuNTczLDAtNDIuNjY3LDE5LjA5My00Mi42NjcsNDIuNjY3djI5OC42NjdDODUuMzMzLDM2NC45MDcsMTA0LjQyNywzODQsMTI4LDM4NGgyOTguNjY3DQoJCQkJYzIzLjU3MywwLDQyLjY2Ny0xOS4wOTMsNDIuNjY3LTQyLjY2N1Y0Mi42NjdDNDY5LjMzMywxOS4wOTMsNDUwLjI0LDAsNDI2LjY2NywweiBNNDI2LjY2NywzNDEuMzMzSDEyOFY0Mi42NjdoMjk4LjY2N1YzNDEuMzMzeg0KCQkJCSIvPg0KCQk8L2c+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=);
+    background: url("https://#{$skinHost}/external_css/#{$skinName}/img/one.svg");
     width: 30px;
     height: 30px;
     background-size: contain;
@@ -2546,7 +2573,7 @@ a.right.live-match-switch-btn-a.btn-noscroll-top.hand-pointer {
     font-style: initial;
     color: inherit;
     font-size: 30px;
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDY5LjMzMyA0NjkuMzMzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NjkuMzMzIDQ2OS4zMzM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8Zz4NCgkJCTxwYXRoIGQ9Ik0zNDEuMzMzLDI1NkgyNTZ2LTQyLjY2N2g0Mi42NjdjMjMuNTczLDAsNDIuNjY3LTE5LjA5Myw0Mi42NjctNDIuNjY3VjEyOGMwLTIzLjU3My0xOS4wOTMtNDIuNjY3LTQyLjY2Ny00Mi42NjcNCgkJCQloLTg1LjMzM1YxMjhoODUuMzMzdjQyLjY2N0gyNTZjLTIzLjU3MywwLTQyLjY2NywxOS4wOTMtNDIuNjY3LDQyLjY2N3Y4NS4zMzNoMTI4VjI1NnoiLz4NCgkJCTxwYXRoIGQ9Ik00Mi42NjcsODUuMzMzSDB2MzQxLjMzM2MwLDIzLjU3MywxOS4wOTMsNDIuNjY3LDQyLjY2Nyw0Mi42NjdIMzg0di00Mi42NjdINDIuNjY3Vjg1LjMzM3oiLz4NCgkJCTxwYXRoIGQ9Ik00MjYuNjY3LDBIMTI4Yy0yMy41NzMsMC00Mi42NjcsMTkuMDkzLTQyLjY2Nyw0Mi42Njd2Mjk4LjY2N0M4NS4zMzMsMzY0LjkwNywxMDQuNDI3LDM4NCwxMjgsMzg0aDI5OC42NjcNCgkJCQljMjMuNTczLDAsNDIuNjY3LTE5LjA5Myw0Mi42NjctNDIuNjY3VjQyLjY2N0M0NjkuMzMzLDE5LjA5Myw0NTAuMjQsMCw0MjYuNjY3LDB6IE00MjYuNjY3LDM0MS4zMzNIMTI4VjQyLjY2N2gyOTguNjY3VjM0MS4zMzN6DQoJCQkJIi8+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==);
+    background: url("https://#{$skinHost}/external_css/#{$skinName}/img/two.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
@@ -2568,7 +2595,7 @@ a.right.live-match-switch-btn-a.btn-noscroll-top.hand-pointer {
     font-size: 30px;
     width: 30px;
     height: 30px;
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDY5LjMzMyA0NjkuMzMzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NjkuMzMzIDQ2OS4zMzM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8Zz4NCgkJCTxwYXRoIGQ9Ik0zNDEuMzMzLDI1NnYtMzJjMC0xNy43MDctMTQuMjkzLTMyLTMyLTMyYzE3LjcwNywwLDMyLTE0LjI5MywzMi0zMnYtMzJjMC0yMy41NzMtMTkuMDkzLTQyLjY2Ny00Mi42NjctNDIuNjY3aC04NS4zMzMNCgkJCQlWMTI4aDg1LjMzM3Y0Mi42NjdIMjU2djQyLjY2N2g0Mi42NjdWMjU2aC04NS4zMzN2NDIuNjY3aDg1LjMzM0MzMjIuMjQsMjk4LjY2NywzNDEuMzMzLDI3OS41NzMsMzQxLjMzMywyNTZ6Ii8+DQoJCQk8cGF0aCBkPSJNNDIuNjY3LDg1LjMzM0gwdjM0MS4zMzNjMCwyMy41NzMsMTkuMDkzLDQyLjY2Nyw0Mi42NjcsNDIuNjY3SDM4NHYtNDIuNjY3SDQyLjY2N1Y4NS4zMzN6Ii8+DQoJCQk8cGF0aCBkPSJNNDI2LjY2NywwSDEyOGMtMjMuNTczLDAtNDIuNjY3LDE5LjA5My00Mi42NjcsNDIuNjY3djI5OC42NjdDODUuMzMzLDM2NC45MDcsMTA0LjQyNywzODQsMTI4LDM4NGgyOTguNjY3DQoJCQkJYzIzLjU3MywwLDQyLjY2Ny0xOS4wOTMsNDIuNjY3LTQyLjY2N1Y0Mi42NjdDNDY5LjMzMywxOS4wOTMsNDUwLjI0LDAsNDI2LjY2NywweiBNNDI2LjY2NywzNDEuMzMzSDEyOFY0Mi42NjdoMjk4LjY2N1YzNDEuMzMzeg0KCQkJCSIvPg0KCQk8L2c+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=);
+    background: url("https://#{$skinHost}/external_css/#{$skinName}/img/three.svg");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -2587,6 +2614,8 @@ a.right.live-match-switch-btn-a.btn-noscroll-top.hand-pointer {
   padding-left: 24px;
   padding-top: 5px;
   padding-bottom: 5px;
+  background: #000;
+  color: #fff !important;
 }
 .live-menu-team-title {
   width: 100%;
@@ -2594,6 +2623,13 @@ a.right.live-match-switch-btn-a.btn-noscroll-top.hand-pointer {
   display: flex !important;
   align-items: center;
   justify-content: flex-start;
+  font-size: 12px;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  width: 100%;
+  /* display: block; */
+  color: var(--accent);
+  margin-top: 5px;
 }
 .live-menu-tourney-country {
   margin: 0 !important;
@@ -2623,6 +2659,7 @@ a.right.live-match-switch-btn-a.btn-noscroll-top.hand-pointer {
     position: absolute;
     right: 5px;
     top: 5px;
+    filter: invert(1) brightness(11);
   }
 }
 .live-menu-pref li.selected {

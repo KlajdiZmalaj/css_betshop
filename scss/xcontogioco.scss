@@ -28,18 +28,38 @@ html body {
     display: none;
   }
 }
+.cg-contatti span {
+  font-size: 15px;
+  font-family: "Lato";
+  font-weight: 400;
+}
+body .cg-header-logo {
+  width: 44px;
+  height: 27px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .row.barra-superiore {
-  position: absolute;
-  height: 70px;
-  background: transparent;
+  height: 40px;
+  background: #1b1b1b;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  white-space: nowrap;
+  color: #fff;
+  justify-content: flex-start;
   // a {
   //   filter: invert($invert);
   // }
-  .info-utili,
-  .funzioni-menu,
-  .testo-disclaimer {
-    display: none;
+  .col-lg-5 {
+    flex: auto;
+    width: auto;
+    max-width: 50%;
   }
+}
+.funzioni-menu {
+  display: none !important;
 }
 .row.barra-intermedia {
   display: flex;
@@ -83,24 +103,36 @@ body:not([subpage="live"])
   top: 0;
   border-left: 1px solid #000;
 }
+.menu-principale-barra ul.menu-principale a {
+  border-bottom: 3px solid transparent;
+}
 .menu-principale-barra ul.menu-principale {
-  background: var(--secondary-bg);
-  color: var(--secondary-txt);
+  background: #000;
+  color: #fff;
   flex-grow: 1;
   position: relative;
+  padding: 0;
 
   li,
   a {
     color: var(--secondary-txt);
     font-family: $font;
+    display: flex;
+    align-items: center;
+  }
+  a[data-ref="ingame"] {
+    background: var(--accent-bg);
+    color: var(--accent-txt);
+    transform: skewX(-20deg);
   }
 }
 .cg-text-muted {
   color: inherit;
 }
 #cg-header .row.bg-bianco {
-  background: var(--secondary-bg);
-  color: var(--secondary-txt);
+  background: #000000;
+
+  color: #fff;
 }
 .menu-principale-barra {
   display: flex;
@@ -121,8 +153,8 @@ body:not([subpage="live"])
   display: block;
 }
 .menu-principale-barra .sottomenu-principale ul {
-  background: var(--secondary-bg);
-  color: var(--secondary-txt);
+  background: #000;
+  color: #fff;
 }
 div#cg-scommesse-submenu {
   display: flex;
@@ -132,7 +164,7 @@ div#cg-scommesse-submenu {
 }
 .menu-principale-barra .active,
 .menu-principale-barra a:hover {
-  border-bottom: 3px solid var(--accent);
+  border-bottom: 3px solid var(--accent) !important;
   color: var(--accent);
 }
 //iframe sport

@@ -125,6 +125,23 @@ body:not([subpage="live"])
     color: var(--accent-txt);
     transform: skewX(-20deg);
   }
+  a[data-ref="promo"] {
+    padding-top: 16px;
+    border: 0 !important;
+    &:before {
+      content: "";
+      background-image: url(https://test.betshop375.it/external_css/BETSHOP375/img/coupon.svg);
+      width: 30px;
+      height: 30px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: scaleX(-1) translateX(25px) translateY(-2px);
+      position: absolute;
+      left: 0;
+      border: 0 !important;
+    }
+  }
 }
 .cg-text-muted {
   color: inherit;

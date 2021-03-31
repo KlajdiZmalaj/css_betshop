@@ -42,7 +42,7 @@ body .cg-header-logo {
 }
 .row.barra-superiore {
   height: 40px;
-  background: #1b1b1b;
+  background: #000;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -66,8 +66,8 @@ body .cg-header-logo {
   flex-flow: row;
   align-items: center;
   height: 70px;
-  background: var(--primary-bg);
-  color: var(--primary-txt);
+  background: #1b1b1b;
+  color: #fff;
   border-bottom: 1px solid var(--accent) !important;
 }
 .login-header.col-lg-9 {
@@ -102,6 +102,11 @@ body:not([subpage="live"])
   right: 0;
   top: 0;
   border-left: 1px solid #000;
+}
+[subpage="live"] {
+  .menu-principale-barra ul.menu-principale a[data-ref="promo"]:before {
+    display: none;
+  }
 }
 .menu-principale-barra ul.menu-principale a {
   border-bottom: 3px solid transparent;

@@ -80,25 +80,25 @@ html:root {
   --cs_rigaCategorie: rgba(60, 60, 60, 1);
   --cs_rigaCategorieColoreTesto: #fff;
   --cs_voceMenuSinistra: #ffffff;
-  --cs_voceMenuSinistraSelezionato: #f8cb24;
+  --cs_voceMenuSinistraSelezionato: var(--accent);
   --cs_voceMenuSinistraTesto: rgba(0, 0, 0, 1);
   --cs_voceMenuSinistraTestoSelezionato: rgba(0, 0, 0, 1);
-  --cs_voceMenuSinistraHover: #f8cb24;
+  --cs_voceMenuSinistraHover: var(--accent);
   --cs_voceMenuSinistraTestHover: ;
   --cs_barraFiltriCasino: rgba(60, 60, 60, 1);
-  --cs_selettoreGligliaAttivo: #f8cb24;
+  --cs_selettoreGligliaAttivo: var(--accent);
   --cs_selettoreGrigliaInattivo: #ffffff;
   --cs_iconaGiocoTesto: #2d3844;
   --cs_iconaGiocoFooterBG: #f2f2f2;
   --cs_iconaGiocoBgOverlay: rgba(66, 68, 90, 0.44);
   --cs_iconaGiocoTestoOverlay: rgba(66, 68, 90, 0.44);
-  --cs_buttonGiocaBG: #f8cb24;
+  --cs_buttonGiocaBG: var(--accent);
   --cs_buttonProvaBG: rgba(60, 60, 60, 1);
   --cs_buttonGiocaProvaTesto: ;
   --cs_gameTesto: #ffffff;
   --cs_gameHeaderFooterBG: #2d3844;
   --cs_icon_invert_color: invert(1);
-  --cs_selezione: #f8cb24;
+  --cs_selezione: var(--accent);
   --coloreTipoLancio: #ffffff;
   --coloreTipoLancioSelezionato: #ffffff;
 
@@ -224,7 +224,7 @@ $bodyBg: "https://#{$skinHost}/external_css/#{$skinName}/img/bodyBg.png";
 $logoUrl: "https://#{$skinHost}/external_css/#{$skinName}/img/logo.svg";
 //1 => original Black > White , 0=> orginal white>Black
 $invert: 1;
-
+@import url("https://#{$skinHost}/external_css/#{$skinName}/fontAwesome/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 $font: "Roboto", sans-serif;
 
@@ -245,10 +245,10 @@ body.stopResponsive {
   }
 }
 
-.main-content.casino.cg-bg-live {
-  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/casinobg.jpeg");
-  padding-top: 20vh !important;
-}
+// .main-content.casino.cg-bg-live {
+//   background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/casinobg.jpeg");
+//   padding-top: 20vh !important;
+// }
 input:focus {
   outline: none !important;
 }

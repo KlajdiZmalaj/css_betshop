@@ -11,7 +11,13 @@ html body {
     background-attachment: fixed;
   }
 }
-
+.modal-account .sottomenu-main {
+  background: #000;
+  color: #fff;
+}
+.testata-modal-account {
+  background: #1b1b1b;
+}
 .main-content {
   margin-bottom: 35px;
 }
@@ -704,6 +710,9 @@ html {
 
 .container.modal-account {
   .menu-profilo-barra {
+    ul {
+      background: var(--secondary-bg);
+    }
     .nav-link.altezza-fissa {
       color: var(--secondary-txt);
       &.active {

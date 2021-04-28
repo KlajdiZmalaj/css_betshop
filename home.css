@@ -65,6 +65,7 @@ body {
 #main_banner {
   position: relative;
   width: 70%;
+  flex-grow: 1;
 }
 
 #rightField {

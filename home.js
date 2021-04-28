@@ -54,7 +54,9 @@ window.fetchSportBanners = async (skin, token) => {
       var template = `${bannersGot
         .map(
           (banner) =>
-            `<div class="sliderItem"><img class="newSliderSlide" src="${
+            `<div class="sliderItem" onclick="window.cg_openGameInternal('${
+              banner.subtitle
+            }', '1', 0, 'BETSHOP375')"><img class="newSliderSlide" src="${
               banner?.image?.path
             }" alt="" /><span>${banner.title || "gameTitle"}</span></div>`
         )

@@ -224,8 +224,6 @@ $bodyBg: "https://#{$skinHost}/external_css/#{$skinName}/img/bodyBg.png";
 $logoUrl: "https://#{$skinHost}/external_css/#{$skinName}/img/logo.svg";
 //1 => original Black > White , 0=> orginal white>Black
 $invert: 1;
-@import url("https://test-#{$skinHost}/external_css/#{$skinName}/fontAwesome/css/all.min.css");
-@import url("https://#{$skinHost}/external_css/#{$skinName}/fontAwesome/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 $font: "Roboto", sans-serif;
 

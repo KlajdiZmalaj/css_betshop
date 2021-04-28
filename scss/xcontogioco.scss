@@ -1,4 +1,6 @@
 @import "vars";
+@import url("https://test-#{$skinHost}/external_css/#{$skinName}/fontAwesome/css/all.min.css");
+
 html body {
   color: var(--mainBgCol);
   background-color: var(--mainBg);

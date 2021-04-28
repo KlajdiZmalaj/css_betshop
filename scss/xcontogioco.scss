@@ -991,3 +991,23 @@ a.carousel-control-next {
 .cg-pvr-page .modal-account {
   margin-bottom: 38px;
 }
+
+.barra-intermedia-footer {
+  .row.cg-footer-sections {
+    justify-content: flex-start;
+    position: relative;
+    &::after {
+      content: "powered by";
+      background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/altechLabs.svg");
+      position: absolute;
+      width: 210px;
+      height: 100%;
+      background-repeat: no-repeat;
+      right: 0;
+      top: 4px;
+      background-size: 120px;
+      background-position-x: right;
+      text-transform: uppercase;
+    }
+  }
+}

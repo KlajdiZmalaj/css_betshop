@@ -449,6 +449,9 @@ body {
   .cg-slide-ico-bingo {
     background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/bingo.svg");
   }
+  .cg-slide-ico-ippica {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/ippica.png");
+  }
   div#cg-external-chat {
     &:before {
       content: "";

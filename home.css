@@ -12,7 +12,13 @@ body {
   color: #fff;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(58deg, #bc2200 -285%, #0d0d0d 95%);
+  background: linear-gradient(
+    28deg,
+    #571f0c -15%,
+    #0d120d 14%,
+    #0d0d0d 95%,
+    #7f250e
+  );
   overflow: hidden;
   overflow-y: auto;
 }
@@ -29,6 +35,7 @@ body {
   top: 30%;
   font-size: 26px;
   color: #fff;
+  flex-grow: 1;
 }
 #main_banner .subtitle {
   position: absolute;
@@ -59,8 +66,12 @@ body {
   position: relative;
   width: 70%;
 }
+
 #rightField {
-  width: calc(30% - 10px);
+  width: 422px;
+  line-height: 14px;
+  font-size: 13px;
+  margin-left: 10px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -119,10 +130,7 @@ body {
 [st] {
   margin-top: 10px;
 }
-#rightField {
-  line-height: 14px;
-  font-size: 13px;
-}
+
 #rightField .footer .time {
   margin-top: 10px;
   font-size: 16px;
@@ -160,4 +168,9 @@ body {
 .slider2 {
   width: calc(100%);
   margin: 0 auto;
+}
+.teams,
+.league,
+#rightField .footer {
+  display: none;
 }

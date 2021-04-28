@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+#root {
+  background-color: #0d0d0d;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(58deg, #bc2200 -285%, #0d0d0d 95%);
+  overflow: hidden;
+  overflow-y: auto;
+}
+.topBanners {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 10px;
+}
+#main_banner .title {
+  position: absolute;
+  left: 88px;
+  top: 30%;
+  font-size: 26px;
+  color: #fff;
+}
+#main_banner .subtitle {
+  position: absolute;
+  left: 88px;
+  color: #fff;
+  top: 39%;
+  font-size: 18px;
+}
+#main_banner a {
+  position: absolute;
+  left: 88px;
+  color: #fff;
+  top: 49%;
+  width: 151.65px;
+  height: 51.06px;
+  background: linear-gradient(#fd7426 0%, #eb3f19 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+#main_banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#main_banner {
+  position: relative;
+  width: 70%;
+}
+#rightField {
+  width: calc(30% - 10px);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  color: #fff;
+}
+#rightField .footer button {
+  border: 0;
+  width: 123px;
+  height: 34px;
+  border-radius: 17px;
+  background: linear-gradient(#fd7426 0%, #eb3f19 100%);
+  text-align: center;
+  font-size: 14px;
+}
+.teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 40px;
+  color: #fff;
+  font-weight: 600;
+}
+.teams img {
+  width: 65%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.teams div {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 30%;
+  height: 155px;
+}
+#rightField .footer button {
+  margin: 0;
+  margin-top: -56px;
+}
+#rightField .footer {
+  width: 100%;
+  margin-top: auto;
+  background: linear-gradient(#000 0%, rgba(0, 0, 0, 0) 100%);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 94px;
+  flex-shrink: 0;
+}
+[st] {
+  margin-top: 10px;
+}
+#rightField {
+  line-height: 14px;
+  font-size: 13px;
+}
+#rightField .footer .time {
+  margin-top: 10px;
+  font-size: 16px;
+}
+#rightField .footer .time,
+#rightField .footer .date {
+  position: relative;
+  top: 13px;
+}
+.sliderItem {
+  display: flex !important;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  margin-right: 10px;
+}
+.slick-slide img {
+  width: 100%;
+}
+.bottomBanners {
+  padding: 10px;
+  padding-top: 0;
+}
+.bottomBanners .title {
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 23px;
+  text-align: left;
+  color: #f76f20;
+  margin-bottom: 10px;
+}
+.slider1,
+.slider2 {
+  width: calc(100%);
+  margin: 0 auto;
+}

@@ -1014,3 +1014,30 @@ a.carousel-control-next {
 .container.registrazione-top {
   background: #222;
 }
+#cg-signup-stepper {
+  .dstepper-block .row:last-child {
+    display: flex;
+    > .col-md-4 {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 50%;
+      max-width: 50%;
+      flex: auto;
+      &:first-child {
+        justify-content: flex-start;
+      }
+      > span {
+        height: 40px;
+        border-radius: 0;
+        display: flex;
+        font-size: 12px;
+        background: var(--accent-bg);
+        color: var(--accent-txt);
+        width: auto;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

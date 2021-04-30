@@ -1069,11 +1069,15 @@ p.cg-footer-section-title.grassetto.mediumtext:after {
   width: 230px;
   height: 50px;
   /* background: red; */
-  background-image: url("https://#{skinHost}/external_css/#{skinName}/img/logo.svg");
+  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/logo.svg");
   background-position: center;
   background-size: contain;
   display: block;
   /* width: 360px; */
   background-repeat: no-repeat;
   height: 40px;
+}
+
+[page="home"] {
+  //home header
 }

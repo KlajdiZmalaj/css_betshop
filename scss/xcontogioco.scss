@@ -485,7 +485,7 @@ footer#nascondifooter {
   display: flex !important;
   flex-flow: column;
   .col-lg-4.cg-align-self-center .cg-flex-container > a {
-    filter: invert($invert);
+    //filter: invert($invert);
   }
 }
 iframe[title="Zendesk Chat widget button"] {
@@ -1008,6 +1008,7 @@ a.carousel-control-next {
       background-size: 120px;
       background-position-x: right;
       text-transform: uppercase;
+      filter: invert(1) grayscale(1);
     }
   }
 }
@@ -1046,4 +1047,33 @@ a.carousel-control-next {
 }
 main#panel {
   margin-bottom: 40px;
+}
+.cg-footer-logo {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+p.cg-footer-section-title.grassetto.mediumtext:after {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: #ff7600;
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 9px;
+}
+
+.col-lg-4.cg-align-self-center:before {
+  content: "";
+  display: block;
+  width: 230px;
+  height: 50px;
+  /* background: red; */
+  background-image: url("https://#{skinHost}/external_css/#{skinName}/img/logo.svg");
+  background-position: center;
+  background-size: contain;
+  display: block;
+  /* width: 360px; */
+  background-repeat: no-repeat;
+  height: 40px;
 }

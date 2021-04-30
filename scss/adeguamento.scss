@@ -1201,7 +1201,7 @@ body {
   background: transparent;
 }
 #fluid-prematch-matches-container .date-time-row {
-  background: #eae7e7;
+  background: #c2c2c2;
   color: #222;
 }
 .fluid-prematch-matches-event-td,
@@ -1470,7 +1470,9 @@ span.menu_left_it.ico-categoria-codice-sport-1-codice-categoria-31 {
 }
 .fluid-prematch-quotes-box-table {
   .prematch-fluid-giocabilita-s,
-  .prematch-fluid-giocabilita-s:visited {
+  .prematch-fluid-giocabilita-s:visited,
+  .giocabilita-q5-ex,
+  .giocabilita-q5-ex:hover {
     border: 0 !important;
     background: #f0f0f0;
     margin: 4px !important;

@@ -765,8 +765,8 @@ body {
     .live-multi-match-3col-box a:hover,
     .live-multi-match-2col-box a:hover,
     .live-multi-match-1col-box a:hover {
-      background: var(--accent) !important;
-      color: #222 !important;
+      background: var(--accent-bg) !important;
+      color: var(--accent-txt) !important;
     }
   }
   .live-match-match-title {
@@ -902,8 +902,8 @@ body {
     }
   }
   #fluid-overview-live-container .handicap-green-bg {
-    background: var(--teableSubHeadersBg);
-    color: var(--teableSubHeadersCol);
+    background: #393939;
+    color: #fff;
   }
   #fluid-overview-live-container .subtitle-row .fluid-overview-live-infos-td {
     background: transparent;
@@ -1620,13 +1620,20 @@ td.invisibile.fluid-prematch.quotes-col {
   color: inherit !important;
 }
 .info-text-box-container.title-big {
-  background: url(https://test.betshop375.it/external_css/BETSHOP375/img/calciobg.png);
+  //background: url(https://test.betshop375.it/external_css/BETSHOP375/img/calciobg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 81%;
   height: 220px;
   height: 114px;
   position: relative;
+  background: linear-gradient(
+    to right,
+    #000000 0,
+    #1b1b1b 25%,
+    #1b1b1b 75%,
+    #000000 100%
+  ) !important;
 }
 .info-text-box-container.title-big:before {
   content: "";
@@ -2013,7 +2020,7 @@ span.quota-value.right.text-white {
 }
 .widget-hotbet-blasoni.column {
   position: absolute;
-  width: 100%;
+  width: 95%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2036,6 +2043,7 @@ span.quota-value.right.text-white {
   position: absolute;
   left: 10px;
   top: 20px;
+  transform: translateX(-20%);
 }
 .match-team-2-blason {
   position: absolute;
@@ -2046,6 +2054,7 @@ span.quota-value.right.text-white {
   position: absolute;
   right: 10px;
   top: 20px;
+  transform: translateX(20%);
 }
 #widget-hotbet-match-table tr {
   display: flex;
@@ -2477,7 +2486,7 @@ td.fluid-overview-live-time-td {
 
 .hotbet-blason-home,
 .hotbet-blason-away {
-  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/custumflag.png");
+  // background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/custumflag.png");
   background-position: center;
   background-size: contain;
   filter: hue-rotate(0deg) sepia(1) brightness(0.4);
@@ -2578,7 +2587,7 @@ div#prenotazione {
   font-weight: 300 !important;
   &::before {
     font-family: "Font Awesome 5 Pro";
-    content: "\f326";
+    content: "\f422";
     font-style: initial;
     color: #fff;
     font-size: 30px;

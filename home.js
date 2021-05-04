@@ -26,7 +26,9 @@ window.fetchSportBanners = async (skin, token) => {
     $("#main_banner .title").text(mainBanner[0].title);
     $("#main_banner .subtitle").text(mainBanner[0].subtitle);
     $("#main_banner a").text(mainBanner[0].button);
-    $("#main_banner a").attr("href", mainBanner[0].link);
+    $("#main_banner a").on("click", () => {
+      window.top.location.href = mainBanner[0].link;
+    });
     $("#main_banner img").attr("src", mainBanner[0].image.path);
   }
   if (fieldBg[0]) {
@@ -34,6 +36,9 @@ window.fetchSportBanners = async (skin, token) => {
     $("#rightField .footer .time").text(fieldBg[0].title);
     $("#rightField .footer .date").text(fieldBg[0].subtitle);
     $("#rightField .footer button").text(fieldBg[0].button);
+    $("#rightField .footer button").on("click", () => {
+      window.top.location.href = fieldBg[0].link;
+    });
   }
   if (squad1Banner[0]) {
     $(".squad1 img").attr("src", squad1Banner[0].image.path);
@@ -54,9 +59,11 @@ window.fetchSportBanners = async (skin, token) => {
       var template = `${bannersGot
         .map(
           (banner) =>
-            `<div class="sliderItem" onclick="window.cg_openGameInternal('${
+            `<div class="sliderItem" onclick="window.top.location.href = 'https://${
+              window.location.host
+            }/casino?token=&language=it&system_code=BETSHOP375&systemCodeLancioGioco=BETSHOP375&codiceGiocoInterno=${
               banner.subtitle
-            }', '1', 0, 'BETSHOP375')"><img class="newSliderSlide" src="${
+            }&codicePiattaforma=1&codiceLancioLive=&isReal=0&ip=' "><img class="newSliderSlide" src="${
               banner?.image?.path
             }" alt="" /><span>${banner.title || "gameTitle"}</span></div>`
         )

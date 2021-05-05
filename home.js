@@ -59,11 +59,11 @@ window.fetchSportBanners = async (skin, token) => {
       var template = `${bannersGot
         .map(
           (banner) =>
-            `<div class="sliderItem" onclick="window.top.location.href = 'https://${
-              window.location.host
-            }/casino?token=&language=it&system_code=BETSHOP375&systemCodeLancioGioco=BETSHOP375&codiceGiocoInterno=${
+            `<div class="sliderItem" onclick="${
               banner.subtitle
-            }&codicePiattaforma=1&codiceLancioLive=&isReal=0&ip=' "><img class="newSliderSlide" src="${
+                ? `window.top.location.href = 'https://${window.location.host}/casino?token=&language=it&system_code=BETSHOP375&systemCodeLancioGioco=BETSHOP375&codiceGiocoInterno=${banner.subtitle}&codicePiattaforma=1&codiceLancioLive=&isReal=0&ip='`
+                : ""
+            }"><img class="newSliderSlide" src="${
               banner?.image?.path
             }" alt="" /><span>${banner.title || "gameTitle"}</span></div>`
         )

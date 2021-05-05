@@ -452,6 +452,9 @@ body {
   .cg-slide-ico-ippica {
     background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/ippica.png");
   }
+  .cg-ico-mybet {
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/checklist.svg");
+  }
   div#cg-external-chat {
     &:before {
       content: "";

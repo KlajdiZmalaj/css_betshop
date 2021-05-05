@@ -1082,3 +1082,22 @@ p.cg-footer-section-title.grassetto.mediumtext:after {
 [page="home"] {
   //home header
 }
+.cg-pvr-page {
+  .menu-principale-barra > nav {
+    display: flex;
+  }
+  .menu-principale-barra .sottomenu-principale ul {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .menu-principale-barra {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-principale-barra ul.menu-principale {
+    flex-flow: row nowrap;
+    white-space: nowrap;
+  }
+}

@@ -172,6 +172,7 @@ html a.ui-slider-handle.ui-state-default.ui-corner-all:before {
   position: absolute;
   right: 0;
   bottom: 2px;
+  pointer-events: none;
 }
 #left-menu-container {
   border: 0;
@@ -2404,6 +2405,7 @@ html .box-prematch div#center-content:before {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: none;
 }
 .widget-last-winnings-box {
   border-color: var(--tableBorders);
@@ -2479,13 +2481,19 @@ td.fluid-overview-live-time-td {
   height: 15px;
 }
 .nationsFilterWrapper {
-  height: 50px;
+  height: auto;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-
+.nations-filter {
+  display: flex;
+  flex-flow: row wrap;
+}
+.nationsFilterSelection {
+  margin-top: 10px;
+}
 .hotbet-blason-home,
 .hotbet-blason-away {
   // background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/custumflag.png");
@@ -4750,3 +4758,25 @@ a.right.live-match-switch-btn-a.btn-noscroll-top.hand-pointer {
 }
 
 //widget end
+.carosello-widget-infos-box {
+  background: -webkit-linear-gradient(top, #ff7600 0%, #cf6001 100%);
+  color: #fff;
+}
+.widget-win-box,
+.widget-win-box .evidence {
+  color: inherit;
+  text-shadow: none;
+}
+
+.DG-pager a {
+  background: #ffcda3;
+}
+.widget-win-box .div-divider {
+  height: 16px;
+  width: 1px;
+  background: #ffffff;
+  box-shadow: none;
+}
+.sottolinea-2:hover {
+  background: #d3d3d3;
+}

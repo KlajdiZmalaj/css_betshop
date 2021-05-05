@@ -841,3 +841,27 @@ body {
     background-position: center;
   }
 }
+
+//promo
+div#cg-promo-preview-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.cg-container-image-section {
+  height: 156px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cg-container-border {
+  width: calc(100% / 2 - 20px);
+}
+
+.cg-container-image-section {
+  height: 156px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

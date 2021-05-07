@@ -421,7 +421,7 @@ figure.sport-icona-live:hover,
   color: var(--teableHeadersCol);
 }
 .riga.colore-1.lampeggia {
-  color: var(--teableHeadersCol);
+  color: var(--teableHeadersCol) !important;
 }
 .griglia-centrale-sport.col.stringimento-sidebar.evento-live-centrale.justify-content-between.go-up-arrow-on-overflow.ord-2.aperto-widget-evento-dx
   > .d-flex {

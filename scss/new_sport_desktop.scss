@@ -1,0 +1,1136 @@
+@import "vars";
+:root {
+  --cg-loader-color: var(--accent) !important;
+}
+
+.menu-principale-barra ul {
+  justify-content: inherit !important;
+}
+
+.sottomenu-nav {
+  justify-content: unset !important;
+  background: #f7f8fa;
+}
+
+body[page="sport"] .elementi-footer .consulta-footer {
+  display: inherit;
+}
+
+body[page="sport"] .elementi-footer.elementi-footer-chiuso #nascondifooter {
+  display: none;
+}
+
+body[page="ingame"] .elementi-footer .consulta-footer {
+  display: inherit;
+}
+
+body[page="ingame"] .elementi-footer.elementi-footer-chiuso #nascondifooter {
+  display: none;
+}
+
+body[page="sport"] .sottomenu-main .nav.nav-tabs.barra-menu {
+  /*visibility: hidden;*/
+}
+
+/* elementi base di sport css */
+
+.elemento-filtro-side-n.f-attivo,
+.sidebar-dx a.tasto-nav-quote-landing.active,
+.filtro-giorni a.active,
+.sidebar-dx a.tasto-nav-quote-landing:hover,
+.scheda-top-match-nav .active,
+.scheda-top-match-nav a:hover,
+.evento-attivo,
+a.filtro-attivo-cal-sport,
+.secondo-filtro a:hover,
+.filtro-giorni-cal.primo-filtro a:hover,
+.filtro-giorni-cal.primo-filtro a.active,
+.strumenti-competizione > a.active,
+.strumenti-competizione > a:hover,
+.filtro-oggi-domani a:hover,
+.lista-selezionabili
+  .custom-control-input:checked
+  ~ .custom-control-label::before,
+.lista-selezionabili
+  .custom-control-input:checked
+  ~ .custom-control-label::before {
+  border-color: var(--accent) !important;
+}
+
+.bg-colore-1,
+.live-in-prematch span:before,
+.icona-centrale-selezionata,
+.icona-sport-centrale:hover,
+.selettore-colonne-evento a.selezionato-toolbox:after,
+.toolbox-evento .selettore-colonne-evento a:hover:after,
+.filtro-oggi-domani a:hover,
+.filtro-oggi-domani a:hover,
+.aggregate div.icona-selezionata,
+.elenco-macro div.icona-selezionata,
+.elemento-macro:hover,
+.aggregate div:hover,
+.lista-selezionabili
+  .custom-control-input:checked
+  ~ .custom-control-label::before,
+.cella.squadre-due-righe span.battuta:after,
+.dropdown-box-grid .elemento-macro:hover,
+.dropdown-box-grid .elemento-macro.icona-selezionata {
+  background: var(--accent-bg) !important;
+  color: var(--accent-txt) !important;
+}
+
+.autocomplete-search-results-popup-title-3:hover,
+.finestra-stampa-ticket-intestazione,
+.tabellaQuoteIntestazione .tabellaQuoteAlias,
+.tabellaQuoteIntestazione .tabellaQuoteTempo,
+.tabellaQuoteIntestazione .tabellaQuoteCampetto,
+.tabellaQuoteIntestazione .tabellaQuoteSquadre,
+.tabellaQuoteIntestazione .tabellaQuoteStatistiche,
+.tabellaQuoteIntestazione .tabellaQuoteAltre,
+.tabellaQuoteIntestazione .tabellaQuoteIntestazione-GruppoQuote,
+.tabellaQuoteRisultatoEsattoIntestazione > *,
+.tablesExpanded .table-template1 thead tr:first-child,
+.banker-letter-box.banker-selected,
+.bonus-schedina_template-1
+  .bonus-schedina_template-1_body_card
+  .bonus-schedina_template-1_body_card_progress.progress
+  .progress-bar,
+.bonus-schedina_template-1
+  .bonus-schedina_template-1_body_button-container
+  button,
+.custom-switch-2 input:checked ~ .custom-slider-2,
+.custom-radio-1 input:checked ~ .custom-radio-1_checkmark {
+  background: var(--accent-bg) !important;
+  color: var(--accent-txt) !important;
+}
+
+.colore-1,
+.quota-con-nome span:last-child,
+.quota-widget-evento span:last-child,
+.selettore-soffiata a.active,
+.quote-extra .quota-con-nome span:last-child,
+.tabella-quote .td-quote .quota,
+.icona-selezionata figure.paese-icona-live,
+figure.paese-icona-live:hover,
+.icona-selezionata figure.sport-icona-live,
+figure.sport-icona-live:hover,
+.toolbox-multilive i:hover,
+.contenitoreSingolaQuota,
+.f-attiva,
+.titolo-partita-top-match-separatore,
+.finestra-stampa-ticket-barra-ricerca > form > input[type="submit"],
+.sortContainer.sortedUp .fas.fa-sort-up,
+.sortContainer.sortedDown .fas.fa-sort-down,
+.bottone-elimina:hover,
+.tasto-abilita-carrello-scrollable[data-carrello-scrollable-abilitato="true"],
+.bonus-schedina_template-1 .bonus-schedina_template-1_header,
+.custom-switch-2 input:checked ~ .custom-switch-2-text,
+.table-schedina .banker-letter-box {
+  color: var(--accent) !important;
+}
+
+.bg-nero,
+.bloccheti-icone-ristrette,
+.selettore-w-attivo,
+.icone-sport-slider i.fas.fa-chevron-left,
+.icone-sport-slider i.fas.fa-chevron-right,
+.icone-live-paesi i.fas.fa-chevron-left,
+.icone-live-paesi i.fas.fa-chevron-right,
+.evento-live-centrale .titolo-giocate-extra,
+.apri-widget-evento-dx::after,
+.apri-widget-evento-su::after {
+  background: #323232 !important;
+}
+
+.autocomplete-search-results-popup-title {
+  background-color: #323232 !important;
+}
+
+.custom-switch-2 input:focus ~ .custom-slider-2 {
+  box-shadow: 0 0 1px var(--accent);
+}
+
+.nero,
+.spread-uo,
+.sof-titolo,
+.nome-paese,
+.toggle-nascondi-live.nero:after,
+.live-paesi-slider .nav-personalizzato i {
+  color: #323232 !important;
+}
+
+.icons-container-no-wrap:not(.icons-container-no-arrow)
+  > .icona-selezionata
+  figure.sport-icona-live:not(.sport-icona-live_template_2):after,
+.icons-container-no-wrap:not(.icons-container-no-arrow)
+  figure.sport-icona-live:not(.sport-icona-live_template_2):hover::after {
+  border-bottom: 20px solid #323232 !important;
+}
+
+@keyframes quota-aumentata-keyframe {
+  100% {
+    color: var(--accent) !important;
+  }
+}
+
+@keyframes quota-diminuita-keyframe {
+  100% {
+    color: var(--accent) !important;
+  }
+}
+
+/* elementi ad hoc per sito */
+
+.banker-letter-box.banker-selected {
+  color: #fff !important;
+}
+
+.xs-loader:after {
+  border-color: var(--accent) transparent var(--accent) transparent !important;
+}
+
+.tablesExpanded .tabellaQuoteIntestazione {
+  background: #f5f5f5;
+}
+
+.sport-blocco {
+  background: #ffffff4d;
+}
+
+.contenitore-table-grande > div {
+  margin-bottom: 8px;
+}
+
+.destra-top-match .titolo-blocco-sport {
+  background: var(--accent-bg) !important;
+  color: var(--accent-txt) !important;
+  margin-top: 8px;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.secondo-blocco-sport {
+  background: rgba(255, 255, 255, 20%);
+}
+
+.col.day-win.maiuscolo i {
+  color: var(--accent);
+}
+
+.quota,
+.contenitoreSingolaQuota {
+  background-color: var(--bg1) !important;
+  color: var(--col1) !important;
+  font-weight: 600;
+}
+
+.quota span,
+.quota-con-nome span:last-child,
+.quote-extra .quota-con-nome span:last-child {
+  color: #323232 !important;
+}
+
+.quota.selezionata,
+.quota:hover {
+  background: var(--accent-bg) !important;
+  color: var(--accent-txt) !important;
+}
+
+.quota.selezionata span,
+.quota:hover span,
+.quota.selezionata span:last-child,
+.quota:hover span:last-child {
+  color: var(--accent-txt) !important;
+}
+
+.quota.selezionata,
+.contenitoreSingolaQuota.selezionata,
+.quota:hover,
+.contenitoreSingolaQuota:hover {
+  background: var(--accent-bg) !important;
+  color: var(--accent-txt) !important;
+}
+
+.gridInterernaQuotazioni button.dropdown-toggle {
+  background-color: transparent !important;
+}
+
+.container-fluid.pagina-sport {
+  background: #e8e9eb !important;
+}
+
+.sidebar-sx-sport .widget-filtro-side {
+  background: #fff !important;
+  color: #323232 !important;
+}
+
+.fasce-orarie {
+  color: #323232 !important;
+  font-weight: 600;
+}
+
+.widget-ricerca-side input {
+  background: #e4e4e4 !important;
+}
+
+.elemento-filtro-side-n.f-attivo {
+  background: #323232;
+}
+
+.filtro-side-n {
+  background: transparent !important;
+}
+
+.tasto-stringi,
+.tasto-allarga {
+  background: var(--accent-bg) !important;
+  color: var(--accent-txt) !important;
+}
+
+.elemento-filtro-side-n:not(.f-attivo),
+.elemento-filtro-side-n:hover:not(.f-attivo) {
+  color: #323232 !important;
+}
+
+.filtro-settimana.maiuscolo.allinea-centro a {
+  background: #e4e4e4;
+  border-color: #e4e4e4;
+  color: #323232;
+  font-weight: 600;
+}
+
+.filtro-settimana a:hover,
+.filtro-attivo-s {
+  background: var(--accent-bg) !important;
+  color: var(--accent-txt) !important;
+  border-color: var(--accent) !important;
+}
+
+.widget-competizioni-side .card.elemento-competizioni-widget {
+  background: #ffffff;
+  color: #323232;
+}
+
+.regione-widget {
+  background: #e4e4e4;
+}
+
+.elemento-competizioni-widget.singola-competizione:hover,
+.competizione-attiva,
+.competizione-attiva.live-si {
+  background: var(--accent-bg) !important;
+  color: var(--accent-txt) !important;
+}
+.titolo-accordion a {
+  overflow: hidden;
+}
+.titolo-accordion.maiuscolo.bianco,
+.titolo-accordion.maiuscolo.bianco a,
+.toggle-nascondi-live:after {
+  color: #323232 !important;
+}
+
+.bg-nero.toggle-nascondi-live:after {
+  color: #fff !important;
+}
+
+.titolo-competizione-live.bg-grigio-scuro:after,
+.titolo-giocate-extra:after {
+  color: #fff !important;
+}
+
+.elenco-macro > .elemento-macro,
+.aggregate > .elemento-macro,
+.aggregate > .elemento-macro-sub {
+  background: transparent;
+  border: 1px solid #e8e9eb;
+  color: #323232 !important;
+  border-radius: 8px !important;
+}
+
+.elenco-macro > .elemento-macro.icona-selezionata,
+.elenco-macro > .elemento-macro:hover,
+.aggregate > .elemento-macro.icona-selezionata,
+.aggregate > .elemento-macro:hover,
+.aggregate > .elemento-macro-sub:hover,
+.aggregate > .elemento-macro-sub.icona-selezionata {
+  background: #323232 !important;
+  color: #fff !important;
+}
+
+.elenco-macro .elemento-macro {
+  background: #f7f8fa !important;
+  border: 1px solid #e8e9eb;
+}
+
+.aggregate > .elemento-macro {
+  font-size: 0.85rem !important;
+}
+
+.ricerca-titolo-blocco-sport input {
+  background: #e4e4e4;
+}
+
+.icone-controllo-sport-centrale img {
+  filter: unset;
+}
+
+.strumenti-competizione.bg-grigio-4 {
+  border-radius: 0 !important;
+}
+
+.partite-del-giorno.tab-pane {
+  margin-top: 0;
+}
+
+.macro-gruppi.mb-2 {
+  background: #fff;
+  padding-bottom: 8px;
+  margin-bottom: 0 !important;
+}
+
+.tabellaQuoteIntestazione {
+  background: #f5f5f5 !important;
+}
+
+.griglia-centrale-sport:not(.top-match)
+  .competizione-interna.dueColonne.dueColonne_Template_1
+  .titolo-blocco-sport.bg-nero.bianco.pointer {
+  background: #fff !important;
+  color: #323232 !important;
+  border-radius: 0.5rem 0.5rem 0 0 !important;
+  margin-bottom: 0;
+}
+
+.sr-lmt-plus__expand-wrapper.srm-is-collapsed path,
+.sr-lmt-plus__expand-wrapper path,
+.sr-bb .sr-lmt-plus-tabs__wrapper-inner.srm-is-btm path {
+  /*fill: #fff;*/
+}
+
+.griglia-centrale-sport:not(.top-match) .sport-blocco.secondo-blocco-sport {
+  background: #fff;
+}
+
+.widget-filtro-side.margine-giu.live-tracker-widget tbody tr:nth-of-type(even) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.info-evento-centrale.d-flex.justify-content-around.align-items-center.margine-giu-mezzo.bordo-tondo {
+  background: var(--teableHeadersBg);
+  color: var(--teableHeadersCol);
+}
+.riga.colore-1.lampeggia {
+  color: var(--teableHeadersCol);
+}
+.griglia-centrale-sport.col.stringimento-sidebar.evento-live-centrale.justify-content-between.go-up-arrow-on-overflow.ord-2.aperto-widget-evento-dx
+  > .d-flex {
+  background: #fff;
+  padding-top: 8px;
+  border-radius: 0.25rem;
+}
+
+.toolbox-evento.justify-content-center.padding-orizzontale.bg-nero.bianco.bordo-tondo.d-flex.margine-giu-mezzo {
+  background: #fff !important;
+  color: #323232 !important;
+}
+
+.toolbox-evento.justify-content-center.padding-orizzontale.bg-nero.bianco.bordo-tondo.d-flex.margine-giu-mezzo
+  .selettore-colonne-evento.d-flex.justify-content-around.w-50
+  a {
+  color: #323232 !important;
+}
+
+.titolo-blocco-sport i.fa.fa-times {
+  background: var(--accent-bg) !important;
+  color: var(--accent-txt);
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.elenco-sport-box-dx img.attivo {
+  border-color: var(--accent) !important;
+}
+
+.filtro-side-n {
+  display: none;
+}
+
+.titolo-blocco-sport.last-minute-t.bg-nero.bianco {
+  justify-content: space-between;
+}
+
+.titolo-blocco-sport.bg-nero.bianco.allinea-centro.margine-su-mezzo i.fa-star {
+  color: var(--accent) !important;
+}
+
+.menu-principale-barra .active,
+.menu-principale-barra a:hover {
+  border-color: var(--accent) !important;
+}
+
+span.voce-riduci.grigio {
+  color: var(--accent);
+}
+
+.toggleReservationBox.shown {
+  color: var(--accent);
+}
+
+.tabelleSchedineNumerate .tabpane.fade.active > .contenuto-widget {
+  background: #fff;
+}
+
+.competizione-sport {
+  margin-bottom: 4px;
+}
+
+.sortContainer {
+  display: none;
+}
+
+span.voce-riduci {
+  color: var(--accent);
+}
+
+.colonne-evento-live.d-grid.dueColonne {
+  grid-template-columns: 1fr 1fr;
+}
+
+.xs-loader-container .fa-info-circle {
+  font-size: 4rem;
+  color: var(--accent);
+}
+
+.xs-loader-container .xs-error-message {
+  font-size: 2rem !important;
+  color: var(--accent);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#sposta-sb-1.attivo-sb,
+#sposta-sb-1:hover {
+  background-image: url(https://skingraphics.it/altri-siti/betclic_new/immagini/sposta-sb-1-active.png) !important;
+}
+
+#sposta-sb-2.attivo-sb,
+#sposta-sb-2:hover {
+  background-image: url(https://skingraphics.it/altri-siti/betclic_new/immagini/sposta-sb-2-active.png) !important;
+}
+
+#sposta-sb-3.attivo-sb,
+#sposta-sb-3:hover {
+  background-image: url(https://skingraphics.it/altri-siti/betclic_new/immagini/sposta-sb-3-active.png) !important;
+}
+
+.lista-eventi-schedina.carrello-desktop_container-elementi > hr {
+  display: none;
+}
+
+.carrello-desktop_container-elementi {
+  background-color: #999999;
+}
+
+.icone-controllo-sport-centrale > img {
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 50%);
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  border: 1px solid rgba(0, 0, 0, 5%);
+}
+
+.tabellaQuoteIntestazione .tabellaQuoteAlias,
+.tabellaQuoteIntestazione .tabellaQuoteTempo,
+.tabellaQuoteIntestazione .tabellaQuoteCampetto,
+.tabellaQuoteIntestazione .tabellaQuoteSquadre,
+.tabellaQuoteIntestazione .tabellaQuoteStatistiche,
+.tabellaQuoteIntestazione .tabellaQuoteAltre,
+.tabellaQuoteIntestazione .tabellaQuoteIntestazione-GruppoQuote {
+  color: #fff;
+}
+
+.tabellaQuoteRisultatiParziali-risultatoParziale > p > span,
+.tempo-live > .lampeggia.tempo-live {
+  color: var(--accent) !important;
+}
+
+.elemento-competizioni-widget.live-si {
+  background-image: unset;
+}
+
+.live-in-prematch {
+  background: #ffffff !important;
+  border-left: 4px solid var(--accent);
+  margin-bottom: 2px !important;
+}
+
+.live-in-prematch span.colore-1 {
+  color: #323232 !important;
+  font-family: "Metropolis-Bold";
+}
+
+.toolbox-evento.justify-content-center.padding-orizzontale.bg-nero.bianco.bordo-tondo.d-flex.margine-giu-mezzo {
+  background: #f5f5f5 !important;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.015);
+}
+
+img.img-fluid.pointer.margine-dx.reload-all {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(https://skingraphics.it/altri-siti/betclic_new/immagini/icon-update-all.png)
+    no-repeat;
+  /* Width of new image */
+  /* Height of new image */
+  padding-left: 20px;
+  /* Equal to width of new image */
+  background-size: 14px;
+  background-position: center;
+}
+
+img.img-fluid.pointer.close-all {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(https://skingraphics.it/altri-siti/betclic_new/immagini/ico-delete-all.png)
+    no-repeat;
+  /* Width of new image */
+  /* Height of new image */
+  padding-left: 20px;
+  /* Equal to width of new image */
+  background-size: 14px;
+  background-position: center;
+}
+
+.elemento-competizioni-widget .d-flex.d-centro-v {
+  font-family: "Metropolis-Bold";
+}
+
+.icone-controllo-sport-centrale > img {
+  box-shadow: unset;
+  border: 1px solid rgba(0, 0, 0, 10%);
+}
+
+.strumenti-competizione > a.active,
+.strumenti-competizione > a:hover {
+  border-color: var(--accent) !important;
+  background: var(--accent-bg);
+  color: var(--accent-txt);
+}
+
+.regione-widget > .elemento-competizioni-widget span:last-child,
+.elemento-competizioni-widget > .titolo-accordion span:last-child {
+  font-family: "Metropolis-Bold";
+}
+
+.regione-widget {
+  background: #e4e4e4;
+}
+
+.lista-eventi-schedina.carrello-desktop_container-elementi {
+  background: #e4e4e4;
+}
+
+.numero-eventi-segni {
+  background: #e4e4e4;
+}
+
+.elemento-competizioni-widget.singola-competizione.bg-bianco.pointer.nero.margine-giu-mezzo.live-si {
+  background: #323232;
+  color: #fff !important;
+}
+
+.quota-widget-evento.quota.bordo-tondo.d-flex.justify-content-between span {
+  color: #323232 !important;
+}
+
+.quota-widget-evento.quota.bordo-tondo.d-flex.justify-content-between.selezionata
+  span,
+.quota-widget-evento.quota.bordo-tondo.d-flex.justify-content-between:hover
+  span {
+  color: var(--accent-txt) !important;
+}
+
+.tabellaQuoteIntestazione button.dropdown-toggle span,
+.tabellaQuoteIntestazione-QuotaSingola > p {
+  color: #4d4d4f !important;
+}
+
+.intemporeale-sport .colore-1,
+.intemporeale-sport i {
+  color: var(--accent) !important;
+}
+
+.tempo-live > .fraz-gioco.colore-1 {
+  color: #000 !important;
+}
+
+.tabellaQuoteRisultatiParziali-risultatoParziale > p > span,
+.tempo-live > .lampeggia.tempo-live {
+  color: var(--accent) !important;
+}
+
+.grid-schedina .grid-schedina-intestazione_contenitore-testo {
+  color: #000 !important;
+}
+
+.grid-schedina-body_quote-riga_descrizione-quota > p > span {
+  color: var(--accent) !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .tabellaQuoteIntestazione button.dropdown-toggle span,
+  .tablesExpanded .tabellaQuoteIntestazione-QuotaSingola > p {
+    font-size: 9px !important;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .tabellaQuoteIntestazione button.dropdown-toggle span,
+  .tablesExpanded .tabellaQuoteIntestazione-QuotaSingola > p {
+    font-size: 11px !important;
+  }
+}
+
+.xs-loader-container span:last-child {
+  color: var(--accent) !important;
+}
+
+.tablesCompacted .titoloQuotazione {
+  color: #4d4d4f !important;
+}
+
+.tablesCompacted .contenitoreSingolaQuota:hover .titoloQuotazione {
+  color: #fc0 !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: var(--accent);
+  background-color: var(--accent-bg);
+  color: var(--accent-txt);
+}
+
+/* icone custom */
+
+.ico-cat,
+.ico-sport {
+  /* padding: 8px !important;
+    width: unset !important;
+    height: unset !important; */
+}
+
+/* CALCIO */
+.cms-setted-sport-ico-football {
+  /* background: url(/XSportDatastore/content/images/sport-ico/soccer.svg); */
+  background-image: url(img/icons/soccer.svg) !important;
+}
+
+.cms-setted-sport-ico-beach-soccer {
+  /* background: url(/XSportDatastore/content/images/sport-ico/calcioa5.svg); */
+  background-image: url(img/icons/soccer_2.svg) !important;
+}
+
+.cms-setted-sport-ico-calcio-5 {
+  /* background: url(/XSportDatastore/content/images/sport-ico/calcioa5.svg); */
+  background-image: url(img/icons/soccer_2.svg) !important;
+}
+
+/* TENNIS */
+.cms-setted-sport-ico-tennis {
+  /* background: url(/XSportDatastore/content/images/sport-ico/tennis.svg); */
+  background-image: url(img/icons/tennis.svg) !important;
+}
+
+/* BASKET */
+.cms-setted-sport-ico-pallacanestro {
+  /* background: url(/XSportDatastore/content/images/sport-ico/basketball.svg); */
+  background-image: url(img/icons/basket_ball.svg) !important;
+}
+
+/* PALLAVOLO */
+.cms-setted-sport-ico-pallavolo {
+  /* background: url(/XSportDatastore/content/images/sport-ico/volleyball.svg); */
+  background-image: url(img/icons/volley_ball.svg) !important;
+}
+
+/* FORMULA-1 */
+.cms-setted-sport-ico-formula1 {
+  /* background: url(/XSportDatastore/content/images/sport-ico/formula-1.svg); */
+  background: url(img/icons/motor_sport_2.svg) !important;
+}
+
+/* FORMULA-E */
+.cms-setted-sport-ico-motori {
+  /* background: url(/XSportDatastore/content/images/sport-ico/racing.svg); */
+  background: url(img/icons/motor_sport_2.svg) !important;
+}
+
+/* HOCKEY */
+.cms-setted-sport-ico-hockey-ghiaccio {
+  /* background: url(/XSportDatastore/content/images/sport-ico/ice-hockey2.svg); */
+  background-image: url(img/icons/ice_hockey.svg) !important;
+}
+
+.cms-setted-sport-ico-hockey-prato {
+  /* background: url(/XSportDatastore/content/images/sport-ico/ice-hockey2.svg); */
+  background-image: url(img/icons/ice_hockey.svg) !important;
+}
+
+.cms-setted-sport-ico-ciclismo {
+  /* background: url(/XSportDatastore/content/images/sport-ico/cycling.svg); */
+  background-image: url(img/icons/cycling.svg) !important;
+}
+
+.cms-setted-sport-ico-floorball {
+  /* background: url(/XSportDatastore/content/images/sport-ico/floorball.svg); */
+  background-image: url(img/icons/soccer_2.svg) !important;
+}
+
+.cms-setted-sport-ico-football-americano {
+  /* background: url(/XSportDatastore/content/images/sport-ico/american-football.svg); */
+  background-image: url(img/icons/american_football.svg) !important;
+}
+
+.cms-setted-sport-ico-football-australiano {
+  /* background: url(/XSportDatastore/content/images/sport-ico/australian-football.svg); */
+  background-image: url(img/icons/rugby.svg) !important;
+}
+
+.cms-setted-sport-ico-freccette {
+  /* background: url(/XSportDatastore/content/images/sport-ico/darts.svg); */
+  background-image: url(img/icons/target_archery.svg) !important;
+}
+
+.cms-setted-sport-ico-golf {
+  /* background: url(/XSportDatastore/content/images/sport-ico/golf.svg); */
+  background-image: url(img/icons/golf.svg) !important;
+}
+
+.cms-setted-sport-ico-pallamano {
+  /* background: url(/XSportDatastore/content/images/sport-ico/handball.svg); */
+  background-image: url(img/icons/handball.svg) !important;
+}
+
+.cms-setted-sport-ico-pallanuoto {
+  /* background: url(/XSportDatastore/content/images/sport-ico/waterpolo.svg); */
+  background-image: url(img/icons/volley_ball.svg) !important;
+}
+
+.cms-setted-sport-ico-pugilato {
+  /* background: url(/XSportDatastore/content/images/sport-ico/boxing.svg); */
+  background-image: url(img/icons/boxing.svg) !important;
+}
+
+.cms-setted-sport-ico-rugby {
+  /* background: url(/XSportDatastore/content/images/sport-ico/rugby-ball.svg); */
+  background-image: url(img/icons/rugby.svg) !important;
+}
+
+.cms-setted-sport-ico-snooker {
+  /* background: url(/XSportDatastore/content/images/sport-ico/snooker.svg); */
+  background-image: url(img/icons/snooker.svg) !important;
+}
+
+.cms-setted-sport-ico-microphone {
+  /* background: url(/XSportDatastore/content/images/sport-ico/microphone.svg); */
+  background-image: url(img/icons/microphone.svg) !important;
+}
+
+.cms-setted-sport-ico-surf {
+  background: url(/XSportDatastore/content/images/sport-ico/surf.svg);
+}
+
+.cms-setted-sport-ico-tennisdatavolo {
+  /* background: url(/XSportDatastore/content/images/sport-ico/ping-pong.svg); */
+  background-image: url(img/icons/table_tennis.svg) !important;
+}
+
+.cms-setted-sport-ico-alpinofemminile {
+  /* background: url(/XSportDatastore/content/images/sport-ico/alpine.svg); */
+  background-image: url(img/icons/winter_sport.svg) !important;
+}
+
+.cms-setted-sport-ico-alpinomaschile {
+  /* background: url(/XSportDatastore/content/images/sport-ico/alpine.svg); */
+  background-image: url(img/icons/winter_sport.svg) !important;
+}
+
+.cms-setted-sport-ico-atletica {
+  /* background: url(/XSportDatastore/content/images/sport-ico/atletica.svg); */
+  background-image: url(img/icons/athletics.svg) !important;
+}
+
+.cms-setted-sport-ico-bandy {
+  /* background: url(/XSportDatastore/content/images/sport-ico/bandy.svg); */
+  background-image: url(img/icons/ice_hockey.svg) !important;
+}
+
+.cms-setted-sport-ico-baseball {
+  /* background: url(/XSportDatastore/content/images/sport-ico/baseball.svg); */
+  background-image: url(img/icons/base_ball.svg) !important;
+}
+
+.cms-setted-sport-ico-beach-volley {
+  /* background: url(/XSportDatastore/content/images/sport-ico/beach-volleyball.svg); */
+  background-image: url(img/icons/volley_ball.svg) !important;
+}
+
+.cms-setted-sport-ico-biathlon-femminile {
+  /* background: url(/XSportDatastore/content/images/sport-ico/biathlon.svg); */
+  background-image: url(img/icons/winter_sport.svg) !important;
+}
+
+.cms-setted-sport-ico-biathlon-maschile {
+  /* background: url(/XSportDatastore/content/images/sport-ico/biathlon.svg); */
+  background-image: url(img/icons/winter_sport.svg) !important;
+}
+
+.cms-setted-sport-ico-biliardo {
+  /* background: url(/XSportDatastore/content/images/sport-ico/snooker.svg); */
+  background-image: url(img/icons/snooker.svg) !important;
+}
+
+.cms-setted-sport-ico-box {
+  /* background: url(/XSportDatastore/content/images/sport-ico/boxing.svg); */
+  background-image: url(img/icons/boxing.svg) !important;
+}
+
+.cms-setted-sport-ico-canottaggio {
+  /* background: url(/XSportDatastore/content/images/sport-ico/canoe.svg); */
+  background-image: url(img/icons/kayak.svg) !important;
+}
+
+.cms-setted-sport-ico-criquet {
+  /* background: url(/XSportDatastore/content/images/sport-ico/cricket.svg); */
+  background-image: url(img/icons/cricket.svg) !important;
+}
+
+.cms-setted-sport-ico-equitazione {
+  /* background: url(/XSportDatastore/content/images/sport-ico/equitazione.svg); */
+  background-image: url(img/icons/horse.svg) !important;
+}
+
+.cms-setted-sport-ico-esport {
+  /* background: url(/XSportDatastore/content/images/sport-ico/esport.svg); */
+  background-image: url(img/icons/gaming.svg) !important;
+}
+
+.cms-setted-sport-ico-immersioni {
+  /* background: url(/XSportDatastore/content/images/sport-ico/watersport.svg); */
+  background-image: url(img/icons/waves.svg) !important;
+}
+
+.cms-setted-sport-ico-misto-alpino {
+  /* background: url(/XSportDatastore/content/images/sport-ico/alpine.svg); */
+  background-image: url(img/icons/winter_sport.svg) !important;
+}
+
+.cms-setted-sport-ico-motociclismo {
+  /* background: url(/XSportDatastore/content/images/sport-ico/motorcycle.svg); */
+  background-image: url(img/icons/motor_sport.svg) !important;
+}
+
+.cms-setted-sport-ico-nascar {
+  /* background: url(/XSportDatastore/content/images/sport-ico/racing.svg); */
+  background-image: url(img/icons/motor_sport_2.svg) !important;
+}
+
+.cms-setted-sport-ico-nuoto {
+  /* background: url(/XSportDatastore/content/images/sport-ico/watersport.svg); */
+  background-image: url(img/icons/waves.svg) !important;
+}
+
+.cms-setted-sport-ico-olimpiadi {
+  /* background: url(/XSportDatastore/content/images/sport-ico/olimpiadi.svg); */
+  background-image: url(img/icons/flame.svg) !important;
+}
+
+.cms-setted-sport-ico-pesapallo {
+  /* background: url(/XSportDatastore/content/images/sport-ico/pesapallo.svg); */
+  background-image: url(img/icons/ball.svg) !important;
+}
+
+.cms-setted-sport-ico-rally {
+  /* background: url(/XSportDatastore/content/images/sport-ico/rally.svg); */
+  background-image: url(img/icons/motor_sport_2.svg) !important;
+}
+
+.cms-setted-sport-ico-saltoconglisci {
+  /* background: url(/XSportDatastore/content/images/sport-ico/ski-jump.svg); */
+  background-image: url(img/icons/winter_sport.svg) !important;
+}
+
+.cms-setted-sport-ico-sollevamentopesi {
+  /* background: url(/XSportDatastore/content/images/sport-ico/pesi.svg); */
+  background-image: url(img/icons/bodybuilding.svg) !important;
+}
+
+.cms-setted-sport-ico-sport-invernali {
+  /* background: url(/XSportDatastore/content/images/sport-ico/alpine.svg); */
+  background-image: url(img/icons/winter_sport.svg) !important;
+}
+
+.cms-setted-sport-ico-squash {
+  /* background: url(/XSportDatastore/content/images/sport-ico/squash.svg); */
+  background-image: url(img/icons/ball.svg) !important;
+}
+
+.cms-setted-sport-ico-tiroconlarco {
+  /* background: url(/XSportDatastore/content/images/sport-ico/arco.svg); */
+  background-image: url(img/icons/target_archery.svg) !important;
+}
+
+.cms-setted-sport-ico-vela {
+  /* background: url(/XSportDatastore/content/images/sport-ico/boat.svg); */
+  background-image: url(img/icons/sailboat.svg) !important;
+}
+
+.cms-setted-sport-ico-wrestling {
+  /* background: url(/XSportDatastore/content/images/sport-ico/wrestling.svg); */
+  background-image: url(img/icons/catch.svg) !important;
+}
+
+.cms-setted-sport-ico-skeleton {
+  /* background: url(/XSportDatastore/content/images/sport-ico/ice-skate.svg); */
+  background-image: url(img/icons/winter_sport.svg) !important;
+}
+
+.cms-setted-sport-ico-slittino {
+  /* background: url(/XSportDatastore/content/images/sport-ico/sleigh.svg); */
+  background-image: url(img/icons/winter_sport.svg) !important;
+}
+
+.cms-setted-sport-ico-snowboard {
+  /* background: url(/XSportDatastore/content/images/sport-ico/snowboard.svg); */
+  background-image: url(img/icons/winter_sport.svg) !important;
+}
+
+.cms-setted-sport-ico-basket-special {
+  /* background: url(/XSportDatastore/content/images/sport-ico/basketball-special.svg); */
+  background-image: url(img/icons/basket_ball.svg) !important;
+}
+
+.cms-setted-sport-ico-calcio-special {
+  /* background: url(/XSportDatastore/content/images/sport-ico/soccer-special.svg); */
+  background-image: url(img/icons/soccer.svg) !important;
+}
+
+.cms-setted-sport-ico-bob {
+  /* background: url(/XSportDatastore/content/images/sport-ico/bobsleigh.svg); */
+  background-image: url(img/icons/winter_sport.svg) !important;
+}
+
+.cms-setted-sport-ico-pattinaggio-figurato {
+  /* background: url(/XSportDatastore/content/images/sport-ico/ice-skate.svg); */
+  background-image: url(img/icons/winter_sport.svg) !important;
+}
+
+.cms-setted-sport-ico-pattinaggio-freestyle {
+  /* background: url(/XSportDatastore/content/images/sport-ico/ice-skate.svg); */
+  background-image: url(img/icons/winter_sport.svg) !important;
+}
+
+.cms-setted-sport-ico-pattinaggio-velocita {
+  /* background: url(/XSportDatastore/content/images/sport-ico/ice-skate.svg); */
+  background-image: url(img/icons/winter_sport.svg) !important;
+}
+
+.cms-setted-sport-ico-short-track {
+  /* background: url(/XSportDatastore/content/images/sport-ico/ice-skate.svg); */
+  background-image: url(img/icons/winter_sport.svg) !important;
+}
+
+.cms-setted-sport-ico-criquet {
+  /* background: url(/XSportDatastore/content/images/sport-ico/cricket.svg); */
+  background-image: url(img/icons/cricket.svg) !important;
+}
+
+.cms-setted-sport-ico-equitazione {
+  /* background: url(/XSportDatastore/content/images/sport-ico/equitazione.svg); */
+  background-image: url(img/icons/horse.svg) !important;
+}
+
+.cms-setted-sport-ico-esport {
+  /* background: url(/XSportDatastore/content/images/sport-ico/esport.svg); */
+  background-image: url(img/icons/gaming.svg) !important;
+}
+
+.icona-sport {
+  height: unset !important;
+  width: unset !important;
+  padding: 8px !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+@media screen and (min-width: 1920px) {
+  .icona-sport {
+    padding: 10px !important;
+  }
+}
+
+.paese-widget-sx .ico-cat {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.strumenti-toolbox-evento .img-tv-streaming {
+  -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+  filter: invert(100%);
+}
+
+.competzioni-sub .paese-widget-sx {
+  color: #323232 !important;
+}
+footer#nascondifooter.collapse:not(.show) {
+  display: none !important;
+}
+nav.sottomenu-main {
+  display: flex !important;
+  background: transparent;
+}
+.menu-principale-barra .sottomenu-principale ul {
+  background: transparent;
+}
+div#cg-scommesse-submenu {
+  background: transparent;
+}
+.altezza-max-html {
+  .menu-principale-barra {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+.sr-bb .srt-fill-primary-6,
+.sr-bb .srt-fill-primary-7,
+.sr-bb .srt-fill-primary-8,
+.sr-bb .srt-fill-home-1,
+.sr-bb .srt-fill-home-2,
+.sr-bb .srt-fill-home-3,
+.sr-bb .srt-fill-primary-12 {
+  fill: var(--accent);
+}
+.sr-bb .srt-home-1 {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.sr-bb .srt-primary-5-is-hoverable:hover,
+.sr-bb .srt-primary-6,
+.sr-bb .srt-primary-7,
+.sr-bb .srt-primary-8,
+.sr-bb .srt-home-3 {
+  background: var(--accent-bg);
+}
+
+.sr-bb .srt-base-1-home-1,
+.sr-bb .srt-base-1-primary {
+  color: var(--accent);
+}

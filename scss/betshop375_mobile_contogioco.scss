@@ -9,7 +9,7 @@ body a.cg-nav-logo.cg-customerLiteLogo {
     display: block;
     height: 44px;
     width: 150px;
-    transform: translateX(-67px);
+    // transform: translateX(-67px);
     background-repeat: no-repeat;
   }
 }
@@ -864,4 +864,8 @@ div#cg-promo-preview-container {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.cg-buttonMenuMobile {
+  box-shadow: 1px 1px var(--tableBorders);
 }

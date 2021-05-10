@@ -110,10 +110,11 @@ body:not([subpage="live"])
   .menu-principale-barra
   ul.menu-principale
   a.altro-principale.pointer[data-ref="promo"] {
-  position: absolute;
+  position: relative;
   right: 0;
   top: 0;
   border-left: 1px solid #000;
+  margin-left: 110px;
 }
 [subpage="live"] {
   .menu-principale-barra ul.menu-principale a[data-ref="promo"]:before {
@@ -172,6 +173,8 @@ body:not([subpage="live"])
   display: flex;
   max-width: 1247px;
   margin: 0 auto;
+  flex-flow: column;
+  align-items: center;
   > ul {
     width: auto;
     font-family: $font;

@@ -142,6 +142,7 @@ body:not([subpage="live"])
     background: var(--accent-bg);
     color: var(--accent-txt);
     transform: skewX(-20deg);
+    background: linear-gradient(#fd7426 0%, #eb3f19 100%);
   }
   a[data-ref="promo"] {
     padding-top: 16px;
@@ -1084,6 +1085,42 @@ p.cg-footer-section-title.grassetto.mediumtext:after {
 
 [page="home"] {
   //home header
+  .menu-principale-barra
+    ul.menu-principale
+    a.altro-principale.pointer[data-ref="promo"] {
+    margin-left: 37px;
+  }
+  background: #0d110d;
+  .col-lg-5.disclaimer {
+    display: none;
+  }
+  .row.barra-intermedia {
+    &::before {
+      content: "";
+      background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/headerIcons.svg");
+      width: 460px;
+      height: 31px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      margin-left: 10px;
+    }
+  }
+  .menu-principale-barra {
+    margin-left: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #cg-header .row.bg-bianco {
+    background: linear-gradient(45deg, #262626 40%, #6e2e1f 130%);
+  }
+  .menu-principale-barra ul.menu-principale {
+    background: transparent;
+  }
+  .menu-principale-barra ul.menu-principale li,
+  .menu-principale-barra ul.menu-principale a {
+    color: #d0d0d0;
+  }
 }
 .cg-pvr-page {
   .menu-principale-barra > nav {

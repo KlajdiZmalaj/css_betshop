@@ -1,5 +1,5 @@
 @import "vars";
-@import url("https://test-#{$skinHost}/external_css/#{$skinName}/fontAwesome/css/all.min.css");
+@import url("https://#{$skinHost}/external_css/#{$skinName}/fontAwesome/css/all.min.css");
 
 html body {
   color: var(--mainBgCol);
@@ -1088,13 +1088,29 @@ p.cg-footer-section-title.grassetto.mediumtext:after {
   .menu-principale-barra
     ul.menu-principale
     a.altro-principale.pointer[data-ref="promo"] {
-    margin-left: 37px;
+    margin-left: 37px !important;
   }
   background: #0d110d;
   .col-lg-5.disclaimer {
     display: none;
   }
+  .login-header .blocco-header input {
+    background: #585858;
+    color: #fff !important;
+    height: 34px;
+
+    &::placeholder {
+      color: #adadad !important;
+    }
+  }
+  .login-header .form-group:first-child:before,
+  .login-header .form-group:last-child:before {
+    top: 9px;
+    color: #adadad !important;
+  }
   .row.barra-intermedia {
+    background: #0c0c0c;
+
     &::before {
       content: "";
       background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/headerIcons.svg");

@@ -1137,3 +1137,7 @@ div#cg-scommesse-submenu {
 .carousel-indicators .active {
   background: var(--accent) !important;
 }
+.widget-ultimi .contenuto-widget-ultime-v {
+  height: calc(100vh - 590px);
+  overflow: auto;
+}

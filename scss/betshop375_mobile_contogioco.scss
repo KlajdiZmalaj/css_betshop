@@ -1,4 +1,11 @@
 @import "vars";
+body {
+  .cg-nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 body a.cg-nav-logo.cg-customerLiteLogo {
   background-image: none;
   &::before {
@@ -8,7 +15,8 @@ body a.cg-nav-logo.cg-customerLiteLogo {
     background-size: contain;
     display: block;
     height: 44px;
-    width: 150px;
+    width: 160px;
+    flex-shrink: 0;
     // transform: translateX(-67px);
     background-repeat: no-repeat;
   }

@@ -1157,3 +1157,16 @@ p.cg-footer-section-title.grassetto.mediumtext:after {
     white-space: nowrap;
   }
 }
+.controlli-sliderP {
+  max-width: 240px;
+  width: 100% !important;
+}
+
+.scopri-promo {
+  background: var(--accent-bg);
+  color: var(--accent-txt) !important;
+  padding: 4px 8px;
+  font-weight: 300;
+  border: 1px solid var(--accent);
+  opacity: 0.9;
+}

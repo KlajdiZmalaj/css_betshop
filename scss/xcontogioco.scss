@@ -1170,3 +1170,16 @@ p.cg-footer-section-title.grassetto.mediumtext:after {
   border: 1px solid var(--accent);
   opacity: 0.9;
 }
+
+html body[page="promo"] {
+  background:#0D0D0D;
+  color: #222;
+  .card {
+    background: #262626;
+    color: #fff;
+  }
+  .card-title {
+    color: var(--accent);
+    font-weight: 500;
+  }
+}

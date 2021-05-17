@@ -22,7 +22,7 @@ window.fetchSportBanners = async (skin, token) => {
   );
   console.log("ca ka data ", data, banners, mainBanner);
 
-  if (mainBanner[0]) {
+  if (mainBanner.length === 1) {
     $("#main_banner .title").text(mainBanner[0].title);
     $("#main_banner .subtitle").text(mainBanner[0].subtitle);
     $("#main_banner a").text(mainBanner[0].button);
@@ -30,6 +30,25 @@ window.fetchSportBanners = async (skin, token) => {
       window.top.location.href = mainBanner[0].link;
     });
     $("#main_banner img").attr("src", mainBanner[0].image.path);
+  }else {
+    var templateLeft = `${mainBanner
+      .map(
+        (banner) =>
+          `<div class="sliderItem" onclick="window.top.location.href = ${banner.link}"><img class="newSliderSlide" src="${
+            banner?.image?.path
+          }" alt="" /></div>`
+      )
+      .join("")}`;
+    $('#main_banner').html(templateLeft);
+    $('#main_banner').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+    });
   }
   if (fieldBg[0]) {
     $("#rightField").css("background-image", `url(${fieldBg[0].image.path})`);

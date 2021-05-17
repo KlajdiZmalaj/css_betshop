@@ -1182,4 +1182,8 @@ html body[page="promo"] {
     color: var(--accent);
     font-weight: 500;
   }
+  p.card-text {
+    height: 110px;
+    overflow: auto;
+  } 
 }

@@ -1183,3 +1183,14 @@ html body[page="promo"] {
     font-weight: 500;
   }
 }
+
+  .container {
+  color: #fff;
+}
+.container.no-padding{
+  color: #222 !important;
+}
+
+html body[page="promo"] .menu-principale-barra>nav {
+ display: flex;
+}

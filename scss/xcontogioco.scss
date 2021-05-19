@@ -60,6 +60,7 @@ body .cg-header-logo {
   flex-flow: row wrap;
   white-space: nowrap;
   color: #fff;
+
   justify-content: flex-start;
   // a {
   //   filter: invert($invert);
@@ -1137,6 +1138,22 @@ p.cg-footer-section-title.grassetto.mediumtext:after {
   .menu-principale-barra ul.menu-principale a {
     color: #d0d0d0;
   }
+
+  .row.bg-bianco::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 35px;
+    background-size: contain;
+    align-self: center;
+    /* right: 20px; */
+    background-image: url("https://betshop375.it/external_css/BETSHOP375/img/datetime.svg");
+    margin-right: 30px;
+    background-repeat: no-repeat;
+  }
+  .row.barra-superiore {
+    display: none;
+  }
 }
 .cg-pvr-page {
   .menu-principale-barra > nav {
@@ -1172,7 +1189,7 @@ p.cg-footer-section-title.grassetto.mediumtext:after {
 }
 
 html body[page="promo"] {
-  background:#0D0D0D;
+  background: #0d0d0d;
   color: #222;
   .card {
     background: #262626;
@@ -1184,13 +1201,13 @@ html body[page="promo"] {
   }
 }
 
-  .container {
+.container {
   color: #fff;
 }
-.container.no-padding{
+.container.no-padding {
   color: #222 !important;
 }
 
-html body[page="promo"] .menu-principale-barra>nav {
- display: flex;
+html body[page="promo"] .menu-principale-barra > nav {
+  display: flex;
 }

@@ -34,7 +34,7 @@ window.fetchSportBanners = async (skin, token) => {
     var templateLeft = `${mainBanner
       .map(
         (banner) =>
-          `<div class="sliderItem" onclick="window.top.location.href = ${banner.link}"><img class="newSliderSlide" src="${
+          `<div class="sliderItem" onclick="window.top.location.href = '${banner.link}'"><img class="newSliderSlide" src="${
             banner?.image?.path
           }" alt="" /></div>`
       )
@@ -44,10 +44,10 @@ window.fetchSportBanners = async (skin, token) => {
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      dots: false,
+      dots: true,
       autoplay: true,
       autoplaySpeed: 2000,
-      arrows: false,
+      arrows: true,
     });
   }
   if (fieldBg[0]) {
@@ -55,7 +55,7 @@ window.fetchSportBanners = async (skin, token) => {
     $("#rightField .footer .time").text(fieldBg[0].title);
     $("#rightField .footer .date").text(fieldBg[0].subtitle);
     $("#rightField .footer button").text(fieldBg[0].button);
-    $("#rightField .footer button").on("click", () => {
+    $("#rightField").on("click", () => {
       window.top.location.href = fieldBg[0].link;
     });
   }
@@ -84,7 +84,7 @@ window.fetchSportBanners = async (skin, token) => {
                 : ""
             }"><img class="newSliderSlide" src="${
               banner?.image?.path
-            }" alt="" /><span>${banner.title || "gameTitle"}</span></div>`
+            }" alt="" /></div>`
         )
         .join("")}`;
       $(element).html(template);
@@ -92,7 +92,7 @@ window.fetchSportBanners = async (skin, token) => {
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 5,
-        dots: true,
+        dots: false,
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,

@@ -174,3 +174,39 @@ body {
 #rightField .footer {
   display: none;
 }
+
+.slick-dots li button:before {
+  opacity: 1 !important;
+  color: #fb6a04 !important;
+}
+
+.slick-dots {
+  bottom: -33px;
+  height: 34px;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.slick-dots li button:before{
+  font-size: 10px;
+}
+
+.slick-next {
+  right: 25px;
+}
+
+.slick-prev {
+  left: 25px;
+  z-index: 1;
+}
+.slick-prev:before, .slick-next:before {
+
+  color: #fe7400;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75 !important;
+  color: white !important;
+}

@@ -28,10 +28,6 @@ body[page="ingame"] .elementi-footer.elementi-footer-chiuso #nascondifooter {
   display: none;
 }
 
-body[page="sport"] .sottomenu-main .nav.nav-tabs.barra-menu {
-  /*visibility: hidden;*/
-}
-
 /* elementi base di sport css */
 
 .elemento-filtro-side-n.f-attivo,
@@ -77,6 +73,7 @@ a.filtro-attivo-cal-sport,
 .dropdown-box-grid .elemento-macro.icona-selezionata {
   background: var(--accent-bg) !important;
   color: var(--accent-txt) !important;
+  display: none;
 }
 
 .autocomplete-search-results-popup-title-3:hover,
@@ -190,7 +187,7 @@ figure.sport-icona-live:hover,
 }
 
 .tablesExpanded .tabellaQuoteIntestazione {
-  background: #f5f5f5;
+  background: #cfcfd0 !important;
 }
 
 .sport-blocco {
@@ -396,16 +393,10 @@ figure.sport-icona-live:hover,
 .griglia-centrale-sport:not(.top-match)
   .competizione-interna.dueColonne.dueColonne_Template_1
   .titolo-blocco-sport.bg-nero.bianco.pointer {
-  background: #fff !important;
-  color: #323232 !important;
+  background: #323232 !important;
+  color: #ffffff !important;
   border-radius: 0.5rem 0.5rem 0 0 !important;
-  margin-bottom: 0;
-}
-
-.sr-lmt-plus__expand-wrapper.srm-is-collapsed path,
-.sr-lmt-plus__expand-wrapper path,
-.sr-bb .sr-lmt-plus-tabs__wrapper-inner.srm-is-btm path {
-  /*fill: #fff;*/
+  margin-bottom: 4px;
 }
 
 .griglia-centrale-sport:not(.top-match) .sport-blocco.secondo-blocco-sport {
@@ -607,10 +598,11 @@ img.img-fluid.pointer.close-all {
   background-size: 14px;
   background-position: center;
 }
-
+/*
 .elemento-competizioni-widget .d-flex.d-centro-v {
   font-family: "Metropolis-Bold";
 }
+*/
 
 .icone-controllo-sport-centrale > img {
   box-shadow: unset;
@@ -714,15 +706,6 @@ img.img-fluid.pointer.close-all {
   border-color: var(--accent);
   background-color: var(--accent-bg);
   color: var(--accent-txt);
-}
-
-/* icone custom */
-
-.ico-cat,
-.ico-sport {
-  /* padding: 8px !important;
-    width: unset !important;
-    height: unset !important; */
 }
 
 /* CALCIO */
@@ -1087,7 +1070,7 @@ img.img-fluid.pointer.close-all {
 }
 
 .competzioni-sub .paese-widget-sx {
-  color: #323232 !important;
+  color: inherit !important;
 }
 footer#nascondifooter.collapse:not(.show) {
   display: none !important;
@@ -1140,4 +1123,65 @@ div#cg-scommesse-submenu {
 .widget-ultimi .contenuto-widget-ultime-v {
   height: calc(100vh - 590px);
   overflow: auto;
+}
+//////////// juli
+
+.dropdown-menu.bg-nero.bianco.container.show {
+  background: white !important;
+}
+
+//// colors white to gray
+
+.aggregate.containerElementiDropdown > *,
+.aggregate ~ .dropdown-box .elemento-macro {
+  background: #cfcfd0 !important;
+  color: #787878;
+  border: 1px solid transparent;
+}
+
+.elenco-macro .elemento-macro {
+  background: #cfcfd0 !important;
+  border: 1px solid #e8e9eb;
+}
+///// jz
+.elemento-competizioni-widget.pointer.toggle-nascondi-live.tog-menu {
+  background: #323232;
+  color: white;
+}
+
+.aggregate.containerElementiDropdown > *,
+.aggregate ~ .dropdown-box .elemento-macro {
+  background: #ffffff !important;
+  color: #787878;
+  border: 1px solid #00000029 !important;
+}
+
+.tabellaQuoteIntestazione.text_s1.tabellaQuoteIntestazionePrematch.mb-2 {
+  border-bottom: 0 !important;
+}
+
+.tablesExpanded .tabellaQuoteNew.tabellaQuotePrematch,
+.tablesExpanded .tabellaQuoteIntestazione.tabellaQuoteIntestazionePrematch {
+  border-bottom: 0.5px solid #c2c1c1;
+}
+
+.elemento-competizioni-widget.pointer.toggle-nascondi-live.tog-menu.collapsed {
+  background: #e4e4e4;
+  color: #323232;
+}
+
+.grid-schedina .grid-schedina-intestazione,
+.grid-schedina .grid-schedina-body_evento,
+.grid-schedina .grid-schedina-body_quote-riga {
+  padding: 3px !important;
+}
+
+div#sidebar-dx {
+  max-width: 350px !important;
+}
+
+.tool-scroll {
+  padding: 8px 6px 8px 10px;
+  background: #fb6904;
+  border: 2px solid #0c0c0c;
 }

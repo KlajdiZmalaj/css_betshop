@@ -73,7 +73,6 @@ a.filtro-attivo-cal-sport,
 .dropdown-box-grid .elemento-macro.icona-selezionata {
   background: var(--accent-bg) !important;
   color: var(--accent-txt) !important;
-  display: none;
 }
 
 .autocomplete-search-results-popup-title-3:hover,
@@ -1177,11 +1176,15 @@ div#cg-scommesse-submenu {
 }
 
 div#sidebar-dx {
-  max-width: 350px !important;
+  max-width: 330px !important;
 }
 
 .tool-scroll {
   padding: 8px 6px 8px 10px;
   background: #fb6904;
   border: 2px solid #0c0c0c;
+}
+
+.sposta-sidebar.padding-verticale.bg-colore-1.padding-orizzontale.bordo-tondo {
+  display: none;
 }

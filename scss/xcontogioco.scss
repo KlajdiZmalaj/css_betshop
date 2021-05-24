@@ -78,7 +78,7 @@ body .cg-header-logo {
   display: flex;
   flex-flow: row;
   align-items: center;
-  height: 70px;
+  height: 80px;
   background: #1b1b1b;
   color: #fff;
   border-bottom: 1px solid var(--accent) !important;
@@ -192,7 +192,7 @@ body:not([subpage="live"])
   display: block;
 }
 .menu-principale-barra .sottomenu-principale ul {
-  background: #000;
+  background: transparent;
   color: #fff;
 }
 div#cg-scommesse-submenu {
@@ -288,7 +288,7 @@ div#content {
   margin-left: 5px;
 }
 .login-header .blocco-header {
-  align-items: center;
+  align-items: stretch;
 }
 a.bottone.bottone-login {
   height: 24px;
@@ -1084,14 +1084,23 @@ p.cg-footer-section-title.grassetto.mediumtext:after {
   height: 40px;
 }
 
-[page="home"] {
+html {
   //home header
   .menu-principale-barra
     ul.menu-principale
     a.altro-principale.pointer[data-ref="promo"] {
     margin-left: 37px !important;
   }
-  background: #0d110d;
+
+  .menu-principale-barra .sottomenu-principale ul {
+    background: transparent !important;
+    color: #fff;
+  }
+
+  .sottomenu-main {
+    background: transparent !important;
+  }
+
   .col-lg-5.disclaimer {
     display: none;
   }
@@ -1114,8 +1123,8 @@ p.cg-footer-section-title.grassetto.mediumtext:after {
 
     &::before {
       content: "";
-      background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/headerIcons.svg");
-      width: 460px;
+      background-image: url("https://betshop375.it/external_css/BETSHOP375/img/headerIcons233.png");
+      width: 500px;
       height: 31px;
       background-repeat: no-repeat;
       background-size: contain;
@@ -1124,9 +1133,9 @@ p.cg-footer-section-title.grassetto.mediumtext:after {
     }
   }
   .menu-principale-barra {
-    margin-left: 0;
+    /*margin-left: 0;*/
     justify-content: flex-start;
-    align-items: flex-start;
+    // align-items: flex-start;
   }
   #cg-header .row.bg-bianco {
     background: linear-gradient(45deg, #262626 40%, #6e2e1f 130%);
@@ -1139,18 +1148,22 @@ p.cg-footer-section-title.grassetto.mediumtext:after {
     color: #d0d0d0;
   }
 
+  /*
+
   .row.bg-bianco::after {
     content: "";
-    display: block;
+    display: none;
     width: 200px;
     height: 35px;
     background-size: contain;
     align-self: center;
-    /* right: 20px; */
+    right: 20px; 
     background-image: url("https://betshop375.it/external_css/BETSHOP375/img/datetime.svg");
     margin-right: 30px;
     background-repeat: no-repeat;
   }
+
+*/
   .row.barra-superiore {
     display: none;
   }
@@ -1175,7 +1188,7 @@ p.cg-footer-section-title.grassetto.mediumtext:after {
   }
 }
 .controlli-sliderP {
-  max-width: 240px;
+  max-width: 350px;
   width: 100% !important;
 }
 
@@ -1202,7 +1215,7 @@ html body[page="promo"] {
 }
 
 .container {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .container.no-padding {
   color: #222 !important;
@@ -1212,6 +1225,34 @@ html body[page="promo"] .menu-principale-barra > nav {
   display: flex;
 }
 
-.panel .container {
+.barra-inferiore-footer .grassetto {
   color: white;
+}
+
+a.bg-colore-1.bianco {
+  background: black !important;
+}
+
+///remove of top top header wp
+
+a[href="/landing"] {
+  display: none !important;
+}
+
+.cg-text-muted {
+  color: inherit !important;
+}
+
+.modal-content .immagine-promo img {
+  max-height: 35rem !important;
+}
+
+.cg-pvr-page {
+  .row.barra-intermedia::before {
+    display: none !important;
+  }
+
+  span.blocco-header.label.grassetto {
+    font-size: 11px;
+  }
 }

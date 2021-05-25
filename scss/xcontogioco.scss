@@ -1188,7 +1188,7 @@ html {
   }
 }
 .controlli-sliderP {
-  max-width: 350px;
+  max-width: 400px;
   width: 100% !important;
 }
 
@@ -1255,4 +1255,26 @@ a[href="/landing"] {
   span.blocco-header.label.grassetto {
     font-size: 11px;
   }
+}
+
+i.fas {
+  margin-right: 0 !important;
+}
+
+.elemento-competizioni-widget.pointer.toggle-nascondi-live.tog-menu.collapsed
+  .paese-widget-sx {
+  color: #323232 !important;
+}
+
+.regione-widget > .elemento-competizioni-widget .paese-widget-sx {
+  color: white !important;
+}
+
+a.consulta-footer,
+a.consulta-chat {
+  background: linear-gradient(
+    #ec411a 0%,
+    #e63312 25.12%,
+    #ff7600 100%
+  ) !important;
 }

@@ -71,7 +71,11 @@ a.filtro-attivo-cal-sport,
 .cella.squadre-due-righe span.battuta:after,
 .dropdown-box-grid .elemento-macro:hover,
 .dropdown-box-grid .elemento-macro.icona-selezionata {
-  background: var(--accent-bg) !important;
+  background: linear-gradient(
+    #ec411a 0%,
+    #e63312 25.12%,
+    #ff7600 100%
+  ) !important;
   color: var(--accent-txt) !important;
 }
 
@@ -96,7 +100,11 @@ a.filtro-attivo-cal-sport,
   button,
 .custom-switch-2 input:checked ~ .custom-slider-2,
 .custom-radio-1 input:checked ~ .custom-radio-1_checkmark {
-  background: var(--accent-bg) !important;
+  background: linear-gradient(
+    #ec411a 0%,
+    #e63312 25.12%,
+    #ff7600 100%
+  ) !important;
   color: var(--accent-txt) !important;
 }
 
@@ -198,8 +206,8 @@ figure.sport-icona-live:hover,
 }
 
 .destra-top-match .titolo-blocco-sport {
-  background: var(--accent-bg) !important;
-  color: var(--accent-txt) !important;
+  background: var(--teableHeadersBg) !important;
+  color: var(--teableHeadersCol) !important;
   margin-top: 8px;
   justify-content: center;
   text-transform: uppercase;
@@ -314,7 +322,11 @@ figure.sport-icona-live:hover,
 .elemento-competizioni-widget.singola-competizione:hover,
 .competizione-attiva,
 .competizione-attiva.live-si {
-  background: var(--accent-bg) !important;
+  background: linear-gradient(
+    #ec411a 0%,
+    #e63312 25.12%,
+    #ff7600 100%
+  ) !important;
   color: var(--accent-txt) !important;
 }
 .titolo-accordion a {
@@ -611,7 +623,11 @@ img.img-fluid.pointer.close-all {
 .strumenti-competizione > a.active,
 .strumenti-competizione > a:hover {
   border-color: var(--accent) !important;
-  background: var(--accent-bg);
+  background: linear-gradient(
+    #ec411a 0%,
+    #e63312 25.12%,
+    #ff7600 100%
+  ) !important;
   color: var(--accent-txt);
 }
 

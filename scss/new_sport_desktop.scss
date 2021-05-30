@@ -223,7 +223,7 @@ figure.sport-icona-live:hover,
 
 .quota,
 .contenitoreSingolaQuota {
-  background-color: var(--bg1) !important;
+  // background-color: var(--bg1) !important;
   color: var(--col1) !important;
   font-weight: 600;
 }
@@ -419,12 +419,10 @@ figure.sport-icona-live:hover,
 }
 
 .info-evento-centrale.d-flex.justify-content-around.align-items-center.margine-giu-mezzo.bordo-tondo {
-  background: var(--teableHeadersBg);
+  background: var(--secondary-bg);
   color: var(--teableHeadersCol);
 }
-.riga.colore-1.lampeggia {
-  color: var(--teableHeadersCol) !important;
-}
+
 .griglia-centrale-sport.col.stringimento-sidebar.evento-live-centrale.justify-content-between.go-up-arrow-on-overflow.ord-2.aperto-widget-evento-dx
   > .d-flex {
   background: #fff;
@@ -1179,6 +1177,9 @@ div#cg-scommesse-submenu {
 .tablesExpanded .tabellaQuoteIntestazione.tabellaQuoteIntestazionePrematch {
   border-bottom: 0.5px solid #c2c1c1;
 }
+.tablesExpanded .tabellaQuoteNew.tabellaQuotePrematch {
+  margin-bottom: 0 !important;
+}
 
 .elemento-competizioni-widget.pointer.toggle-nascondi-live.tog-menu.collapsed {
   background: #e4e4e4;
@@ -1192,7 +1193,7 @@ div#cg-scommesse-submenu {
 }
 
 div#sidebar-dx {
-  max-width: 330px !important;
+  max-width: 300px !important;
 }
 
 .tool-scroll {
@@ -1203,4 +1204,34 @@ div#sidebar-dx {
 
 .sposta-sidebar.padding-verticale.bg-colore-1.padding-orizzontale.bordo-tondo {
   display: none;
+}
+
+.apri-partite-in-evidenza.maiuscolo a{
+  padding: 8px 0px;
+  font-size: 9px;
+}
+.contenitore-table.bg-bianco {
+  .tabellaQuoteNew {
+    .tabellaQuoteSquadre {
+      p.text-left {
+        padding-top: 2px;
+      }
+    }
+  }
+}
+#xsport-container {
+  .overlay-container {
+    #oddslist {
+      .list-element {
+        border-bottom: 1px solid var(--tableBorders);
+        border: 1px solid var(--tableBorders);
+        .pin-toggle {
+          padding-top: 11px;
+        }
+        .arrow.arrow-expand {
+          right: 23px;
+        }
+      }
+    }
+  }
 }

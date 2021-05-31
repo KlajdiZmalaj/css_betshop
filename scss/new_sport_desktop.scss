@@ -251,7 +251,7 @@ figure.sport-icona-live:hover,
 .contenitoreSingolaQuota.selezionata,
 .quota:hover,
 .contenitoreSingolaQuota:hover {
-  background: var(--accent-bg) !important;
+  background: linear-gradient(#ec411a 0%, #e63312 25.12%, #ff7600 100%) !important;
   color: var(--accent-txt) !important;
 }
 
@@ -1196,11 +1196,50 @@ div#sidebar-dx {
 }
 
 .tool-scroll {
-  padding: 8px 6px 8px 10px;
-  background: #fb6904;
-  border: 2px solid #0c0c0c;
+  padding: 8px 10px 8px 10px;
+  background: linear-gradient(
+    #ec411a 0%,
+    #e63312 25.12%,
+    #ff7600 100%
+  ) !important;
 }
 
 .sposta-sidebar.padding-verticale.bg-colore-1.padding-orizzontale.bordo-tondo {
   display: none;
+}
+
+///// button ->
+
+i.fas.fa-expand-arrows-alt:before {
+  content: "Apri / chuidi";
+  display: block;
+  font-family: "Roboto";
+  font-size: 9px;
+}
+
+i.fas.fa-expand-arrows-alt:after {
+  content: "Evento";
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+  font-family: "Roboto";
+  font-size: 9px;
+}
+
+.tool-scroll {
+  padding: 5px 8px 2px 8px;
+  background: linear-gradient(
+    #ec411a 0%,
+    #e63312 25.12%,
+    #ff7600 100%
+  ) !important;
+  font-size: 11px;
+}
+
+.toolbox-submenu {
+  display: flex;
+  position: absolute;
+  right: 50%;
+  transform: translateX(500px);
+  align-items: center;
 }

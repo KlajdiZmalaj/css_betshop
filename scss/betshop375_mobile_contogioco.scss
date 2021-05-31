@@ -1,4 +1,5 @@
 @import "vars";
+
 body {
   .cg-nav-logo {
     display: flex;
@@ -514,6 +515,7 @@ body {
     justify-content: center;
     text-transform: uppercase;
     margin-right: 15px;
+    display: none;
   }
   .cg-top-navbar {
     background: var(--primary-bg);
@@ -747,8 +749,8 @@ body {
     padding-right: 0;
   }
   .cg-menuTabMobile {
-    background: var(--mainBg) !important;
-    color: var(--mainBgCol) !important;
+    background: #0f0f0f !important;
+    color: #fff !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -878,7 +880,7 @@ div#cg-promo-preview-container {
 }
 
 .cg-buttonMenuMobile {
-  box-shadow: 1px 1px var(--tableBorders);
+  box-shadow: 1px 1px #fd7101;
 }
 
 .cg-container-title {
@@ -904,4 +906,14 @@ div#cg-promo-preview-container {
 
 .cg-banner {
   background-image: url(https://www.betshop375.it/external_css/BETSHOP375/img/Drop-wins-italy-banner1.png) !important;
+}
+
+.nav-filters-expand-button {
+  border-radius: 10px;
+}
+
+@media only screen and (max-height: 650px) {
+  #cg-pagina-ippica-isibet #cg-iframe-container iframe {
+    height: calc(100% + 150px);
+  }
 }

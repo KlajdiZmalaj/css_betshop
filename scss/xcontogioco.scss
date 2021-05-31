@@ -1,6 +1,10 @@
 @import "vars";
 @import url("https://#{$skinHost}/external_css/#{$skinName}/fontAwesome/css/all.min.css");
 
+html body #xsport-container {
+  font-family: "Roboto", sans-serif !important;
+}
+
 html body {
   color: var(--mainBgCol);
   background-color: var(--mainBg);
@@ -995,6 +999,7 @@ a.carousel-control-next {
 
 .cg-pvr-page .modal-account {
   margin-bottom: 38px;
+  height: 83vh;
 }
 
 .barra-intermedia-footer {

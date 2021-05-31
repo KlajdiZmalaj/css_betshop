@@ -226,6 +226,7 @@ figure.sport-icona-live:hover,
   // background-color: var(--bg1) !important;
   color: var(--col1) !important;
   font-weight: 600;
+  background: #d8d8d8;
 }
 
 .quota span,
@@ -251,7 +252,11 @@ figure.sport-icona-live:hover,
 .contenitoreSingolaQuota.selezionata,
 .quota:hover,
 .contenitoreSingolaQuota:hover {
-  background: linear-gradient(#ec411a 0%, #e63312 25.12%, #ff7600 100%) !important;
+  background: linear-gradient(
+    #ec411a 0%,
+    #e63312 25.12%,
+    #ff7600 100%
+  ) !important;
   color: var(--accent-txt) !important;
 }
 
@@ -1209,7 +1214,6 @@ div#sidebar-dx {
   display: none;
 }
 
-<<<<<<< HEAD
 ///// button ->
 
 i.fas.fa-expand-arrows-alt:before {
@@ -1244,34 +1248,33 @@ i.fas.fa-expand-arrows-alt:after {
   right: 50%;
   transform: translateX(500px);
   align-items: center;
-=======
-.apri-partite-in-evidenza.maiuscolo a{
-  padding: 8px 0px;
-  font-size: 9px;
-}
-.contenitore-table.bg-bianco {
-  .tabellaQuoteNew {
-    .tabellaQuoteSquadre {
-      p.text-left {
-        padding-top: 2px;
-      }
-    }
+  .apri-partite-in-evidenza.maiuscolo a {
+    padding: 8px 0px;
+    font-size: 9px;
   }
-}
-#xsport-container {
-  .overlay-container {
-    #oddslist {
-      .list-element {
-        border-bottom: 1px solid var(--tableBorders);
-        border: 1px solid var(--tableBorders);
-        .pin-toggle {
-          padding-top: 11px;
-        }
-        .arrow.arrow-expand {
-          right: 23px;
+  .contenitore-table.bg-bianco {
+    .tabellaQuoteNew {
+      .tabellaQuoteSquadre {
+        p.text-left {
+          padding-top: 2px;
         }
       }
     }
   }
->>>>>>> 9fb5e178edd28d603c2684b1cbf68b2da4a4be64
+  #xsport-container {
+    .overlay-container {
+      #oddslist {
+        .list-element {
+          border-bottom: 1px solid var(--tableBorders);
+          border: 1px solid var(--tableBorders);
+          .pin-toggle {
+            padding-top: 11px;
+          }
+          .arrow.arrow-expand {
+            right: 23px;
+          }
+        }
+      }
+    }
+  }
 }

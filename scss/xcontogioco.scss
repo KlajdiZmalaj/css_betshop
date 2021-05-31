@@ -5,7 +5,7 @@ html body {
   color: var(--mainBgCol);
   background-color: var(--mainBg);
   &[page="sport"] {
-    background-image: url(#{$bodyBg});
+    // background-image: url(#{$bodyBg});
     background-color: #000;
     background-position: center -140px;
     background-repeat: no-repeat;
@@ -1230,7 +1230,7 @@ html body[page="promo"] .menu-principale-barra > nav {
 }
 
 a.bg-colore-1.bianco {
-  background: black !important;
+  background: #323232 !important;
 }
 
 ///remove of top top header wp

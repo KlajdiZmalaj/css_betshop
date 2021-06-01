@@ -40,7 +40,7 @@ nav.nav-buttons-container {
   box-shadow: unset;
   position: sticky;
   z-index: 99;
-  top: 44px;
+  top: 55px;
 }
 
 nav.nav-buttons-container {
@@ -67,7 +67,11 @@ span.arrow.arrow-right {
 }
 
 .betslip-bottom-bar {
-  background: var(--accent-bg);
+  background: linear-gradient(
+    #ec411a 0%,
+    #e63312 25.12%,
+    #ff7600 100%
+  ) !important;
   color: var(--accent-txt);
   padding-left: 38px;
   justify-content: space-around !important;
@@ -171,7 +175,11 @@ a.tasto-nav-quote-landing.active {
 }
 
 .custom-switch-2 input:checked ~ .custom-slider-2 {
-  background-color: var(--accent-bg);
+  background: linear-gradient(
+    #ec411a 0%,
+    #e63312 25.12%,
+    #ff7600 100%
+  ) !important;
   color: var(--accent-txt);
 }
 
@@ -222,7 +230,11 @@ nav#nav-temporal-filter {
 }
 
 .nav-filter-item.selected {
-  background: var(--accent-bg);
+  background: linear-gradient(
+    #ec411a 0%,
+    #e63312 25.12%,
+    #ff7600 100%
+  ) !important;
   color: var(--accent-txt);
 }
 
@@ -231,7 +243,11 @@ nav#nav-temporal-filter {
 }
 
 .nav-filters .nav-filter-item.categoryLiveContainer.selected {
-  background: var(--accent-bg);
+  background: linear-gradient(
+    #ec411a 0%,
+    #e63312 25.12%,
+    #ff7600 100%
+  ) !important;
   color: var(--accent-txt);
   border-radius: 4px;
 }
@@ -590,12 +606,6 @@ div#cg_exa-mobileSportAppContainer {
 }
 .nav-breadcrumb {
   color: #222;
-}
-
-.mostra-sidebar-dx.pointer.bg-nero.bianco.bordo-tondo.margine-giu.d-none {
-}
-
-.sr-lmt-plus-penaltycards__cards {
 }
 
 /* WIDGET BETRADAR INIZIA DA QUA */

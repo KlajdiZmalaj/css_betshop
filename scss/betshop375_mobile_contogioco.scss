@@ -632,7 +632,7 @@ body {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    border-radius: 0;
+    border-radius: 7px;
   }
   #cg-slide-footer {
     display: none;
@@ -880,7 +880,7 @@ div#cg-promo-preview-container {
 }
 
 .cg-buttonMenuMobile {
-  box-shadow: 1px 1px #fd7101;
+  box-shadow: 0px 0px #fd7101;
 }
 
 .cg-container-title {
@@ -910,6 +910,36 @@ div#cg-promo-preview-container {
 
 .nav-filters-expand-button {
   border-radius: 10px;
+}
+
+.betslip-bottom-bar .details-name {
+  color: #fff !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+}
+
+body .esito.bet-selected {
+  background: linear-gradient(
+    #ec411a 0%,
+    #e63312 25.12%,
+    #ff7600 100%
+  ) !important;
+}
+
+.info-score {
+  border-radius: 5px !important;
+}
+
+.nav-filters-expand-button {
+  background: linear-gradient(
+    #ec411a 0%,
+    #e63312 25.12%,
+    #ff7600 100%
+  ) !important;
+}
+
+.cg-top-navbar {
+  height: 55px !important;
 }
 
 @media only screen and (max-height: 650px) {

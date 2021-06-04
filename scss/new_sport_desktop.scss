@@ -71,11 +71,7 @@ a.filtro-attivo-cal-sport,
 .cella.squadre-due-righe span.battuta:after,
 .dropdown-box-grid .elemento-macro:hover,
 .dropdown-box-grid .elemento-macro.icona-selezionata {
-  background: linear-gradient(
-    #ec411a 0%,
-    #e63312 25.12%,
-    #ff7600 100%
-  ) !important;
+  background: var(--accent-bg);
   color: var(--accent-txt) !important;
 }
 
@@ -100,11 +96,7 @@ a.filtro-attivo-cal-sport,
   button,
 .custom-switch-2 input:checked ~ .custom-slider-2,
 .custom-radio-1 input:checked ~ .custom-radio-1_checkmark {
-  background: linear-gradient(
-    #ec411a 0%,
-    #e63312 25.12%,
-    #ff7600 100%
-  ) !important;
+  background: var(--accent-bg);
   color: var(--accent-txt) !important;
 }
 
@@ -252,11 +244,7 @@ figure.sport-icona-live:hover,
 .contenitoreSingolaQuota.selezionata,
 .quota:hover,
 .contenitoreSingolaQuota:hover {
-  background: linear-gradient(
-    #ec411a 0%,
-    #e63312 25.12%,
-    #ff7600 100%
-  ) !important;
+  background: var(--accent-bg) !important;
   color: var(--accent-txt) !important;
 }
 
@@ -327,11 +315,7 @@ figure.sport-icona-live:hover,
 .elemento-competizioni-widget.singola-competizione:hover,
 .competizione-attiva,
 .competizione-attiva.live-si {
-  background: linear-gradient(
-    #ec411a 0%,
-    #e63312 25.12%,
-    #ff7600 100%
-  ) !important;
+  background: var(--accent-bg) !important;
   color: var(--accent-txt) !important;
 }
 .titolo-accordion a {
@@ -626,11 +610,7 @@ img.img-fluid.pointer.close-all {
 .strumenti-competizione > a.active,
 .strumenti-competizione > a:hover {
   border-color: var(--accent) !important;
-  background: linear-gradient(
-    #ec411a 0%,
-    #e63312 25.12%,
-    #ff7600 100%
-  ) !important;
+  background: var(--accent-bg) !important;
   color: var(--accent-txt);
 }
 
@@ -1202,12 +1182,9 @@ div#sidebar-dx {
 }
 
 .tool-scroll {
-  padding: 8px 10px 8px 10px;
-  background: linear-gradient(
-    #ec411a 0%,
-    #e63312 25.12%,
-    #ff7600 100%
-  ) !important;
+  padding: 5px 8px 2px 8px;
+  background: var(--accent-bg);
+  font-size: 11px;
 }
 
 .sposta-sidebar.padding-verticale.bg-colore-1.padding-orizzontale.bordo-tondo {
@@ -1230,16 +1207,6 @@ i.fas.fa-expand-arrows-alt:after {
   margin-top: 4px;
   font-family: "Roboto";
   font-size: 9px;
-}
-
-.tool-scroll {
-  padding: 5px 8px 2px 8px;
-  background: linear-gradient(
-    #ec411a 0%,
-    #e63312 25.12%,
-    #ff7600 100%
-  ) !important;
-  font-size: 11px;
 }
 
 .toolbox-submenu {

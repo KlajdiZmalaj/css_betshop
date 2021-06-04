@@ -111,10 +111,7 @@ body .cg-header-logo {
 [page="virtuali"] .elementi-footer {
   margin-top: 0 !important;
 }
-body:not([subpage="live"])
-  .menu-principale-barra
-  ul.menu-principale
-  a.altro-principale.pointer[data-ref="promo"] {
+body:not([subpage="live"]) .menu-principale-barra ul.menu-principale a.altro-principale.pointer[data-ref="promo"] {
   position: relative;
   right: 0;
   top: 0;
@@ -147,7 +144,7 @@ body:not([subpage="live"])
     background: var(--accent-bg);
     color: var(--accent-txt);
     transform: skewX(-20deg);
-    background: linear-gradient(#fd7426 0%, #eb3f19 100%);
+    background: var(--accent-bg);
   }
   a[data-ref="promo"] {
     padding-top: 16px;
@@ -550,14 +547,7 @@ html {
     display: flex;
     flex-flow: column;
     max-height: 180px;
-    background: linear-gradient(
-      140deg,
-      transparent,
-      transparent 26%,
-      #ffffff6e 48%,
-      transparent 78%,
-      transparent 130%
-    );
+    background: linear-gradient(140deg, transparent, transparent 26%, #ffffff6e 48%, transparent 78%, transparent 130%);
     justify-content: flex-end;
     img {
       flex-grow: 1;
@@ -1091,9 +1081,7 @@ p.cg-footer-section-title.grassetto.mediumtext:after {
 
 html {
   //home header
-  .menu-principale-barra
-    ul.menu-principale
-    a.altro-principale.pointer[data-ref="promo"] {
+  .menu-principale-barra ul.menu-principale a.altro-principale.pointer[data-ref="promo"] {
     margin-left: 37px !important;
   }
 
@@ -1262,12 +1250,7 @@ a[href="/landing"] {
   }
 }
 
-i.fas {
-  margin-right: 0 !important;
-}
-
-.elemento-competizioni-widget.pointer.toggle-nascondi-live.tog-menu.collapsed
-  .paese-widget-sx {
+.elemento-competizioni-widget.pointer.toggle-nascondi-live.tog-menu.collapsed .paese-widget-sx {
   color: #323232 !important;
 }
 
@@ -1277,11 +1260,7 @@ i.fas {
 
 a.consulta-footer,
 a.consulta-chat {
-  background: linear-gradient(
-    #ec411a 0%,
-    #e63312 25.12%,
-    #ff7600 100%
-  ) !important;
+  background: var(--accent-bg);
 }
 .carousel-indicators li {
   width: 12px !important;

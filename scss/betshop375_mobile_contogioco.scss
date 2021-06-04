@@ -919,11 +919,7 @@ div#cg-promo-preview-container {
 }
 
 body .esito.bet-selected {
-  background: linear-gradient(
-    #ec411a 0%,
-    #e63312 25.12%,
-    #ff7600 100%
-  ) !important;
+  background: linear-gradient(#ec411a 0%, #e63312 25.12%, #ff7600 100%) !important;
 }
 
 .info-score {
@@ -931,15 +927,28 @@ body .esito.bet-selected {
 }
 
 .nav-filters-expand-button {
-  background: linear-gradient(
-    #ec411a 0%,
-    #e63312 25.12%,
-    #ff7600 100%
-  ) !important;
+  background: linear-gradient(#ec411a 0%, #e63312 25.12%, #ff7600 100%) !important;
 }
 
 .cg-top-navbar {
   height: 55px !important;
+}
+
+.cg-labelMenu {
+  font-size: 12px !important;
+  margin-top: 2px;
+}
+
+.cg-labelMenu {
+  text-transform: capitalize !important;
+}
+
+.cg-recover-top-navbar > .cg-logo.cg-recover-logo {
+  width: 220px;
+}
+
+.cg-recover-top-navbar {
+  background: #fff !important;
 }
 
 @media only screen and (max-height: 650px) {

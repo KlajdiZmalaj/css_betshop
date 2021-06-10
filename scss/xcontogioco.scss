@@ -38,7 +38,7 @@ html body {
     display: block;
     width: 360px;
     background-repeat: no-repeat;
-    height: 40px;
+    height: 45px;
   }
   img {
     display: none;
@@ -73,6 +73,7 @@ body .cg-header-logo {
     flex: auto;
     width: auto;
     max-width: 50%;
+    display: flex;
   }
 }
 .funzioni-menu {
@@ -185,9 +186,9 @@ body:not([subpage="live"]) .menu-principale-barra ul.menu-principale a.altro-pri
     align-items: center;
     justify-content: center;
   }
-  > nav {
-    display: none;
-  }
+  // > nav {
+  //   display: none;
+  // }
 }
 [subpage="live"] .menu-principale-barra > nav {
   display: block;
@@ -1123,6 +1124,7 @@ html {
       background-size: contain;
       background-position: center;
       margin-left: 10px;
+      display: none;
     }
   }
   .menu-principale-barra {
@@ -1280,4 +1282,54 @@ a.consulta-chat {
   background: #f25309;
   color: white;
   border-radius: 0.25rem;
+}
+//header's height
+.row.barra-intermedia {
+  min-height: 100px;
+}
+
+//NEW upper header with wp (start)
+
+.barra-superiore .blocco-header:not(:first-child):before {
+  content: "per invio documenti: ";
+  text-transform: uppercase;
+  margin-right: 20px;
+  font-size: 13px;
+  font-family: lato;
+  font-weight: 400;
+}
+
+span#cg-date {
+  display: none;
+}
+
+span#cg-time {
+  display: none;
+}
+
+html .row.barra-superiore {
+  display: flex;
+  background: linear-gradient(45deg, #262626 40%, #6e2e1f 130%);
+  min-height: 36px;
+  border-bottom: 1px solid #fd7101;
+}
+
+.cg-contatti span {
+  font-size: 13px !important;
+}
+
+//NEW upper header with wp (end)
+
+.col-lg-5.info-utili {
+  max-width: 35% !important;
+}
+
+.col-lg-5.disclaimer {
+  max-width: 65% !important;
+  display: flex;
+  justify-content: flex-end;
+}
+
+p.testo-disclaimer {
+  margin-right: 15px;
 }

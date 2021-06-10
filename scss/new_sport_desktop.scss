@@ -1,4 +1,4 @@
-@import "vars";
+@import 'vars';
 :root {
   --cg-loader-color: var(--accent) !important;
 }
@@ -12,19 +12,19 @@
   background: #f7f8fa;
 }
 
-body[page="sport"] .elementi-footer .consulta-footer {
+body[page='sport'] .elementi-footer .consulta-footer {
   display: inherit;
 }
 
-body[page="sport"] .elementi-footer.elementi-footer-chiuso #nascondifooter {
+body[page='sport'] .elementi-footer.elementi-footer-chiuso #nascondifooter {
   display: none;
 }
 
-body[page="ingame"] .elementi-footer .consulta-footer {
+body[page='ingame'] .elementi-footer .consulta-footer {
   display: inherit;
 }
 
-body[page="ingame"] .elementi-footer.elementi-footer-chiuso #nascondifooter {
+body[page='ingame'] .elementi-footer.elementi-footer-chiuso #nascondifooter {
   display: none;
 }
 
@@ -114,11 +114,11 @@ figure.sport-icona-live:hover,
 .contenitoreSingolaQuota,
 .f-attiva,
 .titolo-partita-top-match-separatore,
-.finestra-stampa-ticket-barra-ricerca > form > input[type="submit"],
+.finestra-stampa-ticket-barra-ricerca > form > input[type='submit'],
 .sortContainer.sortedUp .fas.fa-sort-up,
 .sortContainer.sortedDown .fas.fa-sort-down,
 .bottone-elimina:hover,
-.tasto-abilita-carrello-scrollable[data-carrello-scrollable-abilitato="true"],
+.tasto-abilita-carrello-scrollable[data-carrello-scrollable-abilitato='true'],
 .bonus-schedina_template-1 .bonus-schedina_template-1_header,
 .custom-switch-2 input:checked ~ .custom-switch-2-text,
 .table-schedina .banker-letter-box {
@@ -562,7 +562,7 @@ span.voce-riduci {
 
 .live-in-prematch span.colore-1 {
   color: #323232 !important;
-  font-family: "Metropolis-Bold";
+  font-family: 'Metropolis-Bold';
 }
 
 .toolbox-evento.justify-content-center.padding-orizzontale.bg-nero.bianco.bordo-tondo.d-flex.margine-giu-mezzo {
@@ -616,7 +616,7 @@ img.img-fluid.pointer.close-all {
 
 .regione-widget > .elemento-competizioni-widget span:last-child,
 .elemento-competizioni-widget > .titolo-accordion span:last-child {
-  font-family: "Metropolis-Bold";
+  font-family: 'Metropolis-Bold';
 }
 
 .regione-widget {
@@ -667,7 +667,7 @@ img.img-fluid.pointer.close-all {
 }
 
 .grid-schedina .grid-schedina-intestazione_contenitore-testo {
-  color: #000 !important;
+  color: var(--accent) !important;
 }
 
 .grid-schedina-body_quote-riga_descrizione-quota > p > span {
@@ -1194,18 +1194,18 @@ div#sidebar-dx {
 ///// button ->
 
 i.fas.fa-expand-arrows-alt:before {
-  content: "Apri / chuidi";
+  content: 'Apri / chuidi';
   display: block;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 9px;
 }
 
 i.fas.fa-expand-arrows-alt:after {
-  content: "Evento";
+  content: 'Evento';
   display: flex;
   justify-content: center;
   margin-top: 4px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 9px;
 }
 

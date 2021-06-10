@@ -544,7 +544,15 @@ body {
     margin: 4px auto;
     border-radius: 20px;
     padding: 0 15px;
-    border-bottom: 3px solid var(--tableBorders);
+    // border-bottom: 3px solid var(--tableBorders);
+    border-bottom: 1px solid var(--tableBorders);
+    border: 1px solid var(--tableBorders);
+    .pin-toggle {
+      padding-top: 11px;
+    }
+    .arrow.arrow-expand {
+      right: 23px;
+    }
   }
   .prematch-sport-img {
     border-radius: 25px;

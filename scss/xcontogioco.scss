@@ -1333,3 +1333,15 @@ html .row.barra-superiore {
 p.testo-disclaimer {
   margin-right: 15px;
 }
+
+body[subpage="home"] {
+  background-color: black !important;
+
+  .fissato-bottoni {
+    background: black;
+  }
+
+  .tasti-bottom {
+    background: black;
+  }
+}

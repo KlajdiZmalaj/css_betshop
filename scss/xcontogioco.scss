@@ -1335,13 +1335,60 @@ p.testo-disclaimer {
 }
 
 body[subpage="home"] {
-  background-color: black !important;
+  background-color: #0d100d !important;
 
   .fissato-bottoni {
-    background: black;
+    background: #0d100d;
   }
 
   .tasti-bottom {
-    background: black;
+    background: #0d100d;
+  }
+}
+
+body[page="xcasinopt"] {
+  background-color: #1b1b1b !important;
+
+  .fissato-bottoni {
+    background: #1b1b1b;
+  }
+
+  .tasti-bottom {
+    background: #1b1b1b;
+  }
+}
+
+body[page="xcards"] {
+  .casino-3 .menu-float {
+    margin-top: 20px !important;
+  }
+
+  .row.titolo-slot-3.allinea-sinistra {
+    margin-top: 20px;
+  }
+  .row.titolo-slot-3.allinea-sinistra.bianco.bg-filtri-casino {
+    border: 0 !important;
+    background: #0000001a !important;
+    border-radius: 10px;
+  }
+
+  .elementi-footer #consultaUltimev {
+    bottom: 0px;
+    z-index: 100;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    left: 20px;
+  }
+
+  .ultime-vincite-box {
+    padding-left: 180px;
+  }
+
+  #cg-top-button {
+    display: none !important;
+  }
+
+  .tasti-navigazione-vincite {
+    position: absolute !important;
   }
 }

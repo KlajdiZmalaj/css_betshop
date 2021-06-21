@@ -1,4 +1,8 @@
-@import 'vars';
+@import "vars";
+
+:root {
+  --cg-altezza-header: 54px !important;
+}
 
 body {
   .cg-nav-logo {
@@ -10,8 +14,8 @@ body {
 body a.cg-nav-logo.cg-customerLiteLogo {
   background-image: none;
   &::before {
-    content: '';
-    background-image: url('#{$logoUrl}');
+    content: "";
+    background-image: url("#{$logoUrl}");
     background-position: center;
     background-size: contain;
     display: block;
@@ -148,7 +152,7 @@ body {
     color: var(--accent);
     font-size: 27px;
     font-weight: 300;
-    font-family: 'Roboto';
+    font-family: "Roboto";
   }
   .vincita-totale {
     background: var(--mainBg);
@@ -177,7 +181,7 @@ body {
     border: 0;
   }
   .shopping-cart-date-close-btn {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/close.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/close.svg");
     width: 13px;
     height: 13px;
     background-repeat: no-repeat;
@@ -286,7 +290,7 @@ body {
     min-height: 64px;
   }
   #coupon-multiple-append {
-    .shopping-cart-result-box[data-animation='false'] {
+    .shopping-cart-result-box[data-animation="false"] {
       min-height: 63px;
     }
   }
@@ -340,11 +344,11 @@ body {
   .coupon-result-text-box.multiple_live_entry:before,
   .system-master.system_live_entry:before {
     background-color: transparent;
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/livecpn.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/livecpn.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    content: '';
+    content: "";
     width: 70px;
     height: 66px;
     top: -2px;
@@ -376,10 +380,10 @@ body {
     text-shadow: none;
     font-weight: 300;
     text-transform: uppercase;
-    font-family: 'Roboto';
+    font-family: "Roboto";
   }
   .cg-recover-logo {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/logo.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/logo.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -389,84 +393,84 @@ body {
     align-items: center;
   }
   i.cg-icon.ion-md-albums {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/interface.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/interface.svg");
     &::before {
-      content: '';
+      content: "";
     }
   }
   i.cg-icon.ion-md-send {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/recommendation.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/recommendation.svg");
     &::before {
-      content: '';
+      content: "";
     }
   }
   i.cg-icon.cg-ico-search {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/seo.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/seo.svg");
     &::before {
-      content: '';
+      content: "";
     }
   }
   .cg-ico-sport {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/sports.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/sports.svg");
     &::before {
-      content: '';
+      content: "";
     }
   }
 
   .cg-ico-prematch {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/sports.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/sports.svg");
   }
   .cg-ico-live {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/live.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/live.svg");
   }
   .cg-ico-cart {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/receipt.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/receipt.svg");
   }
   .cg-ico-user {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/user.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/user.svg");
   }
   .cg-ico-casino {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/jackpot.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/jackpot.svg");
   }
   .cg-slide-ico-home {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/homepage.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/homepage.svg");
   }
   .cg-slide-ico-prematch {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/sports.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/sports.svg");
   }
   .cg-slide-ico-promo {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/promotion.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/promotion.svg");
   }
   .cg-slide-ico-casino-live {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/chips.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/chips.svg");
   }
   .cg-slide-ico-poker {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/poker-cards.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/poker-cards.svg");
   }
   .cg-slide-ico-lotterie {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/lottery.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/lottery.svg");
   }
   .cg-slide-ico-carte {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/cartee.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/cartee.svg");
   }
   .cg-slide-ico-virtual {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/race-horse.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/race-horse.svg");
   }
   .cg-slide-ico-gv {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/card.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/card.svg");
   }
   .cg-slide-ico-bingo {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/bingo.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/bingo.svg");
   }
   .cg-slide-ico-ippica {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/ippica.png');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/ippica.png");
   }
   .cg-ico-mybet {
-    background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/checklist.svg');
+    background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/checklist.svg");
   }
   div#cg-external-chat {
     &:before {
-      content: '';
+      content: "";
       width: 25px;
       height: 40px;
       display: block;
@@ -474,12 +478,12 @@ body {
       background-repeat: no-repeat;
       background-size: contain;
       margin-right: 10px;
-      background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/chat.svg');
+      background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/chat.svg");
     }
   }
   div#cg-desktop-mode {
     &:before {
-      content: '';
+      content: "";
       width: 25px;
       height: 40px;
       display: block;
@@ -487,13 +491,13 @@ body {
       background-repeat: no-repeat;
       margin-right: 10px;
       background-size: contain;
-      background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/monitor.svg');
+      background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/monitor.svg");
     }
   }
   div#cg-faq-contogioco,
   div#cg-faq-regole-sport {
     &:before {
-      content: '';
+      content: "";
       width: 25px;
       height: 40px;
       margin-right: 10px;
@@ -501,7 +505,7 @@ body {
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/documents.svg');
+      background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/mobicons/documents.svg");
     }
   }
   .cg-deposit-button {
@@ -674,7 +678,7 @@ body {
     text-transform: uppercase;
   }
   #cg-slide-footer2 {
-    [style*='font-size: 10px'] {
+    [style*="font-size: 10px"] {
       font-size: 12px !important;
     }
   }
@@ -927,11 +931,7 @@ div#cg-promo-preview-container {
 }
 
 body .esito.bet-selected {
-  background: linear-gradient(
-    #ec411a 0%,
-    #e63312 25.12%,
-    #ff7600 100%
-  ) !important;
+  background: linear-gradient(#ec411a 0%, #e63312 25.12%, #ff7600 100%) !important;
 }
 
 .info-score {
@@ -939,11 +939,7 @@ body .esito.bet-selected {
 }
 
 .nav-filters-expand-button {
-  background: linear-gradient(
-    #ec411a 0%,
-    #e63312 25.12%,
-    #ff7600 100%
-  ) !important;
+  background: linear-gradient(#ec411a 0%, #e63312 25.12%, #ff7600 100%) !important;
 }
 
 .cg-top-navbar {
@@ -974,4 +970,13 @@ body .esito.bet-selected {
 }
 .cg-promo-item-img {
   width: 90%;
+}
+
+#xsport-container .sticky {
+  z-index: 99;
+  top: 55px;
+}
+
+.cg-signup-popup-logo {
+  background-image: url(https://www.betshop375.it/external_css/BETSHOP375/img/logo.svg) !important;
 }

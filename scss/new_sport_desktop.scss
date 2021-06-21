@@ -1,4 +1,4 @@
-@import 'vars';
+@import "vars";
 :root {
   --cg-loader-color: var(--accent) !important;
 }
@@ -12,19 +12,19 @@
   background: #f7f8fa;
 }
 
-body[page='sport'] .elementi-footer .consulta-footer {
+body[page="sport"] .elementi-footer .consulta-footer {
   display: inherit;
 }
 
-body[page='sport'] .elementi-footer.elementi-footer-chiuso #nascondifooter {
+body[page="sport"] .elementi-footer.elementi-footer-chiuso #nascondifooter {
   display: none;
 }
 
-body[page='ingame'] .elementi-footer .consulta-footer {
+body[page="ingame"] .elementi-footer .consulta-footer {
   display: inherit;
 }
 
-body[page='ingame'] .elementi-footer.elementi-footer-chiuso #nascondifooter {
+body[page="ingame"] .elementi-footer.elementi-footer-chiuso #nascondifooter {
   display: none;
 }
 
@@ -44,12 +44,8 @@ a.filtro-attivo-cal-sport,
 .strumenti-competizione > a.active,
 .strumenti-competizione > a:hover,
 .filtro-oggi-domani a:hover,
-.lista-selezionabili
-  .custom-control-input:checked
-  ~ .custom-control-label::before,
-.lista-selezionabili
-  .custom-control-input:checked
-  ~ .custom-control-label::before {
+.lista-selezionabili .custom-control-input:checked ~ .custom-control-label::before,
+.lista-selezionabili .custom-control-input:checked ~ .custom-control-label::before {
   border-color: var(--accent) !important;
 }
 
@@ -65,9 +61,7 @@ a.filtro-attivo-cal-sport,
 .elenco-macro div.icona-selezionata,
 .elemento-macro:hover,
 .aggregate div:hover,
-.lista-selezionabili
-  .custom-control-input:checked
-  ~ .custom-control-label::before,
+.lista-selezionabili .custom-control-input:checked ~ .custom-control-label::before,
 .cella.squadre-due-righe span.battuta:after,
 .dropdown-box-grid .elemento-macro:hover,
 .dropdown-box-grid .elemento-macro.icona-selezionata {
@@ -91,9 +85,7 @@ a.filtro-attivo-cal-sport,
   .bonus-schedina_template-1_body_card
   .bonus-schedina_template-1_body_card_progress.progress
   .progress-bar,
-.bonus-schedina_template-1
-  .bonus-schedina_template-1_body_button-container
-  button,
+.bonus-schedina_template-1 .bonus-schedina_template-1_body_button-container button,
 .custom-switch-2 input:checked ~ .custom-slider-2,
 .custom-radio-1 input:checked ~ .custom-radio-1_checkmark {
   background: var(--accent-bg);
@@ -114,11 +106,11 @@ figure.sport-icona-live:hover,
 .contenitoreSingolaQuota,
 .f-attiva,
 .titolo-partita-top-match-separatore,
-.finestra-stampa-ticket-barra-ricerca > form > input[type='submit'],
+.finestra-stampa-ticket-barra-ricerca > form > input[type="submit"],
 .sortContainer.sortedUp .fas.fa-sort-up,
 .sortContainer.sortedDown .fas.fa-sort-down,
 .bottone-elimina:hover,
-.tasto-abilita-carrello-scrollable[data-carrello-scrollable-abilitato='true'],
+.tasto-abilita-carrello-scrollable[data-carrello-scrollable-abilitato="true"],
 .bonus-schedina_template-1 .bonus-schedina_template-1_header,
 .custom-switch-2 input:checked ~ .custom-switch-2-text,
 .table-schedina .banker-letter-box {
@@ -562,7 +554,7 @@ span.voce-riduci {
 
 .live-in-prematch span.colore-1 {
   color: #323232 !important;
-  font-family: 'Metropolis-Bold';
+  font-family: "Metropolis-Bold";
 }
 
 .toolbox-evento.justify-content-center.padding-orizzontale.bg-nero.bianco.bordo-tondo.d-flex.margine-giu-mezzo {
@@ -574,8 +566,7 @@ span.voce-riduci {
 img.img-fluid.pointer.margine-dx.reload-all {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: url(https://skingraphics.it/altri-siti/betclic_new/immagini/icon-update-all.png)
-    no-repeat;
+  background: url(https://skingraphics.it/altri-siti/betclic_new/immagini/icon-update-all.png) no-repeat;
   /* Width of new image */
   /* Height of new image */
   padding-left: 20px;
@@ -587,8 +578,7 @@ img.img-fluid.pointer.margine-dx.reload-all {
 img.img-fluid.pointer.close-all {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: url(https://skingraphics.it/altri-siti/betclic_new/immagini/ico-delete-all.png)
-    no-repeat;
+  background: url(https://skingraphics.it/altri-siti/betclic_new/immagini/ico-delete-all.png) no-repeat;
   /* Width of new image */
   /* Height of new image */
   padding-left: 20px;
@@ -616,7 +606,7 @@ img.img-fluid.pointer.close-all {
 
 .regione-widget > .elemento-competizioni-widget span:last-child,
 .elemento-competizioni-widget > .titolo-accordion span:last-child {
-  font-family: 'Metropolis-Bold';
+  font-family: "Metropolis-Bold";
 }
 
 .regione-widget {
@@ -640,10 +630,8 @@ img.img-fluid.pointer.close-all {
   color: #323232 !important;
 }
 
-.quota-widget-evento.quota.bordo-tondo.d-flex.justify-content-between.selezionata
-  span,
-.quota-widget-evento.quota.bordo-tondo.d-flex.justify-content-between:hover
-  span {
+.quota-widget-evento.quota.bordo-tondo.d-flex.justify-content-between.selezionata span,
+.quota-widget-evento.quota.bordo-tondo.d-flex.justify-content-between:hover span {
   color: var(--accent-txt) !important;
 }
 
@@ -1158,10 +1146,10 @@ div#cg-scommesse-submenu {
   border-bottom: 0 !important;
 }
 
-.tablesExpanded .tabellaQuoteNew.tabellaQuotePrematch,
-.tablesExpanded .tabellaQuoteIntestazione.tabellaQuoteIntestazionePrematch {
-  // border-bottom: 0.5px solid #c2c1c1;
-}
+// .tablesExpanded .tabellaQuoteNew.tabellaQuotePrematch,
+// .tablesExpanded .tabellaQuoteIntestazione.tabellaQuoteIntestazionePrematch {
+//   // border-bottom: 0.5px solid #c2c1c1;
+// }
 .tablesExpanded .tabellaQuoteNew.tabellaQuotePrematch {
   margin-bottom: 0 !important;
 }
@@ -1181,6 +1169,12 @@ div#sidebar-dx {
   max-width: 300px !important;
 }
 
+@media screen and (max-width: 1500px) {
+  .row div#sidebar-dx {
+    max-width: 210px !important;
+  }
+}
+
 .tool-scroll {
   padding: 5px 8px 2px 8px;
   background: var(--accent-bg);
@@ -1194,18 +1188,18 @@ div#sidebar-dx {
 ///// button ->
 
 i.fas.fa-expand-arrows-alt:before {
-  content: 'Apri / chuidi';
+  content: "Apri / chuidi";
   display: block;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 9px;
 }
 
 i.fas.fa-expand-arrows-alt:after {
-  content: 'Evento';
+  content: "Evento";
   display: flex;
   justify-content: center;
   margin-top: 4px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 9px;
 }
 

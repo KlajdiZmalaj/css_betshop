@@ -974,9 +974,23 @@ body .esito.bet-selected {
 
 #xsport-container .sticky {
   z-index: 99;
-  top: 55px;
+  top: 0px;
 }
 
 .cg-signup-popup-logo {
+  background: #000;
   background-image: url(https://www.betshop375.it/external_css/BETSHOP375/img/logo.svg) !important;
+  background-repeat: no-repeat;
+}
+
+.sticky-live-match-nav.sticky {
+  top: 0;
+  position: relative !important;
+}
+
+.sticky-live-match-nav.sticky #br_widget.sticky-position {
+  position: relative !important;
+  width: 100%;
+  transform: unset;
+  top: 0;
 }

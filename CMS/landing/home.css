@@ -11,13 +11,7 @@ body {
   background-color: #0d0d0d;
   color: #fff;
   width: 100%;
-  background: linear-gradient(
-    28deg,
-    #571f0c -15%,
-    #0d120d 14%,
-    #0d0d0d 95%,
-    #7f250e
-  );
+  background: #0d100d;
   overflow-x: hidden;
 }
 .topBanners {

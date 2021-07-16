@@ -148,8 +148,7 @@ body:not([subpage="live"]) .menu-principale-barra ul.menu-principale a.altro-pri
     background: var(--accent-bg);
   }
   a[data-ref="promo"] {
-    padding-top: 16px;
-    border: 0 !important;
+    border-left: 0 !important;
     &:before {
       content: "";
       background-image: url(https://test.betshop375.it/external_css/BETSHOP375/img/coupon.svg);
@@ -157,6 +156,7 @@ body:not([subpage="live"]) .menu-principale-barra ul.menu-principale a.altro-pri
       height: 30px;
       background-size: contain;
       background-repeat: no-repeat;
+      display: none;
       background-position: center;
       transform: scaleX(-1) translateX(25px) translateY(-2px);
       position: absolute;
@@ -1083,7 +1083,7 @@ p.cg-footer-section-title.grassetto.mediumtext:after {
 html {
   //home header
   .menu-principale-barra ul.menu-principale a.altro-principale.pointer[data-ref="promo"] {
-    margin-left: 37px !important;
+    margin-left: 0px !important;
   }
 
   .menu-principale-barra .sottomenu-principale ul {
@@ -1390,5 +1390,12 @@ body[page="xcards"] {
 
   .tasti-navigazione-vincite {
     position: absolute !important;
+  }
+}
+
+body [page="xcasinolive"] {
+  a.carousel-control-prev,
+  a.carousel-control-next {
+    opacity: 0 !important;
   }
 }

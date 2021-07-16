@@ -80,7 +80,7 @@ window.fetchSportBanners = async (skin, token) => {
           (banner) =>
             `<div class="sliderItem" onclick="${
               banner.subtitle
-                ? `window.top.location.href = 'https://${window.location.host}/casino?token=&language=it&system_code=BETSHOP375&systemCodeLancioGioco=BETSHOP375&codiceGiocoInterno=${banner.subtitle}&codicePiattaforma=1&codiceLancioLive=&isReal=0&ip='`
+                ? `window.top.location.href = 'https://${window.location.host}/casino?token=&language=it&system_code=BETSHOP375&systemCodeLancioGioco=BETSHOP375&codiceGiocoInterno=${banner.subtitle}&codicePiattaforma=${banner.button}&codiceLancioLive=&isReal=0&ip='`
                 : ""
             }"><img class="newSliderSlide" src="${
               banner?.image?.path

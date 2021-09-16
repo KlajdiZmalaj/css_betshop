@@ -1399,3 +1399,33 @@ body [page="xcasinolive"] {
     opacity: 0 !important;
   }
 }
+.fireblaze,
+.aviator,
+.mega,
+.drops {
+  width: 25px;
+  height: 25px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  filter: invert(0) !important;
+}
+.fireblaze {
+  background: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-casino-images/icone/fireblaze.svg) !important;
+}
+.aviator {
+  background: url(https://www.scommettendo.it//external_cms/SCOMMETTENDO/new-casino-images/icone/aviator.svg) !important;
+}
+
+.mega {
+  background: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-casino-images/icone/megaways.svg) !important;
+}
+
+.drops {
+  background: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-casino-images/icone/drops%26wins.svg) !important;
+}
+
+html [page="promo"] {
+  .modal-content {
+    margin-top: 156px;
+  }
+}

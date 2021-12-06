@@ -1,430 +1,452 @@
-﻿<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Drop & Wins 2021 Pragmatic</title>
-
-    <style>
-      /*body {background: #000;}*/
-      .panel .container {
-        width: 100%;
-        max-width: 1140px;
-        margin-left: auto;
-        margin-right: auto;
-        color: #fff;
-        font-family: "Open Sans", sans-serif;
+﻿<main id="panel" class="panel">
+  <meta charset="UTF-8" />
+  <title>Drop &amp; Wins 2021 Pragmatic</title>
+  <style>
+    /*body {background: #000;}*/
+    .panel .container {
+      width: 100%;
+      max-width: 1140px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #fff;
+      font-family: "Open Sans", sans-serif;
+    }
+    .banner img {
+      width: 100%;
+    }
+    .text {
+      padding: 30px;
+    }
+  
+    .img-center {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    h1 {
+      color: var(--accent-bg);
+      font-size: 30px;
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+    h2 {
+      color: var(--accent-bg);
+      font-size: 23px;
+      font-weight: 500;
+      text-align: left;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+    h3 {
+      color: var(--accent-bg);
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-top: 40px;
+    }
+  
+    .number {
+      background: var(--accent-bg);
+      width: 36px;
+      height: 36px;
+      color: var(--accent-txt);
+      font-weight: 900;
+      padding: 0;
+      border-radius: 50%;
+      line-height: 36px;
+      margin-right: 10px;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+    }
+  
+    p {
+      font-size: 14px !important;
+      line-height: 1.6 !important;
+    }
+    p.description {
+      font-size: 18px !important;
+      line-height: 1.8 !important;
+      text-align: center !important;
+    }
+    p.example {
+      font-style: italic;
+      font-size: 15px !important;
+      border: 1px solid var(--accent-bg);
+      padding: 15px;
+      color: var(--accent-bg);
+      margin-top: 10px;
+    }
+    p.notes {
+      font-style: italic;
+      font-size: 13px;
+    }
+  
+    ul {
+      font-size: 14px;
+      line-height: 2.6;
+      padding-left: 50px;
+    }
+    dl {
+      font-size: 14px;
+      line-height: 1.6;
+      padding-left: 50px;
+    }
+    dt {
+      text-transform: uppercase;
+    }
+    dd {
+      padding-left: 10px;
+      margin-bottom: 10px;
+    }
+  
+    a {
+      color: var(--accent-bg);
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--accent-bg);
+    }
+  
+    table {
+      font-size: 14px;
+      line-height: 1.6;
+      background-color: #fff;
+      color: #222;
+      margin-bottom: 30px;
+      margin-top: 20px;
+      width: 80%;
+      margin-left: 10%;
+    }
+    th {
+      background: var(--accent-bg);
+      color: var(--accent-txt);
+    }
+    table td {
+      padding: 10px;
+    }
+    table th {
+      padding: 5px;
+    }
+  
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      .img-center img {
+        width: 100% !important;
       }
-      .banner img {
-        width: 100%;
-      }
-      .text {
-        padding: 30px;
-      }
-    
-      .img-center {
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-    
-      h1 {
-        color: var(--accent-bg);
-        font-size: 30px;
-        font-weight: 600;
-        text-align: center;
-        text-transform: uppercase;
-        margin-top: 20px;
-      }
-      h2 {
-        color: var(--accent-bg);
-        font-size: 23px;
-        font-weight: 500;
-        text-align: left;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        display: inline-block;
-      }
-      h3 {
-        color: var(--accent-bg);
-        font-size: 18px;
-        font-weight: 500;
-        text-transform: uppercase;
-        margin-top: 40px;
-      }
-    
-      .number {
-        background: var(--accent-bg);
-        width: 36px;
-        height: 36px;
-        color: var(--accent-txt);
-        font-weight: 900;
-        padding: 0;
-        border-radius: 50%;
-        line-height: 36px;
-        margin-right: 10px;
-        display: inline-block;
-        text-align: center;
-        vertical-align: middle;
-      }
-    
-      p {
-        font-size: 14px !important;
-        line-height: 1.6 !important;
-      }
-      p.description {
-        font-size: 18px !important;
-        line-height: 1.8 !important;
-        text-align: center !important;
-      }
-      p.example {
-        font-style: italic;
-        font-size: 15px !important;
-        border: 1px solid var(--accent-bg);
-        padding: 15px;
-        color: var(--accent-bg);
-        margin-top: 10px;
-      }
-      p.notes {
-        font-style: italic;
-        font-size: 13px;
-      }
-    
-      ul {
-        font-size: 14px;
-        line-height: 2.6;
-        padding-left: 50px;
-      }
-      dl {
-        font-size: 14px;
-        line-height: 1.6;
-        padding-left: 50px;
-      }
-      dt {
-        text-transform: uppercase;
-      }
-      dd {
-        padding-left: 10px;
-        margin-bottom: 10px;
-      }
-    
-      a {
-        color: var(--accent-bg);
-        text-decoration: none;
-      }
-      a:hover {
-        color: var(--accent-bg);
-      }
-    
       table {
-        font-size: 14px;
-        line-height: 1.6;
-        background-color: #fff;
-        color: #222;
-        margin-bottom: 30px;
-        margin-top: 20px;
-        width: 80%;
-        margin-left: 10%;
+        width: 100%;
+        margin-left: 0 !important;
       }
-      th {
-        background: var(--accent-bg);
-        color: var(--accent-txt);
-      }
-      table td {
-        padding: 10px;
-      }
-      table th {
-        padding: 5px;
-      }
-    
-      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-        .img-center img {
-          width: 100% !important;
-        }
-        table {
-          width: 100%;
-          margin-left: 0 !important;
-        }
-      }
-    </style>
-  
-</head>
+    }
+  </style>
 
-  <body>
-    <div class="container">
-      <div class="banner">
-        <img
-          src="https://www.betshop375.it/external_css/BETSHOP375/img/Drop-wins-italy-banner2.png"
-          alt="Scommettendo, Classifica Casino"
-        />
-      </div>
-      <div class="text">
-        <h1>Drops & Wins – ITALY 2021 </h1>
-
-        <div class="number">1</div>
-        <h2>Messaggio di Benvenuto – Bonus Drop </h2>
-        <p>
-          • Montepremi complessivo giornaliero dei Bonus Drop: € 3.500 in Fun Bonus <br>
-          • Valore più alto del Bonus Drop: € 1.000 in Fun Bonus <br>
-          • Ogni giorno in palio 57 premi in Fun Bonus <br>
-        </p>
-        <br />
-        
-        <div class="number">2</div>
-        <h2>Messaggio di Benvenuto – Tornei </h2>
-        <p>
-          • Montepremi complessivo settimanale dei Tornei: € 13.000 in Fun Bonus <br>
-          • 1º Premio dei Tornei: € 3.500 in Fun Bonus <br>
-          • In palio 250 premi in Fun Bonus <br>
-        </p>
-        <br />
-  
-        <div class="number">3</div>
-        <h2>Regolamento – Bonus Drop  </h2>
-        <p>
-          I Tornei settimanali e i Bonus Drop giornalieri di ‘Drops & Wins’ sono attivi su questo gioco e validi ogni settimana, dal lunedì alla domenica, dall’24 maggio al 12 settembre 2021.
-        </p>
-<br>
-        <p>
-          <strong>Bonus Drop giornalieri</strong> <br>
-
-          • Montepremi complessivo giornaliero dei Bonus Drop: € 3.500 in Fun Bonus <br>
-          
-          • Valore più alto del Bonus Drop: € 1.000 in Fun Bonus <br>
-          
-          • Ogni giorno in palio 57 premi in Fun Bonus <br>
-        </p>
-
-        <br>
-        <p>
-          <strong>Come partecipare ai Bonus Drop: </strong> <br>
-
-
-
-I Bonus Drop sono una funzione integrata dei giochi che permette di vincere Fun Bonus nel rispetto dei termini indicati di seguito: <br>
-
-• È necessario completare almeno una giocata (1) in denaro reale, realizzando una puntata minima di almeno € 0,25 su uno qualsiasi dei giochi qualificanti. <br>
-
-• Ciascuna puntata piazzata su uno qualsiasi dei giochi qualificanti e all’interno del periodo di validità del Bonus Drop può portare alla vincita casuale di uno (1) dei premi in Fun Bonus in palio. <br>
-
-• È possibile vincere più di un (1) premio in Fun Bonus all’interno di uno stesso periodo di validità del Bonus Drop.  <br>
-
-• Tabella delle vincite in Fun Bonus in palio: <br>
-        </p>
-
-        <br />
-      
-        <table>
-          <tbody>
-            <tr>
-              <th><strong>Numero di Bonus Drop </strong></th>
-              <th><strong>Vincita in Fun Bonus</strong></th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>€1.000,00  </td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>€500,00  </td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>€100,00  </td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td>€50,00  </td>
-            </tr>
-            <tr>
-              <td>20</td>
-              <td>€20,00  </td>
-            </tr>
-            <tr>
-              <td>20</td>
-              <td>€10,00  </td>
-            </tr>
-          </tbody>
-        </table>
-        <br />
-     
-
-        <div class="number">4</div>
-        <h2>Termini e Condizioni Generali – Tornei e Bonus Drop: </h2>
-        <ul>
-          <li>
-            ‘Drops & Wins’ è composta da sedici (16) Tornei della durata di sette (7) giorni ciascuno e centododici (112) Bonus Drops giornalieri, in palio ogni settimana dall’24 maggio al 12 settembre 2021, dal lunedì alla domenica, come parte integrante dei giochi qualificanti.
-          </li>
-          <li>
-            Per partecipare a ‘Drops & Wins’ è necessario piazzare almeno una puntata qualificante, su almeno uno qualsiasi dei giochi qualificanti.
-          </li>
-          <li>
-            Per partecipare ai Tornei settimanali o ai Bonus Drop giornalieri, vengono considerate idonee soltanto le puntate realizzate in denaro reale da almeno €0,25.
-          </li>
-          <li>
-            Se la puntata minima da €0,25 non è presente tra gli importi all’interno del gioco, il primo importo disponibile per la puntata di valore superiore a €0,25 sarà considerato come la puntata minima necessaria per partecipare ai Tornei settimanali e/o ai Bonus Drop giornalieri (<strong>“puntata qualificante”</strong>). 
-          </li>
-          <li>
-            Montepremi totale è pari a seicentomila Euro (€600.000,00) in vincite Fun Bonus, ed è condiviso tra i giocatori della rete di operatori partner di Pragmatic Play (‘Drops & Wins Network’). Drops Giornalieri: 3.500€ al giorno divisi in 57 premi come da tabella sopra riportata (si concorre all'assegnazione del bonus anche solo con uno spin da 0,25€ sui giochi validi sopra indicati. Torneo settimanale: 13.000€ di montepremi ogni settimana fino alla fine della promozione. Saranno premiati settimanalmente i primi 250 giocatori come da tabella sopra riportata.
-          </li>
-          <li>
-            La classifica settimanale verra' calcolata in base all'importo piu' alto vinto in un singolo spin relativo al valore della puntata. Maggiore il valore dell'importo vinto in un singolo spin in relazione al valore della tua puntata, maggiore sara' il punteggio. Nel caso in cui due o più giocatori finiscano il Torneo nella stessa posizione in classifica, il giocatore ad averla raggiunta per primo vincerà il premio maggiore. La classifica si basa sui giochi validi e si aggiorna in tempo reale. Il progresso è visibile alla voce “tu” e solo gli ID Torneo degli altri giocatori.
-          </li>
-          <li>
-            Una puntata qualificante piazzata su uno qualsiasi dei giochi qualificanti è idonea per la partecipazione contemporanea ai Tornei settimanali e ai Bonus Drop giornalieri di ‘Drops & Wins’. 
-          </li>
-          <li>
-            La partecipazione ai Tornei settimanali e ai Bonus Drop giornalieri di ‘Drops & Wins’ non prevede alcun costo aggiuntivo.
-          </li>
-          <li>
-            Il Montepremi complessivo dei Tornei settimanali e dei Bonus Drop giornalieri di ‘Drops & Wins’ è pari a seicentomila Euro (€600.000,00) in vincite Fun Bonus, ed è condiviso tra i giocatori della rete di operatori partner di Pragmatic Play (‘Drops & Wins Network’). 
-          </li>
-          <li>
-            *Le vincite in Fun Bonus sono destinate a giocatori residenti in Italia che partecipano a ‘Drops & Wins’ nel rispetto del presente regolamento e verranno accreditate secondo quanto descritto nella sezione ‘Vincite in Fun Bonus’ dei giochi qualificanti. Le vincite in Fun Bonus saranno soggette ad un requisito minimo di puntata pari a trentacinque (35) volte il loro valore (wagering 35x).
-          </li>
-          <li>
-            Il presente regolamento dei Tornei settimanali e dei Bonus Drop giornalieri di ‘Drops & Wins’ si applica ai soli utenti residenti in Italia.
-          </li>
-          <li>
-            La Tabella delle vincite in Fun Bonus per i Bonus Drop giornalieri è aggiornata in tempo reale per mostrare l’effettivo numero di vincite in Fun Bonus non ancora assegnate. 
-          </li>
-          
-          <li>
-            Il periodo di validità di ciascun Bonus Drop giornaliero termina ogni giorno (i) alle ore 23:59 CET/CEST; oppure (ii) nel momento esatto in cui l’ultima vincita in Fun Bonus rimasta viene assegnata.
-          </li>
-
-          <li>
-            Ciascuna classifica dei Tornei settimanali viene stilata secondo il punteggio ottenuto dai giocatori durante la settimana, in base alla vincita più alta ottenuta con un solo Spin, in proporzione al valore dell’importo giocato. 
-          </li>
-
-          <li>Il punteggio per le classifiche dei Tornei settimanali viene calcolato come segue: (importo vinto)/ (importo scommesso) *100.</li>
-          
-          <li>Nel caso in cui due (2) o più giocatori concludano un Torneo settimanale nella stessa posizione di classifica, il giocatore che ha ottenuto la posizione per primo riceverà il premio maggiore. </li>
-          
-          <li>Partecipando ai Tornei settimanali e ai Bonus Drop di ‘Drops & Wins’ dichiari di comprendere e accettare che il tuo Username (Nome Utente) potrebbe essere incluso e mostrato nelle relative classifiche, insieme a qualsiasi importo in Fun Bonus vinto contestualmente alla partecipazione. </li>
-          
-          <li>Si applicano Termini e Condizioni Generali. Ci riserviamo il diritto di modificare il presente regolamento dei Tornei settimanali e dei Bonus Drop di ‘Drops & Wins’ in qualsiasi momento e senza alcun preavviso.</li>
-          
-          <li>Per ulteriori informazioni e dettagli sui Bonus, visita la sezione Termini e Condizioni presente sul sito del tuo Operatore. </li>
-        
-          <div class="number">4</div>
-          <h2>Regolamento – Tornei settimanali</h2>
-          <p>
-            I Tornei settimanali e i Bonus Drop giornalieri di ‘Drops & Wins’ sono attivi su questo gioco e validi ogni settimana, dal lunedì alla domenica, dall’24 maggio al 12 settembre 2021.
-          </p>
-          <br />
-
-          <p>
-
-            <strong>Tornei settimanali</strong>
-
-            • Montepremi complessivo settimanale dei Tornei: € 13.000 in Fun Bonus <br>
-            
-            • 1º Premio dei Tornei: € 3.500 in Fun Bonus <br>
-            
-            • In palio 250 premi in Fun Bonus <br>
-          </p>
-
-
-          <p>
-           <strong> Come partecipare ai Tornei settimanali:  </strong>
-
-• Per partecipare ai Tornei settimanali, i giocatori devono aver piazzato almeno una puntata da €0,25 in denaro reale su uno dei giochi qualificanti e devono aver ottenuto almeno una (1) vincita all’interno del gioco stesso. <br>
-
-• Le vincite in Fun Bonus verranno accreditate ai giocatori in base al punteggio finale ottenuto in Classifica, al termine di ciascun Torneo settimanale. <br>
-
-• Il punteggio delle Classifiche è calcolato in base alla vincita più alta ottenuta con un solo Spin, in proporzione al valore dell’importo giocato. Maggiore è la vincita ottenuta con un solo Spin in proporzione all’importo scommesso e maggiore sarà il punteggio ottenuto in Classifica. <br>
-
-• La Classifica è consultabile all’interno di ciascun gioco qualificante ed è aggiornata in tempo reale.  Ciascun giocatore potrà monitorare lo stato dei propri progressi alla voce “Tu”, in mezzo agli ID Torneo degli altri giocatori partecipanti. <br>
-
-• Tabella delle vincite in Fun Bonus: <br>
-          </p>
-
-          <table>
-            <tbody>
-              <tr>
-                <th><strong>Posizione ㅤㅤㅤㅤㅤㅤㅤㅤ ㅤㅤ         </strong></th>
-                <th><strong>Vincite in Fun Bonus</strong></th>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>€3.500,00   </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>€2.000,00    </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>€1.200,00    </td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>€800,00   </td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>€500,00    </td>
-              </tr>
-              <tr>
-                <td>6-10</td>
-                <td>€100,00    </td>
-              </tr>
-              <tr>
-                <td>11-50</td>
-                <td>€50,00    </td>
-              </tr>
-              <tr>
-                <td>51-100</td>
-                <td>€20,00    </td>
-              </tr>
-              <tr>
-                <td>101-250</td>
-                <td>€10,00  </td>
-              </tr>
-            </tbody>
-          </table>
-          <br />
-
-            <p>
-              <strong>Termini e Condizioni Generali – Tornei e Bonus Drop: </strong> <br>
-              • ‘Drops & Wins’ è composta da sedici (16) Tornei della durata di sette (7) giorni ciascuno e centododici (112) Bonus Drops giornalieri, in palio ogni settimana dall’24 maggio al 12 settembre 2021, dal lunedì alla domenica, come parte integrante dei giochi qualificanti. <br><br>
-
-• Per partecipare a ‘Drops & Wins’ è necessario piazzare almeno una puntata qualificante, su almeno uno qualsiasi dei giochi qualificanti. <br><br>
-
-• Per partecipare ai Tornei settimanali o ai Bonus Drop giornalieri, vengono considerate idonee soltanto le puntate realizzate in denaro reale da almeno €0,25. <br><br>
-
-• Se la puntata minima da €0,25 non è presente tra gli importi all’interno del gioco, il primo importo disponibile per la puntata di valore superiore a €0,25 sarà considerato come la puntata minima necessaria per partecipare ai Tornei settimanali e/o ai Bonus Drop giornalieri  (<strong>“puntata qualificante”</strong>).  <br><br>
-
-• Una puntata qualificante piazzata su uno qualsiasi dei giochi qualificanti è idonea per la partecipazione contemporanea ai Tornei settimanali e ai Bonus Drop giornalieri di ‘Drops & Wins’.  <br><br>
-
-• La partecipazione ai Tornei settimanali e ai Bonus Drop giornalieri di ‘Drops & Wins’ non prevede alcun costo aggiuntivo. <br><br>
-
-• Il Montepremi complessivo dei Tornei settimanali e dei Bonus Drop giornalieri di ‘Drops & Wins’ è pari a seicentomila Euro (€600.000,00) in vincite Fun Bonus, ed è condiviso tra i giocatori della rete di operatori partner di Pragmatic Play (‘Drops & Wins Network’). <br> <br>
-
-• *Le vincite in Fun Bonus sono destinate a giocatori residenti in Italia che partecipano a ‘Drops & Wins’ nel rispetto del presente regolamento e verranno accreditate secondo quanto descritto nella sezione ‘Vincite in Fun Bonus’ dei giochi qualificanti. Le vincite in Fun Bonus saranno soggette ad un requisito minimo di puntata pari a trentacinque (35) volte il loro valore (wagering 35x). <br><br>
-
-• Il presente regolamento dei Tornei settimanali e dei Bonus Drop giornalieri di ‘Drops & Wins’ si applica ai soli utenti residenti in Italia. <br><br>
-
-• La Tabella delle vincite in Fun Bonus per i Bonus Drop giornalieri è aggiornata in tempo reale per mostrare l’effettivo numero di vincite in Fun Bonus non ancora assegnate.  <br><br>
-
-• Il periodo di validità di ciascun Bonus Drop giornaliero termina ogni giorno (i) alle ore 23:59 CET/CEST; oppure (ii) nel momento esatto in cui l’ultima vincita in Fun Bonus rimasta viene assegnata. <br><br>
-
-• Ciascuna classifica dei Tornei settimanali viene stilata secondo il punteggio ottenuto dai giocatori durante la settimana, in base alla vincita più alta ottenuta con un solo Spin, in proporzione al valore dell’importo giocato.  <br><br>
-
-• Il punteggio per le classifiche dei Tornei settimanali viene calcolato come segue: (importo vinto)/ (importo scommesso) *100. <br><br>
-
-• Nel caso in cui due (2) o più giocatori concludano un Torneo settimanale nella stessa posizione di classifica, il giocatore che ha ottenuto la posizione per primo riceverà il premio maggiore.  <br><br>
-
-• Partecipando ai Tornei settimanali e ai Bonus Drop di ‘Drops & Wins’ dichiari di comprendere e accettare che il tuo Username (Nome Utente) potrebbe essere incluso e mostrato nelle relative classifiche, insieme a qualsiasi importo in Fun Bonus vinto contestualmente alla partecipazione. <br><br>
-
-• Si applicano Termini e Condizioni Generali. Ci riserviamo il diritto di modificare il presente regolamento dei Tornei settimanali e dei Bonus Drop di ‘Drops & Wins’ in qualsiasi momento e senza alcun preavviso. <br><br>
-
-• Per ulteriori informazioni e dettagli sui Bonus, visita la sezione Termini e Condizioni presente sul sito del tuo Operatore. <br><br>
-           
-</p>
-
-
-      </div>
+  <div class="container">
+    <div class="banner">
+      <img
+        src="https://www.scommettendo.it/external_cms/SCOMMETTENDO/promozioni-images/Casino/Pragmatic/DROPS%26WINS/Drops%26Wins600/Natale0901/Drops%26WinsNov21-PromotionPage.jpg"
+        alt="Betshop375, Classifica Casino"
+      />
     </div>
-  </body>
-</html>
+    <div class="text">
+      <h1>DROPS &amp; WINS 2021 CON 600.000€ IN PALIO</h1>
+      <h1>Bonus giornalieri random e tornei settimanali</h1>
+
+      <div class="number">1</div>
+      <h2>Cosa è?</h2>
+      <p>
+        Dal <strong> 13 Settembre al 9 Gennaio 2022</strong>, parte la TERZA edizione del Mega torneo targato
+        <strong>Pragmatic Play, Drops &amp; Wins</strong> con premi esclusivi ogni giorno e classifiche ogni settimana
+        per 4 mesi consecutivi!
+      </p>
+      <br />
+      <p>
+        Partecipa al grande Torneo Drops &amp; Wins e per varie settimane potrai aggiudicarti tantissimi bonus per un
+        montepremi totale di ben <strong>600.000€!</strong>
+      </p>
+      <br />
+      <p>I giochi selezionati dalla promozione sono tutti contrassegnati dall'etichetta DROPS &amp; WINS e sono:</p>
+      <br />
+      <ul>
+        <li>Sweet Bonanza</li>
+        <li>John Hunter and the Book of Tut</li>
+        <li>Wolf Gold</li>
+        <li>The Dog House Megaways</li>
+        <li>Big Bass Bonanza</li>
+        <li>Gems Bonanza</li>
+        <li>Fruit Party</li>
+        <li>Joker’s Jewels</li>
+        <li>John Hunter and the Tomb of the Scarab Queen</li>
+        <li>Mustang Gold</li>
+        <li>Great Rhino Megaways</li>
+        <li>Diamond Strike</li>
+        <li>Chilli Heat</li>
+        <li>Cowboys Gold</li>
+        <li>Wild Wild Riches</li>
+        <li>Ultra Hold and Spin</li>
+        <li>Hot to Burn</li>
+        <li>Pirate Gold</li>
+        <li>The Dog House</li>
+        <li>Great Rhino</li>
+        <li>5 Lions Gold</li>
+        <li>Madame Destiny Megaways</li>
+        <li>Release the Kraken</li>
+        <li>Curse of the Werewolf Megaways</li>
+        <li>Power of Thor Megaways</li>
+        <li>Buffalo King</li>
+        <li>Gates of Olympus</li>
+        <li>The Magic Cauldron - Enchanted Brew</li>
+        <li>The Hand of Midas</li>
+        <li>Sweet Bonanza Xmas</li>
+        <li>Empty the Bank</li>
+        <li>Leprechaun Carol</li>
+        <li>Christmas Carol Megaways</li>
+        <li>Lucky Lightning</li>
+        <li>Starlight Princess</li>
+        <li>Chicken Drop</li>
+        <li>Bigger Bass Bonanza</li>
+        <li>Chilli Heat Megaways</li>
+      </ul>
+
+      <p>Potrai facilmente individuarli selezionando il TEMA "DROPS&amp;WINS"</p>
+
+      <div class="number">2</div>
+      <h2>Bonus Giornalieri</h2>
+      <p>
+        Partecipare è semplicissimo: ti basterà giocare ad una o piú slot riportate nella sezione dedicata con almeno
+        una puntata con saldo reale di minimo 0,25€.
+      </p>
+      <p>
+        Ciascuna puntata piazzata su uno dei qualsiasi gioco qualificante e all'interno del periodo di validità Bonus
+        Drop può portare alla vincita CASUALE di uno (1) dei premi FUN BONUS giornalieri
+      </p>
+      <p>
+        E' possibile vincere più di un (1) premio FUN BONUS all'interno di uno stesso periodo di validità DROP BONUS;
+      </p>
+      <p>
+        I premi giornalieri avranno un montepremi totale di 3.500€, tutti i giorni fino alla fine della promozione.
+        Avrai quindi la possibilità di essere premiato con tanti bonus ad un passo di spin!
+      </p>
+      <br />
+      <p>
+        Potrai aggiudicarti uno dei 57 premi giornalieri in palio come da tabella in basso e potrai vincere anche con un
+        solo spin!
+      </p>
+      <p>
+        Se non diversamente specificato in questa promo il FUN BONUS seguirà le regole Generali dei BONUS consultabili
+        <a href="https://www.betshop375.it/promo/tutte/TerminiBonus" target="_blank">QUI</a>
+      </p>
+
+      <br />
+      <table>
+        <tbody>
+          <tr>
+            <th><strong>PREMIATI GIORNALIERI</strong></th>
+            <th><strong>FUN BONUS</strong></th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1000€</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>500€</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>100€</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>50€</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>20€</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>10€</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <p>
+        Inoltre potrai partecipare anche ai <strong>Tornei settimanali con in palio ben 13.000€</strong> e 250 premiati
+        per 16 settimane!
+      </p>
+
+      <div class="number">3</div>
+      <h2>Tornei Settimanali</h2>
+
+      <p>
+        Partecipare è semplicissimo: basterà aver piazzato almeno una puntata da €0,25 in denaro reale su uno dei giochi
+        qualificanti riportati nel tema "DROPS &amp; WINS" ed aver ottenuto almeno una (1) vincita all’interno del gioco
+        stesso.
+      </p>
+      <br />
+      <p>
+        La classifica settimanale verrà' calcolata in base alla
+        <strong>vincita più alta ottenuta con un solo Spin</strong>, in proporzione al valore dell’importo giocato.
+        Maggiore il valore dell'importo vinto in un singolo spin in relazione al valore della tua puntata, maggiore
+        sara' il tuo punteggio.
+      </p>
+      <br />
+      <p>
+        Verranno premiati i primi <strong>250 giocatori classificati</strong> e i premi saranno assegnati
+        settimanalmente come da tabella in basso
+      </p>
+      <br />
+      <table>
+        <tbody>
+          <tr>
+            <th><strong>RANK</strong></th>
+            <th><strong>FUN BONUS</strong></th>
+          </tr>
+          <tr>
+            <td>1°</td>
+            <td>3500€</td>
+          </tr>
+          <tr>
+            <td>2°</td>
+            <td>2000€</td>
+          </tr>
+          <tr>
+            <td>3°</td>
+            <td>1200€</td>
+          </tr>
+          <tr>
+            <td>4°</td>
+            <td>800€</td>
+          </tr>
+          <tr>
+            <td>5°</td>
+            <td>500€</td>
+          </tr>
+          <tr>
+            <td>6°-10°</td>
+            <td>100€</td>
+          </tr>
+          <tr>
+            <td>11°-50°</td>
+            <td>50€</td>
+          </tr>
+          <tr>
+            <td>51°-100°</td>
+            <td>20€</td>
+          </tr>
+          <tr>
+            <td>101°-250°</td>
+            <td>10€</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <p>
+        La Classifica è consultabile all’interno di ciascun gioco qualificante ed è aggiornata in tempo reale. Ciascun
+        giocatore potrà monitorare lo stato dei propri progressi alla voce “Tu”, in mezzo agli ID Torneo degli altri
+        giocatori partecipanti.
+      </p>
+      <br />
+      <p>
+        NB. Il Torneo Pragmatic Play Drops &amp; Wins è in collaborazione con altri Operatore del settore italiano, per
+        rendere la sfida ancora piú interessante ed avvincente.
+      </p>
+      <br />
+
+      <div class="number">4</div>
+      <h2>Termini &amp; Condizioni</h2>
+      <ul>
+        <li>
+          Il Torneo Drops &amp; Wins è attivo su Betshop375 dal 13 Settembre al 09 Gennaio 2022 alle 23:59 con un
+          montepremi complessivo di 600.000€ in bonus.
+        </li>
+        <li>
+          I giochi validi per le promozioni Drops&amp;Wins, sono facilmente individuabili nella sezione DROPS&amp;WINS.
+        </li>
+        <li>
+          Per partecipare della promozione, è necessario effettuare almeno 1 spin con denaro reale alle seguenti
+          condizioni: Sono considerati validi, per i Tornei Settimanali e i Prize Drops Giornalieri, solo gli spin di
+          importo minimo pari o superiore a € 0,25 effettuati nei giochi sopra indicati. Se la puntata minima da €0,25
+          non è presente tra gli importi all’interno del gioco, il primo importo disponibile per la puntata di valore
+          superiore a €0,25 sarà considerato come la puntata minima necessaria per partecipare ai Tornei settimanali e/o
+          ai Bonus Drop giornalieri (“puntata qualificante”). Non è richiesto alcun costo aggiuntivo per partecipare
+          alle promozioni.
+        </li>
+        <li>
+          Montepremi totale è pari a seicentomila Euro (€600.000,00) in vincite Fun Bonus, ed è condiviso tra i
+          giocatori della rete di operatori partner di Pragmatic Play (‘Drops &amp; Wins Network’). Drops Giornalieri:
+          3.500€ al giorno divisi in 57 premi come da tabella sopra riportata (si concorre all'assegnazione del bonus
+          anche solo con uno spin da 0,25€ sui giochi validi sopra indicati. Torneo settimanale: 13.000€ di montepremi
+          ogni settimana fino alla fine della promozione. Saranno premiati settimanalmente i primi 250 giocatori come da
+          tabella sopra riportata.
+        </li>
+        <li>
+          La classifica settimanale verra' calcolata in base all'importo piu' alto vinto in un singolo spin relativo al
+          valore della puntata. Maggiore il valore dell'importo vinto in un singolo spin in relazione al valore della
+          tua puntata, maggiore sara' il punteggio. Nel caso in cui due o più giocatori finiscano il Torneo nella stessa
+          posizione in classifica, il giocatore ad averla raggiunta per primo vincerà il premio maggiore. La classifica
+          si basa sui giochi validi e si aggiorna in tempo reale. Il progresso è visibile alla voce “tu” e solo gli ID
+          Torneo degli altri giocatori.
+        </li>
+        <li>
+          I premi verranno accreditati in
+          <strong>Fun Bonus con requisiti di puntata pari a trentacinque (35) volte con validità di 7 giorni</strong>,
+          come indicato nella tabella Premi, visibile anche nei giochi validi. I premi saranno accreditati entro 48h
+          lavorative dalla fine di ogni giornata/settimana, giorni festivi e weekend esclusi.
+        </li>
+        <li>I FUN BONUS dovranno rispettare i seguenti requisiti: minimo spin 0.01 centesimi e massimo spin 1€;</li>
+        <li>
+          I FUN BONUS potranno essere utilizzati esclusivamente sulle slot PRAGMATIC e sui giochi che si visualizzeranno
+          nell'anteprima FUN BONUS;
+        </li>
+        <li>
+          Le regole e la classifica finale del Torneo saranno visibili in tutti i giochi che aderiscono per le 24 ore
+          successive al termine del Torneo.
+        </li>
+        <li>
+          Solo i giocatori localizzati in Italia possono partecipare alla Promozione Network. Il Torneo Pragmatic Play
+          Drops&amp;Wins è in collaborazione con un altri Operatori del settore italiano, i premi saranno dunque in
+          condivisione con tali operatori.
+        </li>
+        <li>
+          Prize Drops Giornalieri: La tabella dei premi si aggiorna in tempo reale mostrando anche i premi rimanenti. Il
+          prize drop terminerà ogni giorno alle 23:59 CET/CEST o quando non saranno rimasti più premi.
+        </li>
+        <li>
+          <a href="https://www.betshop375.it/promo/tutte/TerminiBonus" target="_blank">T&amp;C Generali Bonus</a> si
+          applicano a questa offerta.
+        </li>
+        <li>
+          In caso di violazione dei Termini e Condizioni Generali o dell'offerta, il nostro sito si riserva il diritto
+          di sospendere il conto gioco, di non erogare o cancellare il bonus e le vincite relative e di inoltrare alle
+          autoritá competenti le informazioni rilevanti cosí come previsto dal contratto sottoscritto
+        </li>
+      </ul>
+
+      <h3>IMPORTANTE:</h3>
+      <p class="notes">
+        Le promozioni sono valide solo ed esclusivamente per un singolo Codice Fiscale (indipendentemente dall’apertura
+        e chiusura del Conto Gioco), sono limitate ad una sola persona (Conto di Gioco) per gruppo di utenti correlati,
+        nucleo familiare, numero di telefono, indirizzo IP e dispositivo mobile e desktop.
+      </p>
+
+      <p class="notes">
+        Betshop375 verificherà la correttezza dei movimenti e/o dei dati forniti e/o di strategie fraudolente. Qualora
+        questi presentino elementi di inesattezza e/o di irregolarità, Betshop375 a suo insindacabile giudizio, si riserva
+        di non procedere all’erogazione dei bonus e di stornare i bonus assegnati.
+      </p>
+      <p class="notes">
+        Per ricevere il bonus è necessario non aver già usufruito in precedenza di altri bonus di benvenuto, su Betshop375
+        o su qualsiasi sito della Concessione.
+      </p>
+
+      <p class="notes">Cosa aspetti?</p>
+    </div>
+  </div>
+
+  <script src="/js/desktop/promo.js?v="></script>
+</main>

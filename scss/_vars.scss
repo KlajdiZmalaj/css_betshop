@@ -19,11 +19,7 @@ html:root {
   --skin: "betshop";
 
   //base
-  --headerBtnsRightBg: linear-gradient(
-    #ec411a 0%,
-    #e63312 25.12%,
-    #ff7600 100%
-  );
+  --headerBtnsRightBg: linear-gradient(#ec411a 0%, #e63312 25.12%, #ff7600 100%);
   --headerBtnsRightTxt: #fff;
   --border-color-1: var(--accent);
   --bg-color-1: var(--accent);
@@ -263,5 +259,5 @@ body .cg-top-arrow {
   filter: hue-rotate(145deg) brightness(2.9);
 }
 .cg-favicon {
-  background-image: url("https://betshop375.it/external_css/BETSHOP375/img/betshopvaf.png");
+  background-image: url("https://www.betshop375.it/external_css/BETSHOP375/img/betshop375-favv.svg");
 }

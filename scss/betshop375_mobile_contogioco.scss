@@ -990,3 +990,9 @@ body .esito.bet-selected {
   transform: unset;
   top: 0;
 }
+
+.cg-ico-pvr-crea-conto,
+.cg-ico-pvr-ricarica-conto,
+.cg-ico-pvr-scratch-card {
+  filter: invert(1);
+}

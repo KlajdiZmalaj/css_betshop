@@ -61,10 +61,11 @@ body {
 }
 
 #rightField {
-  width: 23%;
+  width: 30%;
   line-height: 14px;
   font-size: 13px;
   margin-left: 10px;
+  z-index: 0;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -204,3 +205,15 @@ body {
   opacity: 0.75 !important;
   color: white !important;
 }
+
+
+/* christmass */
+
+canvas#sky {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  width: 100vw;
+}
+
+/* christmass */

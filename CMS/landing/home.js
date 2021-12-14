@@ -20,7 +20,6 @@ window.fetchSportBanners = async (skin, token) => {
   const bottomBanners = banners.filter(
     (a) => a.css_selector.name === "bottomrow"
   );
-  console.log("ca ka data ", data, banners, mainBanner);
 
   if (mainBanner.length === 1) {
     $("#main_banner .title").text(mainBanner[0].title);

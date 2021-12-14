@@ -32,13 +32,15 @@ html body {
     content: "";
     width: 100%;
     height: 70px;
-    background-image: url("#{$logoUrl}");
+    // background-image: url("#{$logoUrl}");
+    background-image: url(https://betshop375.it/external_css/BETSHOP375/img/logoBetshopchristmas.png); //// Christmass Logo
     background-position: center;
     background-size: contain;
     display: block;
     width: 360px;
     background-repeat: no-repeat;
-    height: 45px;
+    // height: 45px;   //// Christmass Logo height
+    height: 60px;
   }
   img {
     display: none;

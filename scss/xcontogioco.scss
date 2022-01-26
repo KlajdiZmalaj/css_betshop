@@ -1232,9 +1232,9 @@ a.bg-colore-1.bianco {
 
 ///remove of top top header wp
 
-a[href="/landing"] {
-  display: none !important;
-}
+// a[href="/landing"] {
+//   display: none !important;
+// }
 
 .cg-text-muted {
   color: inherit !important;
@@ -1430,4 +1430,48 @@ html [page="promo"] {
   .modal-content {
     margin-top: 156px;
   }
+}
+
+body:not([page="promo"]) {
+  .menu-principale-barra ul.menu-principale a[data-ref="promo"]:after {
+    content: "11";
+    animation: blink;
+    display: block;
+    position: absolute;
+    right: 92px;
+    top: 1px;
+    background: var(--accent);
+    color: var(--accent-txt);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 10px;
+    animation: heartbit 1s ease-out infinite;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  }
+}
+
+@keyframes heartbit {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #fd7101;
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px #b95604;
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #9b4804;
+  }
+}
+
+body:not([subpage="live"]) .menu-principale-barra ul.menu-principale a.altro-principale.pointer[data-ref="promo"] {
+  margin-left: 15px !important;
 }

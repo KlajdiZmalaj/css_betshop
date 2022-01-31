@@ -1438,12 +1438,12 @@ body:not([page="promo"]) {
     animation: blink;
     display: block;
     position: absolute;
-    right: 92px;
+    right: -10px;
     top: 1px;
     background: var(--accent);
     color: var(--accent-txt);
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1470,8 +1470,4 @@ body:not([page="promo"]) {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 #9b4804;
   }
-}
-
-body:not([subpage="live"]) .menu-principale-barra ul.menu-principale a.altro-principale.pointer[data-ref="promo"] {
-  margin-left: 15px !important;
 }

@@ -525,6 +525,9 @@ body {
     background: var(--primary-bg);
     color: var(--primary-txt);
   }
+  .cg-top-navbar {
+    height: 55px !important;
+  }
   #nav-temporal-filter {
     background: var(--bg1);
     color: var(--col1);
@@ -834,9 +837,7 @@ body {
   .icona {
     filter: invert(0);
   }
-  #filtri-categorie .filtro.selected {
-    border: 1px solid var(--accent) !important;
-  }
+
   .filtri-button-apply {
     background: var(--accent-bg);
     color: var(--accent-txt) !important;
@@ -938,10 +939,6 @@ body .esito.bet-selected {
   background: linear-gradient(#ec411a 0%, #e63312 25.12%, #ff7600 100%) !important;
 }
 
-.cg-top-navbar {
-  height: 55px !important;
-}
-
 .cg-labelMenu {
   font-size: 12px !important;
   margin-top: 2px;
@@ -995,4 +992,78 @@ body .esito.bet-selected {
 .cg-ico-pvr-ricarica-conto,
 .cg-ico-pvr-scratch-card {
   filter: invert(1);
+}
+
+// NEW MOBILE CASINO (START)
+
+.carousel-indicators > button.active {
+  display: none;
+}
+
+.bottone1 {
+  background: var(--accent-bg) !important;
+  & > span {
+    color: var(--accent-txt) !important;
+  }
+}
+.bottone2 {
+  background: var(--accent-bg) !important;
+  & > span {
+    filter: brightness(10);
+  }
+}
+
+.menuCasino {
+  margin-top: 10px !important;
+  color: var(--accent-txt) !important;
+  background: var(--secondary-bg) !important;
+  & > a:nth-child(1) {
+    filter: brightness(100);
+  }
+}
+#idMostraAltriButton {
+  background: var(--accent-bg) !important;
+}
+
+.contentoTitoloCerca {
+  margin-top: 10px !important;
+}
+
+.btn-filters-x,
+.bottoneProvider1__containerLogoInterno {
+  background: var(--accent-bg) !important;
+  color: var(--accent-txt) !important;
+}
+
+#filtri-categorie {
+  .filtro {
+    background: var(--teableSubHeadersBg) !important;
+    color: black;
+    & > div > div:nth-child(1) {
+      filter: invert(1);
+    }
+  }
+  .selected {
+    background: var(--accent-bg) !important;
+    color: var(--accent-txt) !important;
+    & > div > div:nth-child(1) {
+      filter: none !important;
+    }
+  }
+}
+
+#filtri-piattaforme,
+#filtri-temi {
+  .filtro {
+    background: var(--teableSubHeadersBg) !important;
+  }
+  .selected {
+    background: var(--accent-bg) !important;
+    color: var(--accent-txt) !important;
+    font-weight: bold;
+  }
+}
+
+#to-top-button {
+  background: var(--accent-bg) !important;
 }

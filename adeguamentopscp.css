@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* variabili e generali */
+
+:root {
+    --colore-principale: #000000;
+    --colore-principaleDue: #e61a4e;
+    --colore-nero: #000;
+    --colore-neroDue: #333;
+    --colore-bianco: #fff;
+    --colore-biancoDue: #f5f5f5;
+    --colore-grigio: #e4e4e4;
+    --colore-grigio-scuro: #666;
+    --colore-giallo: #fc0;
+    --sfondo-titolo-gruppo: #999;
+    --colore-titolo-gruppo: #fff;
+    --sfondo-quote: #e4e4e4;
+    --colore-quote: #000;
+    --sfondo-quote-selezionate: #000000;
+    --colore-quote-selezionate: #fff;
+    --sfondo-formule: #e4e4e4;
+    --colore-formule: #000;
+    --sfondo-formule-selezionate: #fc0;
+    --colore-formule-selezionate: #000;
+    --stondatura: 8px;
+    --fontPredefinito: 'Montserrat', sans-serif;
+    --grassetto: 700;
+    --main-background: linear-gradient(#ec411a 0%, #e63312 25.12%, #ff7600 100%);
+    --white-color: #fff;
+}
+
+body,
+select,
+table th,
+td,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fontPredefinito) !important;
+    font-weight: 400 !important;
+}
+
+* {
+    text-shadow: unset !important;
+}
+
+/* adeguamenti */
+
+div#wrapper select#id_sel_concorso {
+    width: 100% !important;
+    background-color: transparent !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+    padding: 12px !important;
+    height: auto !important;
+}
+
+.styled-select {
+    border-radius: var(--stondatura) !important;
+    height: auto !important;
+    background: var(--main-background) !important;
+}
+
+.match-title {
+    background: var(--main-background) !important;
+    color: var(--colore-titolo-gruppo) !important;
+    border-radius: var(--stondatura) var(--stondatura) 0 0 !important;
+    text-shadow: unset !important;
+    top: unset !important;
+    position: relative !important;
+    height: auto !important;
+    padding: 8px !important;
+}
+
+table.match-table tr td:first-child {
+    padding-left: 8px !important;
+    color: var(--colore-grigio-scuro) !important;
+}
+
+table.match-table tr td:last-child {
+    padding-right: 8px !important;
+}
+
+
+table.match-table tr td {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+
+.btn-match {
+    background-color: var(--sfondo-quote) !important;
+    color: var(--colore-quote) !important;
+    font-weight: var(--grassetto) !important;
+    padding: 8px !important;
+    width: 100% !important;
+    max-width: calc(33% - 4px) !important;
+}
+
+td.match-buttons-box.bottom-border.left input.btn-match.selected {
+    background: var(--main-background) !important;
+    color: var(--colore-quote-selezionate) !important;
+}
+
+.bottom-border {
+    box-shadow: unset !important;
+    border: 0 !important;
+}
+
+.bordered-box {
+    border-radius: var(--stondatura) !important;
+    padding: 0 !important;
+    border-color: rgb(0 0 0 / 07%) !important;
+}
+
+.bordered-box.match-times-container table {
+    padding: 8px 0 !important;
+    background: var(--colore-biancoDue) !important;
+    border-radius: var(--stondatura) !important;
+    color: var(--colore-nero) !important;
+    border: 0 !important;
+}
+
+td.match-info-box {
+    font-size: 16px !important;
+    padding-bottom: 12px !important;
+    text-align: left !important;
+    padding-left: 10px !important;
+    background: var(--main-background) !important;
+    border-radius: var(--stondatura) var(--stondatura) 0 0 !important;
+    color: var(--colore-bianco) !important;
+}
+
+input.btn-match.sf-blue,
+.sf-blue {
+    background: var(--sfondo-quote) !important;
+    color: var(--colore-nero) !important;
+    max-width: unset !important;
+}
+
+input.btn-match.sf-blue.selected,
+.sf-blue.selected {
+    background: var(--main-background) !important;
+    color: var(--white-color) !important;
+}
+
+.bordered-box.match-times-container {
+    border: 0 !important;
+}
+
+input:focus {
+    background-color: var(--sfondo-quote) !important;
+}
+
+table.match-table tr td {
+    font-size: 12px !important;
+    font-weight: var(--grassetto) !important;
+    color: var(--colore-grigio-scuro) !important;
+}
+
+table.match-table tr td {
+    font-size: 12px !important;
+    font-weight: var(--grassetto) !important;
+    color: var(--colore-neroDue) !important;
+}
+
+.bordered-box.left-title-container .sf-yellow,
+.bordered-box.right-title-container .sf-yellow {
+    background: var(--colore-grigio) !important;
+}
+
+.bordered-box.left-title-container .sf-yellow div,
+.bordered-box.right-title-container .sf-yellow div {
+    font-weight: var(--grassetto) !important;
+    color: var(--colore-neroDue) !important;
+}
+
+.button-container {
+    padding-bottom: 16px !important;
+}
+
+.button-container .button-black-box input,
+.btn-quatrefoil {
+    border-radius: var(--stondatura) !important;
+}
+
+
+.lightyellow {
+    background-color: var(--colore-bianco);
+}
+
+@media all and (max-width: 1000px) {
+    div#boxoverlay {
+        width: 80vw !important;
+        left: calc(50% - 40vw);
+        padding: 48px 0;
+        align-items: center;
+    }
+
+    td.match-buttons-box.bottom-border.left {
+        padding: 0 !important;
+    }
+
+    table.match-table tr td {
+        padding-top: 10px !important;
+        padding-bottom: 8px !important;
+    }
+
+    table.match-table tr td {
+        font-size: 11px !important;
+    }
+}
+
+input.btn-match.lucchetto {display: inline-block;background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAyNCAyNCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTSAxMiAxIEMgOC42NzYxOTA1IDEgNiAzLjY3NjE5MDUgNiA3IEwgNiA4IEMgNC45IDggNCA4LjkgNCAxMCBMIDQgMjAgQyA0IDIxLjEgNC45IDIyIDYgMjIgTCAxOCAyMiBDIDE5LjEgMjIgMjAgMjEuMSAyMCAyMCBMIDIwIDEwIEMgMjAgOC45IDE5LjEgOCAxOCA4IEwgMTggNyBDIDE4IDMuNjc2MTkwNSAxNS4zMjM4MSAxIDEyIDEgeiBNIDEyIDMgQyAxNC4yNzYxOSAzIDE2IDQuNzIzODA5NSAxNiA3IEwgMTYgOCBMIDggOCBMIDggNyBDIDggNC43MjM4MDk1IDkuNzIzODA5NSAzIDEyIDMgeiBNIDEyIDEzIEMgMTMuMSAxMyAxNCAxMy45IDE0IDE1IEMgMTQgMTYuMSAxMy4xIDE3IDEyIDE3IEMgMTAuOSAxNyAxMCAxNi4xIDEwIDE1IEMgMTAgMTMuOSAxMC45IDEzIDEyIDEzIHoiPjwvcGF0aD48L3N2Zz4=') 50% 50% no-repeat;background-size: 18px;}
+
+
+.yellow {
+/*	background-color: #fdd87f;*/
+	background-color: var(--sfondo-quote) !important;
+	color: #5d5d5d;
+}
+
+.yellow.selected {
+	background-color: var(--sfondo-quote-selezionate) !important;
+	color: #ffffff!important;
+}
+

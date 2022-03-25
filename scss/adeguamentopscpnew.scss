@@ -1,0 +1,41 @@
+:root {
+  --main-background: linear-gradient(#ec411a 0%, #e63312 25.12%, #ff7600 100%);
+  --white-color: #fff;
+  --dark-background: #0c0c0c;
+  --orange: #ef4c0b;
+}
+
+.totocalcio__rigaQuote__titolo {
+  background: var(--main-background) !important;
+}
+
+.totocalcio__titoloFormula {
+  background: var(--dark-background) !important;
+}
+
+.totocalcio__casellaFormula.totocalcio__casellaFormula-selezionata .totocalcio__titoloFormula,
+.totocalcio__casellaFormula.totocalcio__casellaFormula:hover .totocalcio__titoloFormula {
+  background: var(--main-background) !important;
+}
+
+.totocalcio__rigaQuote__bloccoQuota__sx__competizione {
+  color: var(--orange) !important;
+}
+
+.span.totocalcio__quota.totocalcio__quota-selezionata,
+span.totocalcio__quota:hover {
+  background: var(--orange) !important ;
+}
+
+.d-flex.totocalcio__contenitoreCarrello {
+  background: linear-gradient(45deg, #262626 40%, #6e2e1f 130%) !important;
+}
+
+span.totocalcio__quota.totocalcio__quota-selezionata,
+span.totocalcio__quota:hover {
+  background: var(--orange) !important;
+}
+
+.icona__chiudi {
+  cursor: pointer;
+}
